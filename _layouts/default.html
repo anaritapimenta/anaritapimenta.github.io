@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+
+  <body style="text-align: justify">
+    <div id="page">
+      <a href="#" class="js-nav-toggle nav-toggle"><i></i></a>
+      {% include navigation.html %}
+
+      <div id="main">{{ content }} {% include footer.html %}</div>
+
+      {% include scripts.html %}
+    </div>
+  </body>
+</html>

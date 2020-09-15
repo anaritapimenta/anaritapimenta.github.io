@@ -1,0 +1,30 @@
+title: 'Ana Rita Pimenta'
+description: 'Career of Ana Rita Pimenta'
+keywords: 'anaritapimenta, ana rita pimenta, marketing, business communication, profile, resume, portfolio'
+url: 'https://anaritapimenta.com/'
+baseurl: '/'
+
+development: false
+
+author:
+  name: 'Ana Rita Pimenta'
+  role: 'Marketing & Business Communication'
+  username: 'anaritapimenta'
+  date_of_birth: 'July 5, 1994'
+  phone_number: '+351962510442'
+  location: 'Porto, Portugal'
+  email: 'hello@anaritapimenta.com'
+  degree: Master
+  freelance: Available
+  linkedin: ''
+  facebook: ''
+  instagram: 'ritapimentaferreira'
+  twitter: ''
+
+destination: _site
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+exclude: ['README.md']

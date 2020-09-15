@@ -1,0 +1,149 @@
+---
+title: Resume
+layout: default
+---
+
+<div class="about">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <span class="heading-meta style-1">Resume</span>
+        <h2 class="heading animate-box" data-animate-effect="fadeInLeft">
+          About Me
+        </h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-7">
+        <img
+          src="{{
+            'assets/img/1200x1250.jpg'
+              | prepend: site.baseurl
+              | prepend: site.url
+          }}"
+          class="img-fluid mb-15 animate-box fadeInLeft animated"
+          data-animate-effect="fadeInLeft"
+          alt=""
+        />
+      </div>
+      <div
+        class="col-md-5 animate-box fadeInLeft animated"
+        data-animate-effect="fadeInLeft"
+      >
+        <span class="heading-meta style-1">Resume</span>
+        <h3 class="about-heading">{{ site.author.role }}</h3>
+        <p>
+          Mauris faucibus consectetur lorem, at gravida neque rhoncus eget.
+          Vivamus et neque risus. Cras leo augue, molestie ultricies enim sit
+          amet, iaculis bibendum diam.
+        </p>
+        <p>
+          Vivamus ornare, nulla eu elementum pulvinar, nulla ex pretium magna,
+          id laoreet leo nunc a dui. Aenean vel purus vitae risus varius
+          sollicitudin vel eu justo.
+        </p>
+        <p>
+          Donec egestas imperdiet rhoncus. Aliquam non elit ligula. Nulla sed
+          lacinia nibh. Curabitur at nunc arcu.
+        </p>
+        <div class="about-contact-wrap">
+          <div class="row">
+            <div class="col-md-6">
+              <p><b>Date of Birth:</b> {{ site.author.date_of_birth }}</p>
+              <p>
+                <b>Phone:</b>
+                <a href="tel:{{ site.author.phone_number }}"
+                  >{{ site.author.phone_number }}</a
+                >
+              </p>
+            </div>
+            <div class="col-md-6">
+              <p><b>Freelance:</b> {{ site.author.freelance }}</p>
+              <p><b>Degree:</b> {{ site.author.degree }}</p>
+            </div>
+            <div class="col-md-12">
+              <p>
+                <b>Email:</b>
+                <a href="mailto:{{ site.author.email }}"
+                  >{{ site.author.email }}</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="divider1"></div>
+<div class="resume">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <span class="heading-meta style-1">Resume</span>
+        <h2 class="heading animate-box" data-animate-effect="fadeInLeft">
+          Experience
+        </h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+        <ul class="timeline">
+          <li>
+            <div class="timeline-content">
+              <span class="timeline-date">2020 - Present</span>
+              <h5>Company</h5>
+              <h4>Role</h4>
+              <p>Description</p>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-content">
+              <span class="timeline-date">2016 - 2019</span>
+              <h5>Company</h5>
+              <h4>Role</h4>
+              <p>Description</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="divider1"></div>
+<div class="resume">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <span class="heading-meta style-1">Resume</span>
+        <h2 class="heading animate-box" data-animate-effect="fadeInLeft">
+          Education
+        </h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+        <ul class="timeline">
+          <li>
+            <div class="timeline-content">
+              <span class="timeline-date">2013 - 2016</span>
+              <h5>University or School</h5>
+              <h4>Degree</h4>
+              <p>Description</p>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-content">
+              <span class="timeline-date">2010 - 2013</span>
+              <h5>University or School</h5>
+              <h4>Degree</h4>
+              <p>Description</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="divider1"></div>
+{% include skills.html %}
