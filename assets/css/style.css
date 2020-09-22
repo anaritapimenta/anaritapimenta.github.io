@@ -1611,7 +1611,7 @@ ul.social-network li {
 }
 
 .bar-fill-developer {
-  width: 90%;
+  width: 70%;
   background-color: #101010;
   animation: bar-fill-developer 2s ease-out;
   -moz-animation: bar-fill-developer 2s ease-out;
@@ -1716,7 +1716,7 @@ ul.social-network li {
 }
 
 .bar-fill-socialmedia {
-  width: 85%;
+  width: 65%;
   background-color: #101010;
   animation: bar-fill-socialmedia 2s ease-out;
   -moz-animation: bar-fill-socialmedia 2s ease-out;
