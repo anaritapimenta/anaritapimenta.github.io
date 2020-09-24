@@ -85,6 +85,10 @@ strong {
   color: #101010;
 }
 
+strong {
+  font-weight: initial;
+}
+
 button,
 input,
 optgroup,
