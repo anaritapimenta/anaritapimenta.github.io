@@ -16,11 +16,11 @@ layout: default
           Project
         </h2>
         <a
-          href="{{
-            'portfolio/' | prepend: site.baseurl | prepend: site.url
-          }}"
-          style="float: right; display: flex; margin-top: 10px"
-          ><i class="ti-arrow-left font-14px gray-icon"></i>
+          href="{{ 'portfolio/' | prepend: site.baseurl | prepend: site.url }}"
+          aria-label="Back to Portfolio"
+          style="float: right; display: flex; margin-top: 10px;"
+        >
+          <i class="ti-arrow-left font-14px gray-icon" aria-hidden="true"></i>
           <p
             style="
               margin-bottom: 0;
@@ -34,53 +34,46 @@ layout: default
         </a>
       </div>
     </div>
+
     <div class="row">
-      <div
-        class="col-md-7 image-content animate-box fadeInLeft animated"
-        data-animate-effect="fadeInLeft"
-      >
+      <!-- Image Section -->
+      <div class="col-md-7 image-content animate-box" data-animate-effect="fadeInLeft">
         <img
           class="img-fluid mb-30"
-          src="{{
-            'assets/img/portfolio/project-1/1.png'
-              | prepend: site.baseurl
-              | prepend: site.url
-          }}"
-          alt=""
+          src="{{ 'assets/img/portfolio/project-1/1.png' | prepend: site.baseurl | prepend: site.url }}"
+          alt="Newsletter and banner design for Meios & Publicidade"
+          loading="lazy"
         />
       </div>
-      <div
-        class="col-md-5 sticky-parent animate-box fadeInLeft animated"
-        data-animate-effect="fadeInLeft"
-      >
+
+      <!-- Content Section -->
+      <div class="col-md-5 sticky-parent animate-box" data-animate-effect="fadeInLeft">
         <div id="sticky_item">
           <div class="project-desc">
             <h2>Briefing and Meios & Publicidade</h2>
+
             <p>
-              At Livemotion I wrote newsletters (we sent it through some
-              marketing magazines), and I did the copy for the magazine's
-              banners ads. But as important as creating it is to measure the
-              exact result of each communication action.
+              At Livemotion, I wrote newsletters that were distributed through key marketing magazines and crafted the copy for banner ads placed in those same publications. However, creating content is just one part of the job — it is just as crucial to measure the exact outcome of each communication effort.
             </p>
+
             <p>
-              - How many viewers did our banners have?<br />- How many website
-              clicks came from that specific banner?<br />-What is the open rate
-              of our newsletter?
+              I continuously asked:
+              <ul>
+                <li>How many views did our banners receive?</li>
+                <li>How many clicks to the website came from a specific banner?</li>
+                <li>What was the open rate of each newsletter?</li>
+              </ul>
             </p>
+
             <p>
-              At Livemotion I usually thought about how to operationalize the
-              media strategy, but I also knew the value of each magazine in our
-              communication strategy.
+              I was not only responsible for the operational side of the media strategy but also understood the value and strategic role of each magazine in our overall communication ecosystem.
             </p>
+
             <p>
-              <b>Project Name:</b> Briefing and Meios & Publicidade<br /><b
-                >Company:</b
-              >
-              Livemotion<br /><b>Skills:</b> Press media, Google Tag Manager,
-              Google Analytics, Copywriting, E-mal Marketing<br /><b
-                >Category:</b
-              >
-              Press Media
+              <strong>Project Name:</strong> Briefing and Meios & Publicidade<br />
+              <strong>Company:</strong> Livemotion<br />
+              <strong>Skills:</strong> Press Media, Google Tag Manager, Google Analytics, Copywriting, E-mail Marketing<br />
+              <strong>Category:</strong> Press Media
             </p>
           </div>
         </div>
