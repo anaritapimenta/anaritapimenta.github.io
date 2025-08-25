@@ -12,11 +12,11 @@ layout: default
           Project
         </h2>
         <a
-          href="{{
-            'portfolio/' | prepend: site.baseurl | prepend: site.url
-          }}"
+          href="{{ 'portfolio/' | prepend: site.baseurl | prepend: site.url }}"
+          aria-label="Back to Portfolio"
           style="float: right; display: flex; margin-top: 10px"
-          ><i class="ti-arrow-left font-14px gray-icon"></i>
+        >
+          <i class="ti-arrow-left font-14px gray-icon" aria-hidden="true"></i>
           <p
             style="
               margin-bottom: 0;
@@ -30,105 +30,92 @@ layout: default
         </a>
       </div>
     </div>
+
     <div class="row">
       <div
-        class="col-md-7 image-content animate-box fadeInLeft animated"
+        class="col-md-7 image-content animate-box fadeInLeft"
         data-animate-effect="fadeInLeft"
       >
         <img
           class="img-fluid mb-30"
-          src="{{
-            'assets/img/portfolio/project-9/1.png'
-              | prepend: site.baseurl
-              | prepend: site.url
-          }}"
-          alt=""
+          src="{{ 'assets/img/portfolio/project-9/1.png' | prepend: site.baseurl | prepend: site.url }}"
+          alt="Corporate video still – Christmas campaign"
+          loading="lazy"
         />
         <img
           class="img-fluid mb-30"
-          src="{{
-            'assets/img/portfolio/project-9/2.png'
-              | prepend: site.baseurl
-              | prepend: site.url
-          }}"
-          alt=""
+          src="{{ 'assets/img/portfolio/project-9/2.png' | prepend: site.baseurl | prepend: site.url }}"
+          alt="Promotional video still – App feature demonstration"
+          loading="lazy"
         />
         <img
           class="img-fluid mb-30"
-          src="{{
-            'assets/img/portfolio/project-9/3.png'
-              | prepend: site.baseurl
-              | prepend: site.url
-          }}"
-          alt=""
+          src="{{ 'assets/img/portfolio/project-9/3.png' | prepend: site.baseurl | prepend: site.url }}"
+          alt="Promotional video still – Rowing boat"
+          loading="lazy"
         />
         <img
           class="img-fluid mb-30"
-          src="{{
-            'assets/img/portfolio/project-9/4.png'
-              | prepend: site.baseurl
-              | prepend: site.url
-          }}"
-          alt=""
+          src="{{ 'assets/img/portfolio/project-9/4.png' | prepend: site.baseurl | prepend: site.url }}"
+          alt="April Fools' campaign video still"
+          loading="lazy"
         />
       </div>
+
       <div
-        class="col-md-5 sticky-parent animate-box fadeInLeft animated"
+        class="col-md-5 sticky-parent animate-box fadeInLeft"
         data-animate-effect="fadeInLeft"
       >
         <div id="sticky_item">
           <div class="project-desc">
             <h2>Video Marketing</h2>
-            <p>It is not my expertise, for sure!</p>
+            <p>This is not my area of expertise, admittedly.</p>
+
             <p>
-              But we know that
-              <strong
-                >video is one of the most efficient and emotional marketing
-                tools</strong
-              >, and I am pretty curious about exploring all of them. After all,
-              the sky is not the limit, but our will. So, I tried, and I did.
+              However, we know that <strong>video is one of the most powerful and emotional tools in marketing</strong>, and I’ve always been curious to explore it. After all, the sky is not the limit — our ambition is.
             </p>
+
             <p>
-              <strong>For MAR Kayaks, Lda I made some videos</strong>:
-              <strong>some are corporate</strong>, like the Christmas video and
-              April fool, and <strong>some are promotional</strong>
-              videos, like the app and the rowing boat.
+              <strong>For MAR Kayaks, Lda, I created several videos</strong>: some were corporate (such as a Christmas video and an April Fools' prank), and others were <strong>promotional</strong>, including an app launch and a rowing boat showcase.
             </p>
+
             <input
               style="margin-bottom: 6px"
               type="button"
               value="Watch It (1)"
               onclick="window.open('https://www.facebook.com/watch/?v=10154767821069082','_blank')"
-            />
-            <br />
+              aria-label="Watch MAR Kayaks Christmas video on Facebook"
+            /><br />
+
             <input
               style="margin-bottom: 6px"
               type="button"
               value="Watch It (2)"
               onclick="window.open('https://www.youtube.com/watch?v=QA1VJWnvvJ8','_blank')"
-            />
-            <br />
+              aria-label="Watch promotional app video on YouTube"
+            /><br />
+
             <input
               style="margin-bottom: 6px"
               type="button"
               value="Watch It (3)"
               onclick="window.open('https://www.youtube.com/watch?v=0dGU82PsI4A','_blank')"
-            />
-            <br />
+              aria-label="Watch rowing boat promotional video on YouTube"
+            /><br />
+
             <input
               style="margin-bottom: 6px"
               type="button"
               value="Watch It (4)"
               onclick="window.open('https://www.youtube.com/watch?v=0dGU82PsI4A','_blank')"
-            />
-            <br />
-            <br />
+              aria-label="Watch rowing boat promotional video again on YouTube"
+            /><br /><br />
+
             <p>
-              <b>Project Name:</b> Video Marketing<br /><b>Company:</b> MAR
-              Kayaks, Lda<br /><b>Skills:</b> Capture and Editing<br /><b
-                >Category:</b
-              >
-              Video
+              <strong>Project Name:</strong> Video Marketing<br />
+              <strong>Company:</strong> MAR Kayaks, Lda<br />
+              <strong>Skills:</strong> Video Capture and Editing<br />
+              <strong>Category:</strong> Video Production
             </p>
           </div>
         </div>
