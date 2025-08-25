@@ -12,11 +12,11 @@ layout: default
           Project
         </h2>
         <a
-          href="{{
-            'portfolio/' | prepend: site.baseurl | prepend: site.url
-          }}"
-          style="float: right; display: flex; margin-top: 10px"
-          ><i class="ti-arrow-left font-14px gray-icon"></i>
+          href="{{ 'portfolio/' | prepend: site.baseurl | prepend: site.url }}"
+          aria-label="Back to Portfolio"
+          style="float: right; display: flex; margin-top: 10px;"
+        >
+          <i class="ti-arrow-left font-14px gray-icon" aria-hidden="true"></i>
           <p
             style="
               margin-bottom: 0;
@@ -30,51 +30,41 @@ layout: default
         </a>
       </div>
     </div>
+
     <div class="row">
-      <div
-        class="col-md-7 image-content animate-box fadeInLeft animated"
-        data-animate-effect="fadeInLeft"
-      >
+      <!-- Images -->
+      <div class="col-md-7 image-content animate-box" data-animate-effect="fadeInLeft">
         <img
           class="img-fluid mb-30"
-          src="{{
-            'assets/img/portfolio/project-5/1.png'
-              | prepend: site.baseurl
-              | prepend: site.url
-          }}"
-          alt=""
+          src="{{ 'assets/img/portfolio/project-5/1.png' | prepend: site.baseurl | prepend: site.url }}"
+          alt="Example of BOM newsletter design layout"
+          loading="lazy"
         />
         <img
           class="img-fluid mb-30"
-          src="{{
-            'assets/img/portfolio/project-5/2.png'
-              | prepend: site.baseurl
-              | prepend: site.url
-          }}"
-          alt=""
+          src="{{ 'assets/img/portfolio/project-5/2.png' | prepend: site.baseurl | prepend: site.url }}"
+          alt="Content section of a BOM newsletter"
+          loading="lazy"
         />
       </div>
-      <div
-        class="col-md-5 sticky-parent animate-box fadeInLeft animated"
-        data-animate-effect="fadeInLeft"
-      >
+
+      <!-- Project Description -->
+      <div class="col-md-5 sticky-parent animate-box" data-animate-effect="fadeInLeft">
         <div id="sticky_item">
           <div class="project-desc">
             <h2>BOM Newsletter</h2>
             <p>
-              Every Wednesday (and it was one Wednesday because we first figured
-              out that it was the day of the week with a higher opening rate), I
-              wrote a newsletter.
+              Every Wednesday (we chose that day after identifying it had the highest open rate), I wrote a newsletter tailored to the brand's needs.
             </p>
             <p>
-              The kind of content depends on our goal. Some newsletters were
-              institutional/corporate, and some were comercial/sales.
+              The content varied depending on the objective: some editions were <strong>corporate and institutional</strong>, while others were focused on <strong>sales and promotions</strong>.
             </p>
+
             <p>
-              <b>Project Name:</b> BOM Newsletter<br /><b>Company:</b> Barn of
-              Monkeys<br /><b>Skills:</b> Copywriting, User Experience,
-              Performance Analysis<br /><b>Category:</b>
-              E-mail Marketing
+              <strong>Project Name:</strong> BOM Newsletter<br />
+              <strong>Company:</strong> Barn of Monkeys<br />
+              <strong>Skills:</strong> Copywriting, User Experience, Performance Analysis<br />
+              <strong>Category:</strong> E-mail Marketing
             </p>
           </div>
         </div>
