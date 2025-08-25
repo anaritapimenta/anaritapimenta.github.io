@@ -1,13 +1,14 @@
 ---
-title: Contact | [AnaRitaPimenta.com - Marketing and Business Commmunication]
+title: Contact | Ana Rita Pimenta - Marketing and Business Communication
 layout: default
-description: Get in touch with [Your Name], a copywriter and content specialist. Contact via email or phone for inquiries, collaborations, or project opportunities.
+description: Get in touch with Your Name or Brand, a copywriter and content specialist. Contact via email or phone for inquiries, collaborations, or project opportunities.
 ---
 
 <div class="contact">
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-12 mb-30 animate-box" data-animate-effect="fadeInLeft">
+
         <span class="heading-meta style-1">Let's Connect</span>
         <h1 class="about-heading">Contact Me</h1>
 
@@ -25,14 +26,16 @@ description: Get in touch with [Your Name], a copywriter and content specialist.
         </p>
 
         <h2>Contact Form</h2>
+        <p>Fields marked with <span style="color: red;">*</span> are required.</p>
+
         <form action="mailto:{{ site.author.email }}" method="post" enctype="text/plain">
-          <label for="name">Name</label><br />
-          <input type="text" id="name" name="name" placeholder="First and Last" required><br /><br />
+          <label for="name">Name <span style="color: red;">*</span></label><br />
+          <input type="text" id="name" name="name" placeholder="Please write your preferred name" required><br /><br />
 
-          <label for="email">Email</label><br />
-          <input type="email" id="email" name="email" placeholder="you@example.com" required><br /><br />
+          <label for="email">Email <span style="color: red;">*</span></label><br />
+          <input type="email" id="email" name="email" placeholder="your.email@example.com" required><br /><br />
 
-          <label for="message">Message</label><br />
+          <label for="message">Message <span style="color: red;">*</span></label><br />
           <textarea id="message" name="message" rows="5" placeholder="How can I help you?" required></textarea><br /><br />
 
           <button type="submit">Send Message</button>
