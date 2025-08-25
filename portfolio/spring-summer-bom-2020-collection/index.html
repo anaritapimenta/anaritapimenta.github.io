@@ -12,11 +12,11 @@ layout: default
           Project
         </h2>
         <a
-          href="{{
-            'portfolio/' | prepend: site.baseurl | prepend: site.url
-          }}"
+          href="{{ 'portfolio/' | prepend: site.baseurl | prepend: site.url }}"
+          aria-label="Back to Portfolio"
           style="float: right; display: flex; margin-top: 10px"
-          ><i class="ti-arrow-left font-14px gray-icon"></i>
+        >
+          <i class="ti-arrow-left font-14px gray-icon" aria-hidden="true"></i>
           <p
             style="
               margin-bottom: 0;
@@ -32,58 +32,42 @@ layout: default
     </div>
     <div class="row">
       <div
-        class="col-md-7 image-content animate-box fadeInLeft animated"
+        class="col-md-7 image-content animate-box fadeInLeft"
         data-animate-effect="fadeInLeft"
       >
         <img
           class="img-fluid mb-30"
-          src="{{
-            'assets/img/portfolio/project-3/1.png'
-              | prepend: site.baseurl
-              | prepend: site.url
-          }}"
-          alt=""
+          src="{{ 'assets/img/portfolio/project-3/1.png' | prepend: site.baseurl | prepend: site.url }}"
+          alt="Barn of Monkeys Spring/Summer 2020 campaign visual"
+          loading="lazy"
         />
       </div>
       <div
-        class="col-md-5 sticky-parent animate-box fadeInLeft animated"
+        class="col-md-5 sticky-parent animate-box fadeInLeft"
         data-animate-effect="fadeInLeft"
       >
         <div id="sticky_item">
           <div class="project-desc">
             <h2>Spring/Summer BOM 2020 Collection</h2>
             <p>
-              I helped in the
-              <strong>definition of the brand communication channels</strong> to
-              communicate properly and efficiently with the target audience -
-              2020 marketing and communication plan definition.
+              I contributed to the <strong>definition of brand communication channels</strong> to ensure effective engagement with the target audience. This involved outlining the <strong>2020 marketing and communication plan</strong>.
             </p>
             <p>
-              In partnership with the designers and videographers I outlined the
-              Spring / Summer communication campaign for the brand -
-              <strong
-                >definition of the axis and concept of communication</strong
-              >,
-              <strong
-                >copywriting/description of the designs of the clothes</strong
-              >
-              - Storytelling of Spring/Summer collection.
+              In collaboration with designers and videographers, I helped shape the Spring/Summer campaign — from the <strong>creative communication concept</strong> to the <strong>copywriting and product storytelling</strong> that accompanied each piece in the collection.
             </p>
             <input
               style="margin-bottom: 6px"
               type="button"
               value="Preview It"
               onclick="window.open('preview.pdf','_blank')"
+              aria-label="Preview Spring/Summer 2020 Campaign PDF"
             />
-            <br />
-            <br />
+            <br /><br />
             <p>
-              <b>Project Name:</b> Spring/Summer BOM 2020 Collection<br /><b
-                >Company:</b
-              >
-              Barn of Monkeys<br /><b>Skills:</b> SEO, Copywriting,
-              Storytelling, and Woocommerce<br /><b>Category:</b>
-              Strategy and Creativity
+              <strong>Project Name:</strong> Spring/Summer BOM 2020 Collection<br />
+              <strong>Company:</strong> Barn of Monkeys<br />
+              <strong>Skills:</strong> SEO, Copywriting, Storytelling, WooCommerce<br />
+              <strong>Category:</strong> Strategy and Creativity
             </p>
           </div>
         </div>
