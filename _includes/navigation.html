@@ -3,66 +3,68 @@
 <aside id="aside">
   <h1 id="logo">
     <img
-      src="{{
-        'assets/img/avatar.jpg'
-          | prepend: site.baseurl
-          | prepend: site.url
-      }}"
-      alt="rita-avatar"
+      src="{{ 'assets/img/ana-rita-pimenta-profile-photo.jpg' | prepend: site.baseurl | prepend: site.url }}"
+      alt="Professional photo of Ana Rita Pimenta, specialist in Marketing and Corporate Communication"
     /><br />
-    <a href="{{ site.url }}"
-      >{{ site.author.name }}<span>{{ site.author.role }}</span></a
-    >
+    <a href="{{ site.url }}">
+      {{ site.author.name }}<span>{{ site.author.role }}</span>
+    </a>
   </h1>
+
   <nav id="main-menu">
     <ul>
       <li class="{% if active[1] == null %}active{% endif %}">
         <a href="{{ site.url }}">Home</a>
       </li>
       <li class="{% if active[1] contains 'resume' %}active{% endif %}">
-        <a
-          href="{{
-            'resume' | prepend: site.baseurl | prepend: site.url
-          }}"
-          >Resume</a
-        >
+        <a href="{{ 'resume' | prepend: site.baseurl | prepend: site.url }}">
+          Resume
+        </a>
       </li>
       <li class="{% if active[1] contains 'portfolio' %}active{% endif %}">
-        <a
-          href="{{
-            'portfolio' | prepend: site.baseurl | prepend: site.url
-          }}"
-          >Portfolio</a
-        >
+        <a href="{{ 'portfolio' | prepend: site.baseurl | prepend: site.url }}">
+          Portfolio
+        </a>
       </li>
       <li class="{% if active[1] contains 'contact' %}active{% endif %}">
-        <a
-          href="{{
-            'contact' | prepend: site.baseurl | prepend: site.url
-          }}"
-          >Contact</a
-        >
+        <a href="{{ 'contact' | prepend: site.baseurl | prepend: site.url }}">
+          Contact
+        </a>
       </li>
     </ul>
   </nav>
+
   <div class="footer">
     <ul>
       <li>
-        <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}"
-          ><i class="ti-linkedin font-14px gray-icon"></i
-        ></a>
+        <a
+          href="https://www.linkedin.com/in/{{ site.author.linkedin }}"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="ti-linkedin font-14px gray-icon"></i>
+        </a>
       </li>
       <li>
-        <a href="https://www.facebook.com/{{ site.author.facebook }}"
-          ><i class="ti-facebook font-14px gray-icon"></i
-        ></a>
+        <a
+          href="https://www.facebook.com/{{ site.author.facebook }}"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="ti-facebook font-14px gray-icon"></i>
+        </a>
       </li>
       <li>
-        <a href="https://www.instagram.com/{{ site.author.instagram }}"
-          ><i class="ti-instagram font-14px gray-icon"></i
-        ></a>
+        <a
+          href="https://www.instagram.com/{{ site.author.instagram }}"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="ti-instagram font-14px gray-icon"></i>
+        </a>
       </li>
     </ul>
+
     <p>
       <small>{{ site.author.name }} &copy; 2025 All Rights Reserved</small>
     </p>
