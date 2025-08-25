@@ -12,11 +12,11 @@ layout: default
           Project
         </h2>
         <a
-          href="{{
-            'portfolio/' | prepend: site.baseurl | prepend: site.url
-          }}"
-          style="float: right; display: flex; margin-top: 10px"
-          ><i class="ti-arrow-left font-14px gray-icon"></i>
+          href="{{ 'portfolio/' | prepend: site.baseurl | prepend: site.url }}"
+          aria-label="Back to Portfolio"
+          style="float: right; display: flex; margin-top: 10px;"
+        >
+          <i class="ti-arrow-left font-14px gray-icon" aria-hidden="true"></i>
           <p
             style="
               margin-bottom: 0;
@@ -30,60 +30,49 @@ layout: default
         </a>
       </div>
     </div>
+
     <div class="row">
-      <div
-        class="col-md-7 image-content animate-box fadeInLeft animated"
-        data-animate-effect="fadeInLeft"
-      >
+      <!-- Image Section -->
+      <div class="col-md-7 image-content animate-box" data-animate-effect="fadeInLeft">
         <img
           class="img-fluid mb-30"
-          src="{{
-            'assets/img/portfolio/project-4/1.png'
-              | prepend: site.baseurl
-              | prepend: site.url
-          }}"
-          alt=""
+          src="{{ 'assets/img/portfolio/project-4/1.png' | prepend: site.baseurl | prepend: site.url }}"
+          alt="Corporate document sample for Barn of Monkeys"
+          loading="lazy"
         />
         <img
           class="img-fluid mb-30"
-          src="{{
-            'assets/img/portfolio/project-4/2.png'
-              | prepend: site.baseurl
-              | prepend: site.url
-          }}"
-          alt=""
+          src="{{ 'assets/img/portfolio/project-4/2.png' | prepend: site.baseurl | prepend: site.url }}"
+          alt="Ambassador protocol example from the BOM project"
+          loading="lazy"
         />
       </div>
-      <div
-        class="col-md-5 sticky-parent animate-box fadeInLeft animated"
-        data-animate-effect="fadeInLeft"
-      >
+
+      <!-- Content Section -->
+      <div class="col-md-5 sticky-parent animate-box" data-animate-effect="fadeInLeft">
         <div id="sticky_item">
           <div class="project-desc">
             <h2>BOM Documents</h2>
             <p>
-              I created <strong>corporate/institutional</strong> content for the
-              brand.
+              I developed <strong>corporate and institutional content</strong> for the brand, focusing on professionalism and tone consistency.
             </p>
             <p>
-              I created <strong>protocols for ambassadors</strong>, some
-              <strong>content for the website/online store</strong>,
-              <strong>corporate documents for international agents</strong>, and
-              <strong>relevant stakeholders</strong>, in English, and
-              Portuguese.
+              This included <strong>ambassador protocols</strong>, website and online store content, and <strong>corporate documents</strong> for international agents and key stakeholders — written in both English and Portuguese.
             </p>
+
             <input
-              style="margin-bottom: 6px"
               type="button"
               value="Preview It"
               onclick="window.open('preview.pdf','_blank')"
+              style="margin-bottom: 16px; padding: 8px 12px; cursor: pointer;"
+              aria-label="Open project preview in new tab"
             />
-            <br />
-            <br />
+
             <p>
-              <b>Project Name:</b> BOM Documents<br /><b>Company:</b> Barn of
-              Monkeys<br /><b>Skills:</b> Copywriting<br /><b>Category:</b>
-              Corporate Communication
+              <strong>Project Name:</strong> BOM Documents<br />
+              <strong>Company:</strong> Barn of Monkeys<br />
+              <strong>Skills:</strong> Copywriting<br />
+              <strong>Category:</strong> Corporate Communication
             </p>
           </div>
         </div>
