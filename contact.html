@@ -1,27 +1,45 @@
 ---
-title: Contact
+title: Contact | [Your Name or Brand]
 layout: default
+description: Get in touch with [Your Name], a copywriter and content specialist. Contact via email or phone for inquiries, collaborations, or project opportunities.
 ---
 
 <div class="contact">
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-12 mb-30 animate-box" data-animate-effect="fadeInLeft">
-        <span class="heading-meta style-1">Get In Touch</span>
-        <h2 class="about-heading">Contact</h2>
+        <span class="heading-meta style-1">Let's Connect</span>
+        <h1 class="about-heading">Contact Me</h1>
+
         <p>
-          If you have any questions, please feel free to drop me a line. I'll be
-          back to you as soon as I can. <strong>That's a promise!</strong>
+          Looking to collaborate, ask a question, or start a new project? I’d love to hear from you.
+          I typically respond within 24 hours. Whether it's content strategy, copywriting, or something unique — let's talk.
         </p>
+
+        <h2>Contact Details</h2>
         <p>
-          <b>Phone:</b>
-          <a href="tel:{{ site.author.phone_number }}"
-            >{{ site.author.phone_number }}</a
-          >
-        </p>
-        <p>
-          <b>Email:</b>
+          <strong>Phone:</strong>
+          <a href="tel:{{ site.author.phone_number }}">{{ site.author.phone_number }}</a><br />
+          <strong>Email:</strong>
           <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
+        </p>
+
+        <h2>Contact Form</h2>
+        <form action="mailto:{{ site.author.email }}" method="post" enctype="text/plain">
+          <label for="name">Name</label><br />
+          <input type="text" id="name" name="name" placeholder="Your Name" required><br /><br />
+
+          <label for="email">Email</label><br />
+          <input type="email" id="email" name="email" placeholder="you@example.com" required><br /><br />
+
+          <label for="message">Message</label><br />
+          <textarea id="message" name="message" rows="5" placeholder="How can I help you?" required></textarea><br /><br />
+
+          <button type="submit">Send Message</button>
+        </form>
+
+        <p style="margin-top: 2rem;">
+          Based in [City, Country] – available for remote collaborations worldwide.
         </p>
       </div>
     </div>
