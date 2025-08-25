@@ -12,11 +12,11 @@ layout: default
           Project
         </h2>
         <a
-          href="{{
-            'portfolio/' | prepend: site.baseurl | prepend: site.url
-          }}"
+          href="{{ 'portfolio/' | prepend: site.baseurl | prepend: site.url }}"
+          aria-label="Back to Portfolio"
           style="float: right; display: flex; margin-top: 10px"
-          ><i class="ti-arrow-left font-14px gray-icon"></i>
+        >
+          <i class="ti-arrow-left font-14px gray-icon" aria-hidden="true"></i>
           <p
             style="
               margin-bottom: 0;
@@ -32,47 +32,40 @@ layout: default
     </div>
     <div class="row">
       <div
-        class="col-md-7 image-content animate-box fadeInLeft animated"
+        class="col-md-7 image-content animate-box fadeInLeft"
         data-animate-effect="fadeInLeft"
       >
         <img
           class="img-fluid mb-30"
-          src="{{
-            'assets/img/portfolio/project-7/1.png'
-              | prepend: site.baseurl
-              | prepend: site.url
-          }}"
-          alt=""
+          src="{{ 'assets/img/portfolio/project-7/1.png' | prepend: site.baseurl | prepend: site.url }}"
+          alt="EDP Running Wonders and Portugal a Correr event – Image 1"
+          loading="lazy"
         />
         <img
           class="img-fluid mb-30"
-          src="{{
-            'assets/img/portfolio/project-7/2.png'
-              | prepend: site.baseurl
-              | prepend: site.url
-          }}"
-          alt=""
+          src="{{ 'assets/img/portfolio/project-7/2.png' | prepend: site.baseurl | prepend: site.url }}"
+          alt="EDP Running Wonders and Portugal a Correr event – Image 2"
+          loading="lazy"
         />
       </div>
       <div
-        class="col-md-5 sticky-parent animate-box fadeInLeft animated"
+        class="col-md-5 sticky-parent animate-box fadeInLeft"
         data-animate-effect="fadeInLeft"
       >
         <div id="sticky_item">
           <div class="project-desc">
-            <h2>EDP Running Wonders and Portugal a Correr - Press Media</h2>
+            <h2>EDP Running Wonders and Portugal a Correr – Press Media</h2>
             <p>
-              At Global Sport, I usually
-              <strong>write some scripts to the spokesperson</strong>, the
-              <strong>schedule of the events</strong>, and
-              <strong>important information</strong>, like
+              At Global Sport, I regularly
+              <strong>write scripts for the spokesperson</strong>, the
+              <strong>event schedules</strong>, and
+              <strong>key information</strong> such as
               <strong>partners</strong>, <strong>sponsors</strong>, and
-              <strong>animation groups</strong>.
+              <strong>entertainment groups</strong>.
             </p>
             <p>
-              Here I let you a simple guideline of the EDP Running Wonders Viseu
-              and Evora events, and a guideline of one of the Portugal a correr
-              event: Corrida da Nau.
+              Here, I share a simple guideline for the EDP Running Wonders events in Viseu
+              and Évora, as well as a guideline for one of the Portugal a Correr events: Corrida da Nau.
             </p>
             <input
               style="margin-bottom: 6px"
@@ -104,10 +97,10 @@ layout: default
             <br />
             <br />
             <p>
-              <b>Project Name:</b> EDP Running Wonders and Portugal a Correr -
-              Press Media<br /><b>Company:</b> Global Sport<br /><b>Skills:</b>
-              Copywriting<br /><b>Category:</b>
-              Press Media
+              <strong>Project Name:</strong> EDP Running Wonders and Portugal a Correr – Press Media<br />
+              <strong>Company:</strong> Global Sport<br />
+              <strong>Skills:</strong> Copywriting<br />
+              <strong>Category:</strong> Press Media
             </p>
           </div>
         </div>
