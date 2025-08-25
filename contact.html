@@ -1,55 +1,29 @@
 ---
-title: Contact | Ana Rita Pimenta - Marketing and Business Communication
+title: Contact
 layout: default
-description: Get in touch with Ana Rita Pimenta - Marketing and Business Communication. Contact via email or phone for inquiries, collaborations, or project opportunities.
 ---
 
-<div class="contact">
+<section class="contact" aria-labelledby="contact-heading">
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-12 mb-30 animate-box" data-animate-effect="fadeInLeft">
-
-        <span class="heading-meta style-1">Let's Connect</span>
-        <h1 class="about-heading">Contact Me</h1>
-
+        <p class="heading-meta style-1" id="contact-heading">Get In Touch</p>
+        <h1 class="about-heading">Contact</h1>
         <p>
-          Looking to collaborate, ask a question, or start a new project? I’d love to hear from you.
-          I typically respond within 24 hours. Whether it's content strategy, SEO, copywriting, or something unique — let's talk.
+          If you have any questions, please feel free to drop me a line. I'll be
+          back to you as soon as I can. <strong>That's a promise!</strong>
         </p>
-
-        <h2>Contact Details</h2>
-        <p style="margin-bottom: 3rem;">
-          <strong>Phone:</strong>
-          <a href="tel:{{ site.author.phone_number }}">{{ site.author.phone_number }}</a><br />
-          <strong>Email:</strong>
-          <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
-        </p>
-
-        <h2>Contact Form</h2>
-        <p>Fields marked with <span style="color: red;">*</span> are required.</p>
-
-        <form action="mailto:{{ site.author.email }}" method="post" enctype="text/plain">
-          <label for="name">Name <span style="color: red;">*</span></label><br />
-          <input type="text" id="name" name="name" placeholder="Please write your preferred name" required><br /><br />
-
-          <label for="email">Email <span style="color: red;">*</span></label><br />
-          <input type="email" id="email" name="email" placeholder="your.email@example.com" required><br /><br />
-
-          <label for="message">Message <span style="color: red;">*</span></label><br />
-          <textarea id="message" name="message" rows="5" placeholder="How can I help you?" required></textarea><br /><br />
-
-          <button type="submit">Send Message</button>
-        </form>
-
-        <p style="margin-top: 2rem;">
-          Based in Portugal – available for remote collaborations worldwide.
-        </p>
-
-        <p style="font-size: 0.9em; color: #555; margin-top: 2rem;">
-          Your contact details are used solely to respond to your inquiry. I respect your privacy and do not share your information with others.
-        </p>
-
+        <address>
+          <p>
+            <strong>Phone:</strong>
+            <a href="tel:{{ site.author.phone_number }}">{{ site.author.phone_number }}</a>
+          </p>
+          <p>
+            <strong>Email:</strong>
+            <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
+          </p>
+        </address>
       </div>
     </div>
   </div>
-</div>
+</section>
