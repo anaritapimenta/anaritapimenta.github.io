@@ -12,11 +12,11 @@ layout: default
           Project
         </h2>
         <a
-          href="{{
-            'portfolio/' | prepend: site.baseurl | prepend: site.url
-          }}"
-          style="float: right; display: flex; margin-top: 10px"
-          ><i class="ti-arrow-left font-14px gray-icon"></i>
+          href="{{ 'portfolio/' | prepend: site.baseurl | prepend: site.url }}"
+          aria-label="Back to Portfolio"
+          style="float: right; display: flex; margin-top: 10px;"
+        >
+          <i class="ti-arrow-left font-14px gray-icon" aria-hidden="true"></i>
           <p
             style="
               margin-bottom: 0;
@@ -30,66 +30,49 @@ layout: default
         </a>
       </div>
     </div>
+
     <div class="row">
-      <div
-        class="col-md-7 image-content animate-box fadeInLeft animated"
-        data-animate-effect="fadeInLeft"
-      >
+      <!-- Image Section -->
+      <div class="col-md-7 image-content animate-box" data-animate-effect="fadeInLeft">
         <img
           class="img-fluid mb-30"
-          src="{{
-            'assets/img/portfolio/project-6/1.png'
-              | prepend: site.baseurl
-              | prepend: site.url
-          }}"
-          alt=""
+          src="{{ 'assets/img/portfolio/project-6/1.png' | prepend: site.baseurl | prepend: site.url }}"
+          alt="Illustrative content for Conselhos para uma Vida Equilibrada campaign"
+          loading="lazy"
         />
         <img
           class="img-fluid mb-30"
-          src="{{
-            'assets/img/portfolio/project-6/2.png'
-              | prepend: site.baseurl
-              | prepend: site.url
-          }}"
-          alt=""
+          src="{{ 'assets/img/portfolio/project-6/2.png' | prepend: site.baseurl | prepend: site.url }}"
+          alt="Creative assets developed for Centro Terapêutico Equilibrium"
+          loading="lazy"
         />
       </div>
-      <div
-        class="col-md-5 sticky-parent animate-box fadeInLeft animated"
-        data-animate-effect="fadeInLeft"
-      >
+
+      <!-- Text Section -->
+      <div class="col-md-5 sticky-parent animate-box" data-animate-effect="fadeInLeft">
         <div id="sticky_item">
           <div class="project-desc">
             <h2>Conselhos para uma Vida Equilibrada</h2>
+
             <p>
               After listening to the client, it became clear that
-              <strong
-                >the message should not be commercial but informative</strong
-              >. After all, the mission of the company is to help people to feel
-              better and to have a healthy life.
+              <strong>the message should not be commercial but informative</strong>. After all, the mission of the company is to help people feel better and live a healthier life.
             </p>
+
             <p>
-              I couldn't agree more with this statement. So,
-              <strong
-                >I proposed using humor to share the services of the
-                organization in a more interesting and appealing way</strong
-              >.
+              I completely agreed. So,
+              <strong>I proposed using humour to present the organisation's services in a more engaging and appealing way</strong>.
             </p>
+
             <p>
-              <strong
-                >The result was to write some phrases that could stop the reader
-                a bit</strong
-              >. "Conselhos para uma Vida Equilibrada" is a kind of a rubric and
-              a pun of "Centro Terapêutico Equilibrium", that is the name of the
-              company.
+              <strong>The result was a series of thought-provoking phrases</strong>. “Conselhos para uma Vida Equilibrada” became both a regular column and a clever pun on the company's name, "Centro Terapêutico Equilibrium".
             </p>
+
             <p>
-              <b>Project Name:</b> Conselhos para uma Vida Equilibrada<br /><b
-                >Company:</b
-              >
-              Centro Terapêutico Equilibrium<br /><b>Skills:</b> Social Media
-              Performance and Creation of Content<br /><b>Category:</b>
-              Social Media
+              <strong>Project Name:</strong> Conselhos para uma Vida Equilibrada<br />
+              <strong>Company:</strong> Centro Terapêutico Equilibrium<br />
+              <strong>Skills:</strong> Social Media Performance, Content Creation<br />
+              <strong>Category:</strong> Social Media
             </p>
           </div>
         </div>
