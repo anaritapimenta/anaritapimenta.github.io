@@ -4,6 +4,50 @@ layout: default
 description: Scripts, schedules, and partner guidelines created for EDP Running Wonders and Portugal a Correr events by Ana Rita Pimenta.
 ---
 
+<style>
+  body {
+    background-color: #fff;
+    color: #313f47;
+    font-family: inherit;
+  }
+
+  input[type="button"] {
+    background: transparent;
+    border: none;
+    color: #313f47;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 6px 12px;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+
+  a[aria-label="Back to Portfolio"] {
+    color: #313f47;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1.2px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    float: right;
+  }
+
+  a[aria-label="Back to Portfolio"] i {
+    font-size: 14px;
+    margin-right: 5px;
+    color: #999999;
+  }
+
+  a[aria-label="Back to Portfolio"] p {
+    margin-bottom: 0;
+    margin-top: 1.21px;
+  }
+</style>
+
 <div class="projects">
   <div class="container-fluid">
     <div class="row">
@@ -15,10 +59,9 @@ description: Scripts, schedules, and partner guidelines created for EDP Running 
         <a
           href="{{ 'portfolio/' | prepend: site.baseurl | prepend: site.url }}"
           aria-label="Back to Portfolio"
-          style="float: right; display: flex; margin-top: 10px; color: #313f47; text-transform: uppercase; font-weight: 600; font-size: 14px; letter-spacing: 1.2px; text-decoration: none;"
         >
-          <i class="ti-arrow-left font-14px gray-icon" aria-hidden="true" style="margin-right: 5px; font-size: 16px;"></i>
-          <p style="margin: 0; line-height: 1;">Back</p>
+          <i class="ti-arrow-left gray-icon" aria-hidden="true"></i>
+          <p>Back</p>
         </a>
       </div>
     </div>
@@ -63,7 +106,6 @@ description: Scripts, schedules, and partner guidelines created for EDP Running 
             </p>
 
             <input
-              style="margin-bottom: 6px; background: transparent; border: none; color: #313f47; font-weight: 600; cursor: pointer; padding: 6px 12px; text-transform: uppercase; font-size: 14px;"
               type="button"
               value="Preview PDF (1)"
               onclick="window.open('{{ 'assets/pdf/preview-1.pdf' | prepend: site.baseurl | prepend: site.url }}','_blank')"
@@ -71,7 +113,6 @@ description: Scripts, schedules, and partner guidelines created for EDP Running 
             /><br />
 
             <input
-              style="margin-bottom: 6px; background: transparent; border: none; color: #313f47; font-weight: 600; cursor: pointer; padding: 6px 12px; text-transform: uppercase; font-size: 14px;"
               type="button"
               value="Preview PDF (2)"
               onclick="window.open('{{ 'assets/pdf/preview-2.pdf' | prepend: site.baseurl | prepend: site.url }}','_blank')"
@@ -79,7 +120,6 @@ description: Scripts, schedules, and partner guidelines created for EDP Running 
             /><br />
 
             <input
-              style="margin-bottom: 6px; background: transparent; border: none; color: #313f47; font-weight: 600; cursor: pointer; padding: 6px 12px; text-transform: uppercase; font-size: 14px;"
               type="button"
               value="Preview PDF (3)"
               onclick="window.open('{{ 'assets/pdf/preview-3.pdf' | prepend: site.baseurl | prepend: site.url }}','_blank')"
@@ -87,7 +127,6 @@ description: Scripts, schedules, and partner guidelines created for EDP Running 
             /><br />
 
             <input
-              style="margin-bottom: 6px; background: transparent; border: none; color: #313f47; font-weight: 600; cursor: pointer; padding: 6px 12px; text-transform: uppercase; font-size: 14px;"
               type="button"
               value="Preview PDF (4)"
               onclick="window.open('{{ 'assets/pdf/preview-4.pdf' | prepend: site.baseurl | prepend: site.url }}','_blank')"
@@ -106,3 +145,4 @@ description: Scripts, schedules, and partner guidelines created for EDP Running 
     </div>
   </div>
 </div>
+
