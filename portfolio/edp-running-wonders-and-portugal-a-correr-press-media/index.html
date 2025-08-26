@@ -1,7 +1,7 @@
 ---
 title: EDP Running Wonders – Press & Copywriting
 layout: default
-description: Conteúdos editoriais criados para eventos de corrida em Portugal, com guias de parceiros, guiões de apresentação e materiais de imprensa desenvolvidos para a Global Sport.
+description: Conteúdos desenvolvidos para eventos de corrida em Portugal, incluindo guiões, cronogramas e diretrizes para parceiros e imprensa.
 og_image: /assets/img/portfolio/project-7/1.png
 ---
 
@@ -16,7 +16,7 @@ og_image: /assets/img/portfolio/project-7/1.png
           </h1>
         </div>
 
-        <!-- Botão de voltar com estilos consistentes -->
+        <!-- Botão de voltar com cor consistente -->
         <a
           href="{{ 'portfolio/' | prepend: site.baseurl | prepend: site.url }}"
           aria-label="Back to Portfolio"
@@ -53,51 +53,56 @@ og_image: /assets/img/portfolio/project-7/1.png
             <h2>Scripts, Schedules and Guidelines</h2>
 
             <p>
-              Na Global Sport, fui responsável por preparar os conteúdos escritos que apoiam os principais eventos de corrida realizados em Portugal.
+              At Global Sport, I prepared all written content supporting major running events across Portugal.
             </p>
             <p>
-              Isso incluiu <strong>guiões para porta-vozes</strong>, <strong>cronogramas de eventos</strong> e diretrizes detalhadas para <strong>parceiros</strong>, <strong>patrocinadores</strong> e <strong>equipas de animação</strong>.
+              This included <strong>spokesperson scripts</strong>, <strong>event schedules</strong>, and detailed guidelines for <strong>partners</strong>, <strong>sponsors</strong>, and <strong>entertainment teams</strong>.
             </p>
             <p>
-              Abaixo estão pré-visualizações dos materiais desenvolvidos para eventos em Viseu, Évora e para a corrida “Corrida da Nau” do circuito Portugal a Correr.
+              Below are previews of materials developed for events in Viseu, Évora, and the Portugal a Correr race “Corrida da Nau.”
+            </p>
+
+            <!-- Styled Preview Buttons -->
+            <div class="pdf-buttons mt-3">
+              <button
+                onclick="window.open('preview-1.pdf','_blank')"
+                aria-label="Open PDF preview 1"
+                class="btn btn-link p-0 mb-2 text-uppercase text-dark"
+                style="font-size: 13px; letter-spacing: 0.5px;"
+              >Preview (1)</button><br />
+
+              <button
+                onclick="window.open('preview-2.pdf','_blank')"
+                aria-label="Open PDF preview 2"
+                class="btn btn-link p-0 mb-2 text-uppercase text-dark"
+                style="font-size: 13px; letter-spacing: 0.5px;"
+              >Preview (2)</button><br />
+
+              <button
+                onclick="window.open('preview-3.pdf','_blank')"
+                aria-label="Open PDF preview 3"
+                class="btn btn-link p-0 mb-2 text-uppercase text-dark"
+                style="font-size: 13px; letter-spacing: 0.5px;"
+              >Preview (3)</button><br />
+
+              <button
+                onclick="window.open('preview-4.pdf','_blank')"
+                aria-label="Open PDF preview 4"
+                class="btn btn-link p-0 text-uppercase text-dark"
+                style="font-size: 13px; letter-spacing: 0.5px;"
+              >Preview (4)</button>
+            </div>
+
+            <p class="mt-4">
+              <strong>Project:</strong> EDP Running Wonders – Press & Copywriting<br />
+              <strong>Company:</strong> Global Sport<br />
+              <strong>Skills:</strong> Copywriting, Media Support, Event Content<br />
+              <strong>Category:</strong> Press Media
             </p>
           </article>
         </div>
       </div>
     </div>
-
-    <!-- PDF Preview Cards -->
-    <div class="row mt-5">
-      {% assign previews = "1,2,3,4" | split: "," %}
-      {% assign descriptions = "Materiais do evento de Viseu: Guião de apresentação e diretrizes para patrocinadores.,Conteúdos de imprensa e cronograma do evento em Évora.,Briefing para equipas de animação e logística.,Materiais de imprensa e comunicados da Corrida da Nau." | split: "," %}
-
-      {% for i in (0..3) %}
-        <div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
-          <a href="{{ 'preview-' | append: previews[i] | append: '.pdf' | prepend: site.baseurl | prepend: site.url }}" target="_blank" class="desc" aria-label="Abrir PDF preview {{ previews[i] }}">
-            <div class="project">
-              <img src="{{ 'assets/img/portfolio/project-7/preview-' | append: previews[i] | append: '-thumb.png' | prepend: site.baseurl | prepend: site.url }}" class="img-fluid" alt="Preview {{ previews[i] }} thumbnail" loading="lazy" />
-              <div class="desc">
-                <div class="con">
-                  <h3>Preview ({{ previews[i] }})</h3>
-                  <span>{{ descriptions[i] }}</span>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-      {% endfor %}
-    </div>
-
-    <div class="row">
-      <div class="col-md-12 mt-4">
-        <p>
-          <strong>Projecto:</strong> EDP Running Wonders – Press & Copywriting<br />
-          <strong>Empresa:</strong> Global Sport<br />
-          <strong>Competências:</strong> Copywriting, Apoio à Imprensa, Conteúdos para Eventos<br />
-          <strong>Categoria:</strong> Media & Imprensa
-        </p>
-      </div>
-    </div>
-
   </div>
 </div>
+
