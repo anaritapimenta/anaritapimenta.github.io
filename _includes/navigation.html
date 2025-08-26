@@ -8,13 +8,14 @@
           | prepend: site.baseurl
           | prepend: site.url
       }}"
-      alt="rita-avatar"
+      alt="Foto de perfil de Ana Rita Pimenta, especialista em marketing e comunicação empresarial"
     /><br />
     <a href="{{ site.url }}">
       {{ site.author.name }}
       <span>{{ site.author.role }}</span>
     </a>
   </h1>
+
   <nav id="main-menu">
     <ul>
       <li class="{% if active[1] == null %}active{% endif %}">
@@ -37,23 +38,27 @@
       </li>
     </ul>
   </nav>
+
   <div class="footer">
     <ul>
       <li>
         <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}"
-           target="_blank" rel="noopener noreferrer">
+           target="_blank" rel="noopener noreferrer"
+           aria-label="LinkedIn de {{ site.author.name }}">
           <i class="ti-linkedin font-14px gray-icon"></i>
         </a>
       </li>
       <li>
         <a href="https://www.facebook.com/{{ site.author.facebook }}"
-           target="_blank" rel="noopener noreferrer">
+           target="_blank" rel="noopener noreferrer"
+           aria-label="Facebook de {{ site.author.name }}">
           <i class="ti-facebook font-14px gray-icon"></i>
         </a>
       </li>
       <li>
         <a href="https://www.instagram.com/{{ site.author.instagram }}"
-           target="_blank" rel="noopener noreferrer">
+           target="_blank" rel="noopener noreferrer"
+           aria-label="Instagram de {{ site.author.name }}">
           <i class="ti-instagram font-14px gray-icon"></i>
         </a>
       </li>
