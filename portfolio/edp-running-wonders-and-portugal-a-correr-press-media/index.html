@@ -4,46 +4,6 @@ layout: default
 description: Scripts, schedules, and partner guidelines created for EDP Running Wonders and Portugal a Correr events by Ana Rita Pimenta.
 ---
 
-<style>
-  body {
-    background-color: #fff;
-    color: #313f47;
-    font-family: inherit;
-  }
-
-  /* Estilo do link "Back" igual ao código 2 */
-  a[aria-label="Back to Portfolio"] {
-    color: #313f47;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 14px;
-    letter-spacing: 1.2px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-    float: right;
-  }
-
-  a[aria-label="Back to Portfolio"] i {
-    font-size: 14px;
-    margin-right: 5px;
-    color: #999999;
-  }
-
-  a[aria-label="Back to Portfolio"] p {
-    margin-bottom: 0;
-    margin-top: 1.21px;
-  }
-
-  /* Estilo dos botões igual ao código 2 */
-  input[type="button"] {
-    margin-bottom: 6px;
-    cursor: pointer;
-    font-size: 14px;
-  }
-</style>
-
 <div class="projects">
   <div class="container-fluid">
     <div class="row">
@@ -55,18 +15,26 @@ description: Scripts, schedules, and partner guidelines created for EDP Running 
         <a
           href="{{ 'portfolio/' | prepend: site.baseurl | prepend: site.url }}"
           aria-label="Back to Portfolio"
+          style="float: right; display: flex; margin-top: 10px;"
         >
-          <i class="ti-arrow-left gray-icon" aria-hidden="true"></i>
-          <p>Back</p>
+          <i class="ti-arrow-left font-14px gray-icon" aria-hidden="true"></i>
+          <span
+            style="
+              margin-bottom: 0;
+              margin-top: 1.21px;
+              color: #313f47;
+              text-transform: uppercase;
+            "
+          >
+            Back
+          </span>
         </a>
       </div>
     </div>
 
     <div class="row">
-      <div
-        class="col-md-7 image-content animate-box fadeInLeft"
-        data-animate-effect="fadeInLeft"
-      >
+      <!-- Image Section -->
+      <div class="col-md-7 image-content animate-box" data-animate-effect="fadeInLeft">
         <img
           class="img-fluid mb-30"
           src="{{ 'assets/img/portfolio/project-7/1.png' | prepend: site.baseurl | prepend: site.url }}"
@@ -81,12 +49,10 @@ description: Scripts, schedules, and partner guidelines created for EDP Running 
         />
       </div>
 
-      <div
-        class="col-md-5 sticky-parent animate-box fadeInLeft"
-        data-animate-effect="fadeInLeft"
-      >
+      <!-- Text Section -->
+      <div class="col-md-5 sticky-parent animate-box" data-animate-effect="fadeInLeft">
         <div id="sticky_item">
-          <div class="project-desc">
+          <article class="project-desc">
             <h2>Scripts, Guidelines and Race Schedules</h2>
 
             <p>
@@ -101,28 +67,30 @@ description: Scripts, schedules, and partner guidelines created for EDP Running 
               Below you can preview documents produced for races in Viseu, Évora and Corrida da Nau.
             </p>
 
+            <!-- Preview Buttons -->
             <input
+              style="margin-bottom: 6px"
               type="button"
               value="Preview PDF (1)"
               onclick="window.open('{{ 'assets/pdf/preview-1.pdf' | prepend: site.baseurl | prepend: site.url }}','_blank')"
               aria-label="Open preview 1"
             /><br />
-
             <input
+              style="margin-bottom: 6px"
               type="button"
               value="Preview PDF (2)"
               onclick="window.open('{{ 'assets/pdf/preview-2.pdf' | prepend: site.baseurl | prepend: site.url }}','_blank')"
               aria-label="Open preview 2"
             /><br />
-
             <input
+              style="margin-bottom: 6px"
               type="button"
               value="Preview PDF (3)"
               onclick="window.open('{{ 'assets/pdf/preview-3.pdf' | prepend: site.baseurl | prepend: site.url }}','_blank')"
               aria-label="Open preview 3"
             /><br />
-
             <input
+              style="margin-bottom: 6px"
               type="button"
               value="Preview PDF (4)"
               onclick="window.open('{{ 'assets/pdf/preview-4.pdf' | prepend: site.baseurl | prepend: site.url }}','_blank')"
@@ -135,7 +103,7 @@ description: Scripts, schedules, and partner guidelines created for EDP Running 
               <strong>Skills:</strong> Copywriting, Media Support, Event Content<br />
               <strong>Category:</strong> Press Media
             </p>
-          </div>
+          </article>
         </div>
       </div>
     </div>
