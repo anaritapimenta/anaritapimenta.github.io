@@ -5,50 +5,21 @@ description: Scripts and event prep for EDP Running Wonders and Portugal a Corre
 og_image: /assets/img/portfolio/project-7/1.png
 ---
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>{{ page.title }} | Ana Rita Pimenta</title>
-  <meta name="description" content="{{ page.description }}" />
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="{{ page.title }} | Ana Rita Pimenta" />
-  <meta property="og:description" content="{{ page.description }}" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="{{ page.url | absolute_url }}" />
-  <meta property="og:image" content="{{ page.og_image | absolute_url }}" />
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="{{ page.title }} | Ana Rita Pimenta" />
-  <meta name="twitter:description" content="{{ page.description }}" />
-  <meta name="twitter:image" content="{{ page.og_image | absolute_url }}" />
-</head>
-
-<div class="projects">
-  <div class="container-fluid">
+<div class="project">
+  <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <span class="heading-meta style-1">Portfolio</span>
+        <span class="heading-meta">Portfolio</span>
         <h1 class="heading animate-box" data-animate-effect="fadeInLeft">
           Press Materials for Running Events
         </h1>
         <a
           href="{{ 'portfolio/' | prepend: site.baseurl | prepend: site.url }}"
           aria-label="Back to Portfolio"
-          style="float: right; display: flex; margin-top: 10px"
+          class="back-link"
         >
           <i class="ti-arrow-left font-14px gray-icon" aria-hidden="true"></i>
-          <span
-            style="
-              margin-bottom: 0;
-              margin-top: 1.21px;
-              color: #313f47;
-              text-transform: uppercase;
-            "
-          >
-            Back
-          </span>
+          <span>Back</span>
         </a>
       </div>
     </div>
@@ -87,12 +58,14 @@ og_image: /assets/img/portfolio/project-7/1.png
             </p>
 
             <!-- PDF Preview Buttons -->
-            <input type="button" value="Preview (1)" onclick="window.open('preview-1.pdf','_blank')" aria-label="Open PDF preview 1" style="margin-bottom: 6px" /><br />
-            <input type="button" value="Preview (2)" onclick="window.open('preview-2.pdf','_blank')" aria-label="Open PDF preview 2" style="margin-bottom: 6px" /><br />
-            <input type="button" value="Preview (3)" onclick="window.open('preview-3.pdf','_blank')" aria-label="Open PDF preview 3" style="margin-bottom: 6px" /><br />
-            <input type="button" value="Preview (4)" onclick="window.open('preview-4.pdf','_blank')" aria-label="Open PDF preview 4" style="margin-bottom: 6px" /><br /><br />
+            <div class="pdf-buttons">
+              <button type="button" onclick="window.open('preview-1.pdf','_blank')" aria-label="Open PDF preview 1" class="btn btn-outline-primary mb-2">Preview (1)</button><br />
+              <button type="button" onclick="window.open('preview-2.pdf','_blank')" aria-label="Open PDF preview 2" class="btn btn-outline-primary mb-2">Preview (2)</button><br />
+              <button type="button" onclick="window.open('preview-3.pdf','_blank')" aria-label="Open PDF preview 3" class="btn btn-outline-primary mb-2">Preview (3)</button><br />
+              <button type="button" onclick="window.open('preview-4.pdf','_blank')" aria-label="Open PDF preview 4" class="btn btn-outline-primary mb-2">Preview (4)</button>
+            </div>
 
-            <p>
+            <p class="mt-4">
               <strong>Project Name:</strong> EDP Running Wonders – Press Media<br />
               <strong>Company:</strong> Global Sport<br />
               <strong>Skills:</strong> Copywriting, Media Support, Event Content<br />
