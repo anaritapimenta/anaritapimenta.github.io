@@ -1,25 +1,37 @@
 ---
 title: EDP Running Wonders – Press & Copywriting
 layout: default
-description: Scripts, schedules, and partner guidelines created for EDP Running Wonders and Portugal a Correr events by Ana Rita Pimenta. Comprehensive press materials and event support.
+description: Conteúdos editoriais criados para eventos de corrida em Portugal, com guias de parceiros, guiões de apresentação e materiais de imprensa desenvolvidos para a Global Sport.
 og_image: /assets/img/portfolio/project-7/1.png
 ---
 
-<div class="projects" style="background-color: #fff; padding: 40px 0;">
+<div class="project">
   <div class="container">
-    <div class="row mb-4">
-      <div class="col-md-12 d-flex justify-content-between align-items-center">
-        <span class="heading-meta style-1">Portfolio</span>
-        <a href="{{ 'portfolio/' | prepend: site.baseurl | prepend: site.url }}" aria-label="Back to Portfolio" class="btn-back">
-          <i class="ti-arrow-left font-14px gray-icon" aria-hidden="true"></i>
-          <span class="btn-back-text">Back</span>
+    <div class="row">
+      <div class="col-md-12 d-flex justify-content-between align-items-start">
+        <div>
+          <span class="heading-meta">Portfolio</span>
+          <h1 class="heading animate-box" data-animate-effect="fadeInLeft">
+            Press Materials for Running Events
+          </h1>
+        </div>
+
+        <!-- Botão de voltar com estilos consistentes -->
+        <a
+          href="{{ 'portfolio/' | prepend: site.baseurl | prepend: site.url }}"
+          aria-label="Back to Portfolio"
+          class="d-flex align-items-center mt-2 text-uppercase text-dark small"
+          style="letter-spacing: 0.5px;"
+        >
+          <i class="ti-arrow-left font-14px gray-icon me-2" aria-hidden="true"></i>
+          Back
         </a>
       </div>
     </div>
 
-    <div class="row mb-5">
-      <!-- Left Images -->
-      <div class="col-md-7 animate-box" data-animate-effect="fadeInLeft">
+    <div class="row">
+      <!-- Images -->
+      <div class="col-md-7 image-content animate-box" data-animate-effect="fadeInLeft">
         <img
           class="img-fluid mb-30"
           src="{{ 'assets/img/portfolio/project-7/1.png' | prepend: site.baseurl | prepend: site.url }}"
@@ -34,123 +46,58 @@ og_image: /assets/img/portfolio/project-7/1.png
         />
       </div>
 
-      <!-- Right Text -->
+      <!-- Text Section -->
       <div class="col-md-5 sticky-parent animate-box" data-animate-effect="fadeInLeft">
         <div id="sticky_item">
           <article class="project-desc">
-            <h1 class="heading animate-box" data-animate-effect="fadeInLeft" style="margin-bottom: 20px;">
-              Press Materials for Running Events
-            </h1>
-
             <h2>Scripts, Schedules and Guidelines</h2>
+
             <p>
-              At Global Sport, I prepared all written content supporting major running events across Portugal.
+              Na Global Sport, fui responsável por preparar os conteúdos escritos que apoiam os principais eventos de corrida realizados em Portugal.
             </p>
             <p>
-              This included <strong>spokesperson scripts</strong>, <strong>event schedules</strong>, and detailed guidelines for <strong>partners</strong>, <strong>sponsors</strong>, and <strong>entertainment teams</strong>.
+              Isso incluiu <strong>guiões para porta-vozes</strong>, <strong>cronogramas de eventos</strong> e diretrizes detalhadas para <strong>parceiros</strong>, <strong>patrocinadores</strong> e <strong>equipas de animação</strong>.
             </p>
             <p>
-              Below are previews of materials developed for events in Viseu, Évora, and the Portugal a Correr race “Corrida da Nau.”
+              Abaixo estão pré-visualizações dos materiais desenvolvidos para eventos em Viseu, Évora e para a corrida “Corrida da Nau” do circuito Portugal a Correr.
             </p>
           </article>
         </div>
       </div>
     </div>
 
-    <!-- PDF Preview Cards (Styled Like Portfolio Overview) -->
-    <div class="row">
+    <!-- PDF Preview Cards -->
+    <div class="row mt-5">
+      {% assign previews = "1,2,3,4" | split: "," %}
+      {% assign descriptions = "Materiais do evento de Viseu: Guião de apresentação e diretrizes para patrocinadores.,Conteúdos de imprensa e cronograma do evento em Évora.,Briefing para equipas de animação e logística.,Materiais de imprensa e comunicados da Corrida da Nau." | split: "," %}
 
-      <!-- Preview 1 -->
-      <div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
-        <a href="{{ 'preview-1.pdf' | prepend: site.baseurl | prepend: site.url }}" target="_blank" class="desc" aria-label="Open PDF preview 1">
-          <div class="project">
-            <img src="{{ 'assets/img/portfolio/project-7/preview-1-thumb.png' | prepend: site.baseurl | prepend: site.url }}" class="img-fluid" alt="Preview 1 thumbnail" loading="lazy" />
-            <div class="desc">
-              <div class="con">
-                <h3>Preview (1)</h3>
-                <span>Materials for Viseu event: Spokesperson script and sponsor guidelines.</span>
+      {% for i in (0..3) %}
+        <div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
+          <a href="{{ 'preview-' | append: previews[i] | append: '.pdf' | prepend: site.baseurl | prepend: site.url }}" target="_blank" class="desc" aria-label="Abrir PDF preview {{ previews[i] }}">
+            <div class="project">
+              <img src="{{ 'assets/img/portfolio/project-7/preview-' | append: previews[i] | append: '-thumb.png' | prepend: site.baseurl | prepend: site.url }}" class="img-fluid" alt="Preview {{ previews[i] }} thumbnail" loading="lazy" />
+              <div class="desc">
+                <div class="con">
+                  <h3>Preview ({{ previews[i] }})</h3>
+                  <span>{{ descriptions[i] }}</span>
+                </div>
               </div>
             </div>
-          </div>
-        </a>
-      </div>
-
-      <!-- Preview 2 -->
-      <div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
-        <a href="{{ 'preview-2.pdf' | prepend: site.baseurl | prepend: site.url }}" target="_blank" class="desc" aria-label="Open PDF preview 2">
-          <div class="project">
-            <img src="{{ 'assets/img/portfolio/project-7/preview-2-thumb.png' | prepend: site.baseurl | prepend: site.url }}" class="img-fluid" alt="Preview 2 thumbnail" loading="lazy" />
-            <div class="desc">
-              <div class="con">
-                <h3>Preview (2)</h3>
-                <span>Press content and schedule from Évora event.</span>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <!-- Preview 3 -->
-      <div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
-        <a href="{{ 'preview-3.pdf' | prepend: site.baseurl | prepend: site.url }}" target="_blank" class="desc" aria-label="Open PDF preview 3">
-          <div class="project">
-            <img src="{{ 'assets/img/portfolio/project-7/preview-3-thumb.png' | prepend: site.baseurl | prepend: site.url }}" class="img-fluid" alt="Preview 3 thumbnail" loading="lazy" />
-            <div class="desc">
-              <div class="con">
-                <h3>Preview (3)</h3>
-                <span>Entertainment and logistics team briefing.</span>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <!-- Preview 4 -->
-      <div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
-        <a href="{{ 'preview-4.pdf' | prepend: site.baseurl | prepend: site.url }}" target="_blank" class="desc" aria-label="Open PDF preview 4">
-          <div class="project">
-            <img src="{{ 'assets/img/portfolio/project-7/preview-4-thumb.png' | prepend: site.baseurl | prepend: site.url }}" class="img-fluid" alt="Preview 4 thumbnail" loading="lazy" />
-            <div class="desc">
-              <div class="con">
-                <h3>Preview (4)</h3>
-                <span>Corrida da Nau media materials and announcements.</span>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-
+          </a>
+        </div>
+      {% endfor %}
     </div>
 
-    <div class="row mt-5">
-      <div class="col-md-12">
+    <div class="row">
+      <div class="col-md-12 mt-4">
         <p>
-          <strong>Project:</strong> EDP Running Wonders – Press & Copywriting<br />
-          <strong>Company:</strong> Global Sport<br />
-          <strong>Skills:</strong> Copywriting, Media Support, Event Content<br />
-          <strong>Category:</strong> Press Media
+          <strong>Projecto:</strong> EDP Running Wonders – Press & Copywriting<br />
+          <strong>Empresa:</strong> Global Sport<br />
+          <strong>Competências:</strong> Copywriting, Apoio à Imprensa, Conteúdos para Eventos<br />
+          <strong>Categoria:</strong> Media & Imprensa
         </p>
       </div>
     </div>
+
   </div>
 </div>
-
-<style>
-  .btn-back {
-    color: #313f47;
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    font-weight: 600;
-  }
-  .btn-back:hover {
-    text-decoration: underline;
-  }
-  .btn-back-text {
-    margin-left: 6px;
-  }
-</style>
-
