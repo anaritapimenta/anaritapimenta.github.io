@@ -5,51 +5,26 @@ description: Copywriting, event scripts, and partner guidelines created for Port
 og_image: /assets/img/portfolio/project-7/1.png
 ---
 
-<style>
-  .preview-btn {
-    background-color: #fafafa;
-    color: #313f47;
-    text-transform: uppercase;
-    font-size: 13px;
-    letter-spacing: 0.5px;
-    padding: 8px 14px;
-    margin-bottom: 8px;
-    border: none;
-    cursor: pointer;
-    font-family: inherit;
-    transition: background-color 0.2s ease-in-out;
-    display: inline-block;
-  }
-
-  .preview-btn:hover {
-    background-color: #eaeaea;
-  }
-</style>
-
-<div class="project">
-  <div class="container">
+<div class="projects">
+  <div class="container-fluid">
     <div class="row">
-      <div class="col-md-12 d-flex justify-content-between align-items-start">
-        <div>
-          <span class="heading-meta">Portfolio</span>
-          <h1 class="heading animate-box" data-animate-effect="fadeInLeft">
-            Press Materials for Running Events
-          </h1>
-        </div>
-
+      <div class="col-md-12">
+        <span class="heading-meta style-1">Portfolio</span>
+        <h1 class="heading animate-box" data-animate-effect="fadeInLeft">
+          Press Materials for Running Events
+        </h1>
         <a
           href="{{ 'portfolio/' | prepend: site.baseurl | prepend: site.url }}"
           aria-label="Back to Portfolio"
-          style="display: flex; align-items: center; margin-top: 10px;"
+          style="float: right; display: flex; margin-top: 10px"
         >
           <i class="ti-arrow-left font-14px gray-icon" aria-hidden="true"></i>
           <p
             style="
-              margin: 0 0 0 6px;
+              margin-bottom: 0;
+              margin-top: 1.21px;
               color: #313f47;
               text-transform: uppercase;
-              font-size: 12px;
-              letter-spacing: 0.5px;
             "
           >
             Back
@@ -59,7 +34,7 @@ og_image: /assets/img/portfolio/project-7/1.png
     </div>
 
     <div class="row">
-      <!-- Image Section -->
+      <!-- Images -->
       <div class="col-md-7 image-content animate-box" data-animate-effect="fadeInLeft">
         <img
           class="img-fluid mb-30"
@@ -75,10 +50,10 @@ og_image: /assets/img/portfolio/project-7/1.png
         />
       </div>
 
-      <!-- Text Section -->
+      <!-- Description -->
       <div class="col-md-5 sticky-parent animate-box" data-animate-effect="fadeInLeft">
         <div id="sticky_item">
-          <article class="project-desc">
+          <div class="project-desc">
             <h2>Scripts, Guidelines and Media Packs</h2>
 
             <p>
@@ -92,36 +67,42 @@ og_image: /assets/img/portfolio/project-7/1.png
             </p>
 
             <!-- Preview Buttons -->
-            <div class="pdf-buttons">
-              <button
-                onclick="window.open('preview-1.pdf','_blank')"
-                aria-label="Open PDF preview 1"
-                class="preview-btn"
-              >Preview (1)</button><br />
-              <button
-                onclick="window.open('preview-2.pdf','_blank')"
-                aria-label="Open PDF preview 2"
-                class="preview-btn"
-              >Preview (2)</button><br />
-              <button
-                onclick="window.open('preview-3.pdf','_blank')"
-                aria-label="Open PDF preview 3"
-                class="preview-btn"
-              >Preview (3)</button><br />
-              <button
-                onclick="window.open('preview-4.pdf','_blank')"
-                aria-label="Open PDF preview 4"
-                class="preview-btn"
-              >Preview (4)</button>
-            </div>
+            <input
+              style="margin-bottom: 6px"
+              type="button"
+              value="Preview It"
+              onclick="window.open('preview-1.pdf','_blank')"
+              aria-label="Open PDF preview 1"
+            /><br />
+            <input
+              style="margin-bottom: 6px"
+              type="button"
+              value="Preview It"
+              onclick="window.open('preview-2.pdf','_blank')"
+              aria-label="Open PDF preview 2"
+            /><br />
+            <input
+              style="margin-bottom: 6px"
+              type="button"
+              value="Preview It"
+              onclick="window.open('preview-3.pdf','_blank')"
+              aria-label="Open PDF preview 3"
+            /><br />
+            <input
+              style="margin-bottom: 6px"
+              type="button"
+              value="Preview It"
+              onclick="window.open('preview-4.pdf','_blank')"
+              aria-label="Open PDF preview 4"
+            /><br /><br />
 
-            <p class="mt-4">
-              <strong>Project:</strong> EDP Running Wonders – Press & Copywriting<br />
+            <p>
+              <strong>Project Name:</strong> EDP Running Wonders – Press & Copywriting<br />
               <strong>Company:</strong> Global Sport<br />
               <strong>Skills:</strong> Copywriting, Media Support, Event Content<br />
               <strong>Category:</strong> Press Media
             </p>
-          </article>
+          </div>
         </div>
       </div>
     </div>
