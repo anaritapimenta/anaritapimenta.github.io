@@ -1,13 +1,30 @@
 ---
-title: BOM Newsletter – Email Marketing Strategy | Ana Rita Pimenta
+title: BOM Newsletter – Email Marketing Strategy
 layout: default
+description: Weekly email marketing project for Barn of Monkeys, combining UX copywriting and performance analysis. Written by Ana Rita Pimenta.
+og_image: /assets/img/portfolio/project-5/1.png
 ---
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Weekly email marketing project for Barn of Monkeys, combining UX copywriting and performance analysis. Written by Ana Rita Pimenta." />
-  <title>BOM Newsletter – Email Marketing Strategy | Ana Rita Pimenta</title>
+
+  <title>{{ page.title }} | Ana Rita Pimenta</title>
+  
+  <meta name="description" content="{{ page.description }}" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="{{ page.title }} | Ana Rita Pimenta" />
+  <meta property="og:description" content="{{ page.description }}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ page.url | absolute_url }}" />
+  <meta property="og:image" content="{{ page.og_image | absolute_url }}" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{ page.title }} | Ana Rita Pimenta" />
+  <meta name="twitter:description" content="{{ page.description }}" />
+  <meta name="twitter:image" content="{{ page.og_image | absolute_url }}" />
 </head>
 
 <div class="projects">
@@ -15,9 +32,9 @@ layout: default
     <div class="row">
       <div class="col-md-12">
         <span class="heading-meta style-1">Portfolio</span>
-        <h2 class="heading animate-box" data-animate-effect="fadeInLeft">
-          Project
-        </h2>
+        <h1 class="heading animate-box" data-animate-effect="fadeInLeft">
+          {{ page.title }}
+        </h1>
         <a
           href="{{ 'portfolio/' | prepend: site.baseurl | prepend: site.url }}"
           aria-label="Back to Portfolio"
@@ -79,4 +96,3 @@ layout: default
     </div>
   </div>
 </div>
-
