@@ -4,6 +4,14 @@ layout: default
 description: Scripts, schedules, and partner guidelines created for EDP Running Wonders and Portugal a Correr events by Ana Rita Pimenta.
 ---
 
+<style>
+  .preview-button {
+    margin-bottom: 6px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+</style>
+
 <div class="projects">
   <div class="container-fluid">
     <div class="row">
@@ -35,18 +43,26 @@ description: Scripts, schedules, and partner guidelines created for EDP Running 
     <div class="row">
       <!-- Image Section -->
       <div class="col-md-7 image-content animate-box" data-animate-effect="fadeInLeft">
-        <img
-          class="img-fluid mb-30"
-          src="{{ 'assets/img/portfolio/project-7/1.png' | prepend: site.baseurl | prepend: site.url }}"
-          alt="Runner at EDP Running Wonders event"
-          loading="lazy"
-        />
-        <img
-          class="img-fluid mb-30"
-          src="{{ 'assets/img/portfolio/project-7/2.png' | prepend: site.baseurl | prepend: site.url }}"
-          alt="Press coverage at Portugal a Correr event"
-          loading="lazy"
-        />
+        <figure>
+          <img
+            class="img-fluid mb-30"
+            src="{{ 'assets/img/portfolio/project-7/1.png' | prepend: site.baseurl | prepend: site.url }}"
+            alt="Runner at EDP Running Wonders event"
+            width="1000"
+            height="667"
+            loading="lazy"
+          />
+        </figure>
+        <figure>
+          <img
+            class="img-fluid mb-30"
+            src="{{ 'assets/img/portfolio/project-7/2.png' | prepend: site.baseurl | prepend: site.url }}"
+            alt="Press coverage at Portugal a Correr event"
+            width="1000"
+            height="667"
+            loading="lazy"
+          />
+        </figure>
       </div>
 
       <!-- Text Section -->
@@ -69,32 +85,32 @@ description: Scripts, schedules, and partner guidelines created for EDP Running 
 
             <!-- Preview Buttons -->
             <input
-              style="margin-bottom: 6px"
+              class="preview-button"
               type="button"
               value="Preview PDF (1)"
               onclick="window.open('{{ 'assets/pdf/preview-1.pdf' | prepend: site.baseurl | prepend: site.url }}','_blank')"
-              aria-label="Open preview 1"
+              aria-label="Open PDF preview 1"
             /><br />
             <input
-              style="margin-bottom: 6px"
+              class="preview-button"
               type="button"
               value="Preview PDF (2)"
               onclick="window.open('{{ 'assets/pdf/preview-2.pdf' | prepend: site.baseurl | prepend: site.url }}','_blank')"
-              aria-label="Open preview 2"
+              aria-label="Open PDF preview 2"
             /><br />
             <input
-              style="margin-bottom: 6px"
+              class="preview-button"
               type="button"
               value="Preview PDF (3)"
               onclick="window.open('{{ 'assets/pdf/preview-3.pdf' | prepend: site.baseurl | prepend: site.url }}','_blank')"
-              aria-label="Open preview 3"
+              aria-label="Open PDF preview 3"
             /><br />
             <input
-              style="margin-bottom: 6px"
+              class="preview-button"
               type="button"
               value="Preview PDF (4)"
               onclick="window.open('{{ 'assets/pdf/preview-4.pdf' | prepend: site.baseurl | prepend: site.url }}','_blank')"
-              aria-label="Open preview 4"
+              aria-label="Open PDF preview 4"
             /><br /><br />
 
             <p>
