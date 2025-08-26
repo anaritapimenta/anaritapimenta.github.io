@@ -1,29 +1,43 @@
 <div id="footer2">
   <div class="narrow-content">
     <div class="row">
+      <!-- Coluna 1: Direitos autorais -->
       <div class="col-md-4 animate-box" data-animate-effect="fadeInLeft">
         <p class="lead">
           {{ site.author.name }} &copy; 2025 All Rights Reserved
         </p>
       </div>
+
+      <!-- Coluna 2: Nome -->
       <div class="col-md-4 animate-box" data-animate-effect="fadeInLeft">
         <h2 class="text-center">{{ site.author.name }}</h2>
       </div>
+
+      <!-- Coluna 3: Redes Sociais com acessibilidade -->
       <div class="col-md-4 animate-box" data-animate-effect="fadeInLeft">
         <ul class="social-network">
           <li>
-            <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}" target="_blank" rel="noopener noreferrer">
-              <i class="ti-linkedin font-14px black-icon"></i>
+            <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}"
+               target="_blank" rel="noopener noreferrer"
+               aria-label="LinkedIn de {{ site.author.name }}">
+              <i class="ti-linkedin font-14px black-icon" aria-hidden="true"></i>
+              <span class="sr-only">LinkedIn de {{ site.author.name }}</span>
             </a>
           </li>
           <li>
-            <a href="https://www.facebook.com/{{ site.author.facebook }}" target="_blank" rel="noopener noreferrer">
-              <i class="ti-facebook font-14px black-icon"></i>
+            <a href="https://www.facebook.com/{{ site.author.facebook }}"
+               target="_blank" rel="noopener noreferrer"
+               aria-label="Facebook de {{ site.author.name }}">
+              <i class="ti-facebook font-14px black-icon" aria-hidden="true"></i>
+              <span class="sr-only">Facebook de {{ site.author.name }}</span>
             </a>
           </li>
           <li>
-            <a href="https://www.instagram.com/{{ site.author.instagram }}" target="_blank" rel="noopener noreferrer">
-              <i class="ti-instagram font-14px black-icon"></i>
+            <a href="https://www.instagram.com/{{ site.author.instagram }}"
+               target="_blank" rel="noopener noreferrer"
+               aria-label="Instagram de {{ site.author.name }}">
+              <i class="ti-instagram font-14px black-icon" aria-hidden="true"></i>
+              <span class="sr-only">Instagram de {{ site.author.name }}</span>
             </a>
           </li>
         </ul>
@@ -31,3 +45,4 @@
     </div>
   </div>
 </div>
+
