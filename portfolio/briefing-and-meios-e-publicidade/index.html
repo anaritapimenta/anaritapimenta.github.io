@@ -1,13 +1,29 @@
 ---
-title: Briefing & Meios & Publicidade – Media Copy & Analytics | Ana Rita Pimenta
+title: Briefing & Meios & Publicidade – Media Copy & Analytics
 layout: default
+description: Copywriting and media performance analysis for Livemotion ads in Briefing and Meios & Publicidade. Strategic email and banner campaigns by Ana Rita Pimenta.
+og_image: /assets/img/portfolio/project-1/1.png
 ---
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Copywriting and media performance analysis for Livemotion ads in Briefing and Meios & Publicidade. Strategic email and banner campaigns by Ana Rita Pimenta." />
-  <title>Briefing & Meios & Publicidade – Media Copy & Analytics | Ana Rita Pimenta</title>
+
+  <title>{{ page.title }} | Ana Rita Pimenta</title>
+  <meta name="description" content="{{ page.description }}" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="{{ page.title }} | Ana Rita Pimenta" />
+  <meta property="og:description" content="{{ page.description }}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ page.url | absolute_url }}" />
+  <meta property="og:image" content="{{ page.og_image | absolute_url }}" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{ page.title }} | Ana Rita Pimenta" />
+  <meta name="twitter:description" content="{{ page.description }}" />
+  <meta name="twitter:image" content="{{ page.og_image | absolute_url }}" />
 </head>
 
 <div class="projects">
@@ -15,13 +31,13 @@ layout: default
     <div class="row">
       <div class="col-md-12">
         <span class="heading-meta style-1">Portfolio</span>
-        <h2
+        <h1
           class="heading animate-box"
           style="float: left"
           data-animate-effect="fadeInLeft"
         >
           Project
-        </h2>
+        </h1>
         <a
           href="{{ 'portfolio/' | prepend: site.baseurl | prepend: site.url }}"
           aria-label="Back to Portfolio"
@@ -63,14 +79,12 @@ layout: default
               At Livemotion, I wrote newsletters that were distributed through key marketing magazines and crafted the copy for banner ads placed in those same publications. However, creating content is just one part of the job — it is just as crucial to measure the exact outcome of each communication effort.
             </p>
 
-            <p>
-              I continuously asked:
-              <ul>
-                <li>How many views did our banners receive?</li>
-                <li>How many clicks to the website came from a specific banner?</li>
-                <li>What was the open rate of each newsletter?</li>
-              </ul>
-            </p>
+            <p>I continuously asked:</p>
+            <ul>
+              <li>How many views did our banners receive?</li>
+              <li>How many clicks to the website came from a specific banner?</li>
+              <li>What was the open rate of each newsletter?</li>
+            </ul>
 
             <p>
               I was not only responsible for the operational side of the media strategy but also understood the value and strategic role of each magazine in our overall communication ecosystem.
@@ -88,4 +102,3 @@ layout: default
     </div>
   </div>
 </div>
-
