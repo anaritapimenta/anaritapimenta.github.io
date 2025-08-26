@@ -1,39 +1,25 @@
 ---
-title: BOM Documents – Corporate Content 
+title: Media Copy for Briefing & Meios & Publicidade
 layout: default
+description: Copywriting and performance analysis for strategic media campaigns by Ana Rita Pimenta.
+og_image: /assets/img/portfolio/project-1/1.png
 ---
-
-{% assign brand = "Ana Rita Pimenta" %}
-{% assign page_title = page.title %}
-
-{% if page_title contains brand %}
-  {% assign page_title = page_title | replace: " | " | append: brand, "" %}
-  {% assign page_title = page_title | replace: " – " | append: brand, "" %}
-  {% assign page_title = page_title | replace: brand, "" | strip %}
-{% endif %}
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Corporate content project for Barn of Monkeys, including ambassador protocols and institutional documents. Copywriting by Ana Rita Pimenta." />
-  <title>{{ page_title }} | {{ brand }}</title>
-</head>
 
 <div class="projects">
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-12">
         <span class="heading-meta style-1">Portfolio</span>
-        <h2 class="heading animate-box" data-animate-effect="fadeInLeft">
-          Project
-        </h2>
+        <h1 class="heading animate-box" data-animate-effect="fadeInLeft">
+          Media Copy & Analytics Campaign
+        </h1>
         <a
           href="{{ 'portfolio/' | prepend: site.baseurl | prepend: site.url }}"
           aria-label="Back to Portfolio"
           style="float: right; display: flex; margin-top: 10px;"
         >
           <i class="ti-arrow-left font-14px gray-icon" aria-hidden="true"></i>
-          <p
+          <span
             style="
               margin-bottom: 0;
               margin-top: 1.21px;
@@ -42,7 +28,7 @@ layout: default
             "
           >
             Back
-          </p>
+          </span>
         </a>
       </div>
     </div>
@@ -52,14 +38,8 @@ layout: default
       <div class="col-md-7 image-content animate-box" data-animate-effect="fadeInLeft">
         <img
           class="img-fluid mb-30"
-          src="{{ 'assets/img/portfolio/project-4/1.png' | prepend: site.baseurl | prepend: site.url }}"
-          alt="Corporate document sample for Barn of Monkeys"
-          loading="lazy"
-        />
-        <img
-          class="img-fluid mb-30"
-          src="{{ 'assets/img/portfolio/project-4/2.png' | prepend: site.baseurl | prepend: site.url }}"
-          alt="Ambassador protocol example from the BOM project"
+          src="{{ 'assets/img/portfolio/project-1/1.png' | prepend: site.baseurl | prepend: site.url }}"
+          alt="Design sample from Meios & Publicidade newsletter"
           loading="lazy"
         />
       </div>
@@ -67,32 +47,34 @@ layout: default
       <!-- Content Section -->
       <div class="col-md-5 sticky-parent animate-box" data-animate-effect="fadeInLeft">
         <div id="sticky_item">
-          <div class="project-desc">
-            <h2>BOM Documents</h2>
-            <p>
-              I developed <strong>corporate and institutional content</strong> for the brand, focusing on professionalism and tone consistency.
-            </p>
-            <p>
-              This included <strong>ambassador protocols</strong>, website and online store content, and <strong>corporate documents</strong> for international agents and key stakeholders — written in both English and Portuguese.
-            </p>
-
-            <input
-              type="button"
-              value="Preview It"
-              onclick="window.open('preview.pdf','_blank')"
-              style="margin-bottom: 16px; padding: 8px 12px; cursor: pointer;"
-              aria-label="Open project preview in new tab"
-            />
+          <article class="project-desc">
+            <h2>Project Overview</h2>
 
             <p>
-              <strong>Project Name:</strong> BOM Documents<br />
-              <strong>Company:</strong> Barn of Monkeys<br />
-              <strong>Skills:</strong> Copywriting<br />
-              <strong>Category:</strong> Corporate Communication
+              At Livemotion, I wrote newsletters distributed through leading marketing magazines and created banner copy for those platforms. My work included crafting high-performing media campaigns tailored to their audience.
             </p>
-          </div>
+
+            <p>I focused on campaign results:</p>
+            <ul>
+              <li>How many views did each banner generate?</li>
+              <li>What was the click-through rate from ads to the website?</li>
+              <li>How well did each newsletter perform?</li>
+            </ul>
+
+            <p>
+              I managed the operational and strategic aspects of media performance, understanding how each magazine contributed to our broader communication goals.
+            </p>
+
+            <p>
+              <strong>Project Name:</strong> Briefing & Meios & Publicidade<br />
+              <strong>Company:</strong> Livemotion<br />
+              <strong>Skills:</strong> Copywriting, Press Media, Email Marketing, Analytics<br />
+              <strong>Category:</strong> Press Media
+            </p>
+          </article>
         </div>
       </div>
     </div>
   </div>
 </div>
+
