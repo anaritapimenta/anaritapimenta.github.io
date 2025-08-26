@@ -4,39 +4,28 @@ description: Produção e criação de vídeos corporativos e promocionais para 
 layout: default
 ---
 
-<section class="projects">
-  <div class="container-fluid">
+<div class="project">
+  <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <span class="heading-meta style-1">Portfolio</span>
+        <span class="heading-meta">Portfolio</span>
         <h1 class="heading animate-box" data-animate-effect="fadeInLeft">
           Video Marketing
         </h1>
         <a
           href="{{ 'portfolio/' | prepend: site.baseurl | prepend: site.url }}"
           aria-label="Back to Portfolio"
-          style="float: right; display: flex; margin-top: 10px"
+          class="back-link"
         >
           <i class="ti-arrow-left font-14px gray-icon" aria-hidden="true"></i>
-          <p
-            style="
-              margin-bottom: 0;
-              margin-top: 1.21px;
-              color: #313f47;
-              text-transform: uppercase;
-            "
-          >
-            Back
-          </p>
+          <span>Back</span>
         </a>
       </div>
     </div>
 
     <div class="row">
-      <div
-        class="col-md-7 image-content animate-box fadeInLeft"
-        data-animate-effect="fadeInLeft"
-      >
+      <!-- Images Section -->
+      <div class="col-md-7 image-content animate-box" data-animate-effect="fadeInLeft">
         <img
           class="img-fluid mb-30"
           src="{{ 'assets/img/portfolio/project-9/1.png' | prepend: site.baseurl | prepend: site.url }}"
@@ -63,12 +52,10 @@ layout: default
         />
       </div>
 
-      <div
-        class="col-md-5 sticky-parent animate-box fadeInLeft"
-        data-animate-effect="fadeInLeft"
-      >
+      <!-- Text Section -->
+      <div class="col-md-5 sticky-parent animate-box" data-animate-effect="fadeInLeft">
         <div id="sticky_item">
-          <div class="project-desc">
+          <article class="project-desc">
             <p>This is not my area of expertise, admittedly.</p>
 
             <p>
@@ -79,69 +66,57 @@ layout: default
               <strong>For MAR Kayaks, Lda, I created several videos</strong>: some corporate (such as a Christmas video and an April Fools' prank), and others <strong>promotional</strong>, including an app launch and a rowing boat showcase.
             </p>
 
-            <div>
+            <div class="btn-group-vertical">
               <a
                 href="https://www.facebook.com/watch/?v=10154767821069082"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Watch MAR Kayaks Christmas video on Facebook"
-                class="btn btn-primary"
-                style="margin-bottom: 6px; display: inline-block;"
+                class="btn btn-primary mb-2"
               >
                 Watch It (1)
               </a>
-            </div>
 
-            <div>
               <a
                 href="https://www.youtube.com/watch?v=QA1VJWnvvJ8"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Watch promotional app video on YouTube"
-                class="btn btn-primary"
-                style="margin-bottom: 6px; display: inline-block;"
+                class="btn btn-primary mb-2"
               >
                 Watch It (2)
               </a>
-            </div>
 
-            <div>
               <a
                 href="https://www.youtube.com/watch?v=0dGU82PsI4A"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Watch rowing boat promotional video on YouTube"
-                class="btn btn-primary"
-                style="margin-bottom: 6px; display: inline-block;"
+                class="btn btn-primary mb-2"
               >
                 Watch It (3)
               </a>
-            </div>
 
-            <div>
               <a
                 href="https://www.youtube.com/watch?v=0qGcY-3EjAk&ab_channel=NeloKayaks"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Watch rowing boat promotional video again on YouTube"
-                class="btn btn-primary"
-                style="margin-bottom: 6px; display: inline-block;"
+                class="btn btn-primary mb-2"
               >
                 Watch It (4)
               </a>
             </div>
 
-            <br />
-
-            <p>
+            <p class="mt-4">
               <strong>Project Name:</strong> Video Marketing<br />
               <strong>Company:</strong> MAR Kayaks, Lda<br />
               <strong>Skills:</strong> Video Capture and Editing<br />
               <strong>Category:</strong> Video Production
             </p>
-          </div>
+          </article>
         </div>
       </div>
     </div>
   </div>
-</section>
+</div>
