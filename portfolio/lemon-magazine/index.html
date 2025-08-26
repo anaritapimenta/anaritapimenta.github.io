@@ -1,13 +1,28 @@
 ---
-title: Lemon Magazine PR Project | Barn of Monkeys | Ana Rita Pimenta
+title: Lemon Magazine PR – Barn of Monkeys
 layout: default
+description: Media placement for Barn of Monkeys in Lemon Magazine. Copywriting, PR outreach, and press relations by Ana Rita Pimenta.
+og_image: /assets/img/portfolio/project-2/1.png
 ---
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="PR project for Barn of Monkeys featured in Lemon Magazine. Copywriting and media outreach by Ana Rita Pimenta." />
-  <title>Lemon Magazine PR Project | Barn of Monkeys | Ana Rita Pimenta</title>
+  <meta name="description" content="{{ page.description }}" />
+  <title>{{ page.title }} | Ana Rita Pimenta</title>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="{{ page.title }} | Ana Rita Pimenta" />
+  <meta property="og:description" content="{{ page.description }}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ page.url | absolute_url }}" />
+  <meta property="og:image" content="{{ page.og_image | absolute_url }}" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{ page.title }} | Ana Rita Pimenta" />
+  <meta name="twitter:description" content="{{ page.description }}" />
+  <meta name="twitter:image" content="{{ page.og_image | absolute_url }}" />
 </head>
 
 <div class="projects">
@@ -15,16 +30,16 @@ layout: default
     <div class="row">
       <div class="col-md-12">
         <span class="heading-meta style-1">Portfolio</span>
-        <h2 class="heading animate-box" data-animate-effect="fadeInLeft">
-          Project
-        </h2>
+        <h1 class="heading animate-box" data-animate-effect="fadeInLeft">
+          Lemon Magazine Feature
+        </h1>
         <a
           href="{{ 'portfolio/' | prepend: site.baseurl | prepend: site.url }}"
           aria-label="Back to Portfolio"
           style="float: right; display: flex; margin-top: 10px"
         >
           <i class="ti-arrow-left font-14px gray-icon" aria-hidden="true"></i>
-          <p
+          <span
             style="
               margin-bottom: 0;
               margin-top: 1.21px;
@@ -33,59 +48,55 @@ layout: default
             "
           >
             Back
-          </p>
+          </span>
         </a>
       </div>
     </div>
+
     <div class="row">
-      <div
-        class="col-md-7 image-content animate-box fadeInLeft"
-        data-animate-effect="fadeInLeft"
-      >
+      <!-- Images -->
+      <div class="col-md-7 image-content animate-box" data-animate-effect="fadeInLeft">
         <img
           class="img-fluid mb-30"
           src="{{ 'assets/img/portfolio/project-2/1.png' | prepend: site.baseurl | prepend: site.url }}"
-          alt="Lemon Magazine article feature – Image 1"
+          alt="Published article in Lemon Magazine featuring Barn of Monkeys"
           loading="lazy"
         />
         <img
           class="img-fluid mb-30"
           src="{{ 'assets/img/portfolio/project-2/2.png' | prepend: site.baseurl | prepend: site.url }}"
-          alt="Lemon Magazine article feature – Image 2"
+          alt="Close-up of Lemon Magazine article – PR campaign result"
           loading="lazy"
         />
       </div>
-      <div
-        class="col-md-5 sticky-parent animate-box fadeInLeft"
-        data-animate-effect="fadeInLeft"
-      >
+
+      <!-- Description -->
+      <div class="col-md-5 sticky-parent animate-box" data-animate-effect="fadeInLeft">
         <div id="sticky_item">
-          <div class="project-desc">
-            <h2>Lemon Magazine</h2>
+          <article class="project-desc">
+            <h2>PR Highlights</h2>
+
             <p>
-              At Barn of Monkeys, I acted as a true <strong>brand ambassador</strong>.
+              While working at Barn of Monkeys, I acted as a dedicated <strong>brand ambassador</strong>,
+              offering media support and ensuring smooth communication with journalists.
             </p>
             <p>
-              I was always available to <strong>answer any questions about the brand</strong>.
+              I regularly wrote <strong>press releases</strong> and served as the <strong>liaison between media and the brand</strong>. This approach helped secure visibility in high-profile outlets.
             </p>
             <p>
-              On several occasions, I served as <strong>the bridge between journalists and the brand</strong>.
+              One result of this effort was a featured article in <strong>Lemon Magazine</strong>, a renowned children’s fashion publication.
             </p>
-            <p>
-              During my time at BOM, I wrote numerous <strong>press releases</strong> – many of which were proudly published.
-            </p>
-            <p>
-              This is one of the published articles in <strong>Lemon</strong>, a renowned children’s fashion magazine.
-            </p>
+
             <p>
               <strong>Project Name:</strong> Lemon Magazine<br />
               <strong>Company:</strong> Barn of Monkeys<br />
-              <strong>Skills:</strong> Copywriting<br />
+              <strong>Skills:</strong> Copywriting, Media Outreach, Press Relations<br />
               <strong>Category:</strong> PR and Press Media
             </p>
-          </div>
+          </article>
         </div>
       </div>
     </div>
   </div>
 </div>
+
