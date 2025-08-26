@@ -1,14 +1,28 @@
 ---
-title: EDP Running Wonders & Portugal a Correr – Press Media | Ana Rita Pimenta
-description: Copywriting and media preparation for EDP Running Wonders and Portugal a Correr events, including scripts, schedules, and partner guidelines for multiple Portuguese cities.
+title: EDP Running Wonders – Press & Copywriting
 layout: default
+description: Scripts and event prep for EDP Running Wonders and Portugal a Correr. Includes media schedules, guidelines, and partner docs by Ana Rita Pimenta.
+og_image: /assets/img/portfolio/project-7/1.png
 ---
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Copywriting and media preparation for EDP Running Wonders and Portugal a Correr events, including scripts, schedules, and partner guidelines for multiple Portuguese cities." />
-  <title>EDP Running Wonders & Portugal a Correr – Press Media | Ana Rita Pimenta</title>
+  <title>{{ page.title }} | Ana Rita Pimenta</title>
+  <meta name="description" content="{{ page.description }}" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="{{ page.title }} | Ana Rita Pimenta" />
+  <meta property="og:description" content="{{ page.description }}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ page.url | absolute_url }}" />
+  <meta property="og:image" content="{{ page.og_image | absolute_url }}" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{ page.title }} | Ana Rita Pimenta" />
+  <meta name="twitter:description" content="{{ page.description }}" />
+  <meta name="twitter:image" content="{{ page.og_image | absolute_url }}" />
 </head>
 
 <div class="projects">
@@ -16,16 +30,16 @@ layout: default
     <div class="row">
       <div class="col-md-12">
         <span class="heading-meta style-1">Portfolio</span>
-        <h2 class="heading animate-box" data-animate-effect="fadeInLeft">
-          Project
-        </h2>
+        <h1 class="heading animate-box" data-animate-effect="fadeInLeft">
+          Press Materials for Running Events
+        </h1>
         <a
           href="{{ 'portfolio/' | prepend: site.baseurl | prepend: site.url }}"
           aria-label="Back to Portfolio"
           style="float: right; display: flex; margin-top: 10px"
         >
           <i class="ti-arrow-left font-14px gray-icon" aria-hidden="true"></i>
-          <p
+          <span
             style="
               margin-bottom: 0;
               margin-top: 1.21px;
@@ -34,93 +48,59 @@ layout: default
             "
           >
             Back
-          </p>
+          </span>
         </a>
       </div>
     </div>
 
     <div class="row">
-      <div
-        class="col-md-7 image-content animate-box fadeInLeft"
-        data-animate-effect="fadeInLeft"
-      >
+      <!-- Images -->
+      <div class="col-md-7 image-content animate-box" data-animate-effect="fadeInLeft">
         <img
           class="img-fluid mb-30"
           src="{{ 'assets/img/portfolio/project-7/1.png' | prepend: site.baseurl | prepend: site.url }}"
-          alt="EDP Running Wonders and Portugal a Correr event – Image 1"
+          alt="Runner at EDP Running Wonders event"
           loading="lazy"
         />
         <img
           class="img-fluid mb-30"
           src="{{ 'assets/img/portfolio/project-7/2.png' | prepend: site.baseurl | prepend: site.url }}"
-          alt="EDP Running Wonders and Portugal a Correr event – Image 2"
+          alt="Press coverage at Portugal a Correr event"
           loading="lazy"
         />
       </div>
 
-      <div
-        class="col-md-5 sticky-parent animate-box fadeInLeft"
-        data-animate-effect="fadeInLeft"
-      >
+      <!-- Text Section -->
+      <div class="col-md-5 sticky-parent animate-box" data-animate-effect="fadeInLeft">
         <div id="sticky_item">
-          <div class="project-desc">
-            <h2>EDP Running Wonders and Portugal a Correr – Press Media</h2>
+          <article class="project-desc">
+            <h2>Scripts, Schedules & Guidelines</h2>
+
             <p>
-              During my time at Global Sport, I regularly
-              <strong>wrote scripts for the spokesperson</strong>, prepared
-              <strong>event schedules</strong>, and compiled
-              <strong>key information</strong> about
-              <strong>partners</strong>, <strong>sponsors</strong>, and
-              <strong>entertainment groups</strong>.
+              While working at Global Sport, I was responsible for preparing all the written content that supported major running events across Portugal.
             </p>
             <p>
-              This section includes sample guidelines I developed for the EDP Running Wonders events in Viseu
-              and Évora, along with a guideline for the Portugal a Correr event "Corrida da Nau."
+              This included <strong>spokesperson scripts</strong>, <strong>event schedules</strong>, and detailed guidelines for <strong>partners</strong>, <strong>sponsors</strong>, and <strong>entertainment teams</strong>.
+            </p>
+            <p>
+              Below, you can preview some of the materials developed for events in Viseu, Évora, and the Portugal a Correr race “Corrida da Nau.”
             </p>
 
-            <input
-              style="margin-bottom: 6px"
-              type="button"
-              value="Preview It (1)"
-              onclick="window.open('preview-1.pdf','_blank')"
-              aria-label="Open Preview It 1 in a new tab"
-            />
-            <br />
-            <input
-              style="margin-bottom: 6px"
-              type="button"
-              value="Preview It (2)"
-              onclick="window.open('preview-2.pdf','_blank')"
-              aria-label="Open Preview It 2 in a new tab"
-            />
-            <br />
-            <input
-              style="margin-bottom: 6px"
-              type="button"
-              value="Preview It (3)"
-              onclick="window.open('preview-3.pdf','_blank')"
-              aria-label="Open Preview It 3 in a new tab"
-            />
-            <br />
-            <input
-              style="margin-bottom: 6px"
-              type="button"
-              value="Preview It (4)"
-              onclick="window.open('preview-4.pdf','_blank')"
-              aria-label="Open Preview It 4 in a new tab"
-            />
-            <br />
-            <br />
+            <!-- PDF Preview Buttons -->
+            <input type="button" value="Preview (1)" onclick="window.open('preview-1.pdf','_blank')" aria-label="Open PDF preview 1" style="margin-bottom: 6px" /><br />
+            <input type="button" value="Preview (2)" onclick="window.open('preview-2.pdf','_blank')" aria-label="Open PDF preview 2" style="margin-bottom: 6px" /><br />
+            <input type="button" value="Preview (3)" onclick="window.open('preview-3.pdf','_blank')" aria-label="Open PDF preview 3" style="margin-bottom: 6px" /><br />
+            <input type="button" value="Preview (4)" onclick="window.open('preview-4.pdf','_blank')" aria-label="Open PDF preview 4" style="margin-bottom: 6px" /><br /><br />
+
             <p>
-              <strong>Project Name:</strong> EDP Running Wonders and Portugal a Correr – Press Media<br />
+              <strong>Project Name:</strong> EDP Running Wonders – Press Media<br />
               <strong>Company:</strong> Global Sport<br />
-              <strong>Skills:</strong> Copywriting<br />
+              <strong>Skills:</strong> Copywriting, Media Support, Event Content<br />
               <strong>Category:</strong> Press Media
             </p>
-          </div>
+          </article>
         </div>
       </div>
     </div>
   </div>
 </div>
-
