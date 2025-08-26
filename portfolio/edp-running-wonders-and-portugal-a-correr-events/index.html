@@ -1,5 +1,5 @@
 ---
-title: EDP Running Wonders & Portugal a Correr – PR & Events | Ana Rita Pimenta
+title: EDP Running Wonders & Portugal a Correr – PR & Events
 description: PR and event support for EDP Running Wonders and Portugal a Correr across several Portuguese cities. Press releases, media coordination, and athlete support.
 layout: default
 ---
@@ -7,8 +7,21 @@ layout: default
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="PR and event support for EDP Running Wonders and Portugal a Correr across several Portuguese cities. Press releases, media coordination, and athlete support." />
-  <title>EDP Running Wonders & Portugal a Correr – PR & Events | Ana Rita Pimenta</title>
+  <title>{{ page.title }} | Ana Rita Pimenta</title>
+  <meta name="description" content="{{ page.description }}" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="{{ page.title }} | Ana Rita Pimenta" />
+  <meta property="og:description" content="{{ page.description }}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ page.url | absolute_url }}" />
+  <meta property="og:image" content="{{ 'assets/img/portfolio/project-8/1.png' | prepend: site.baseurl | prepend: site.url }}" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{ page.title }} | Ana Rita Pimenta" />
+  <meta name="twitter:description" content="{{ page.description }}" />
+  <meta name="twitter:image" content="{{ 'assets/img/portfolio/project-8/1.png' | prepend: site.baseurl | prepend: site.url }}" />
 </head>
 
 <div class="projects">
@@ -16,9 +29,9 @@ layout: default
     <div class="row">
       <div class="col-md-12">
         <span class="heading-meta style-1">Portfolio</span>
-        <h2 class="heading animate-box" data-animate-effect="fadeInLeft">
+        <h1 class="heading animate-box" data-animate-effect="fadeInLeft">
           Project Overview
-        </h2>
+        </h1>
         <a
           href="{{ 'portfolio/' | prepend: site.baseurl | prepend: site.url }}"
           aria-label="Back to Portfolio"
@@ -41,7 +54,7 @@ layout: default
 
     <div class="row">
       <div
-        class="col-md-7 image-content animate-box fadeInLeft"
+        class="col-md-7 image-content animate-box"
         data-animate-effect="fadeInLeft"
       >
         <img
@@ -59,11 +72,11 @@ layout: default
       </div>
 
       <div
-        class="col-md-5 sticky-parent animate-box fadeInLeft"
+        class="col-md-5 sticky-parent animate-box"
         data-animate-effect="fadeInLeft"
       >
         <div id="sticky_item">
-          <div class="project-desc">
+          <article class="project-desc">
             <h2>EDP Running Wonders and Portugal a Correr – Events</h2>
             <p>
               Aveiro, Portimão, Vila do Conde, Viseu, Porto, Évora, and Coimbra were some of the cities where Portugal a Correr and EDP Running Wonders took place.
@@ -83,11 +96,10 @@ layout: default
               <strong>Skills:</strong> Customer Service<br />
               <strong>Category:</strong> Event Organisation
             </p>
-          </div>
+          </article>
         </div>
       </div>
     </div>
   </div>
 </div>
-iv>
-</div>
+
