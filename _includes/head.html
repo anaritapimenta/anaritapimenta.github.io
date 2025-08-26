@@ -4,21 +4,15 @@
   <meta name="organization" content="{{ site.organization.name }}" />
   <meta name="description" content="{{ site.description }}" />
   <meta name="keywords" content="{{ site.keywords }}" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1, maximum-scale=1"
-  />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes" />
 
   <title>
-    {% if page.title %}{{ site.author.name }} | {{ page.title }}{% else %}{{
-    site.title }}{% endif %}
+    {% if page.title %}{{ site.author.name }} | {{ page.title }}{% else %}{{ site.title }}{% endif %}
   </title>
 
   <link
     rel="shortcut icon"
-    href="{{
-      'assets/img/favicon.png' | prepend: site.baseurl | prepend: site.url
-    }}"
+    href="{{ 'assets/img/favicon.png' | prepend: site.baseurl | prepend: site.url }}"
   />
 
   <link
@@ -29,38 +23,28 @@
   <link
     type="text/css"
     rel="stylesheet"
-    href="{{
-      'assets/css/animate.css' | prepend: site.baseurl | prepend: site.url
-    }}"
+    href="{{ 'assets/css/animate.css' | prepend: site.baseurl | prepend: site.url }}"
   />
   <link
     type="text/css"
     rel="stylesheet"
-    href="{{
-      'assets/css/et-lineicons.css' | prepend: site.baseurl | prepend: site.url
-    }}"
+    href="{{ 'assets/css/et-lineicons.css' | prepend: site.baseurl | prepend: site.url }}"
   />
   <link
     type="text/css"
     rel="stylesheet"
     media="all"
-    href="{{
-      'assets/css/themify-icons.css' | prepend: site.baseurl | prepend: site.url
-    }}"
+    href="{{ 'assets/css/themify-icons.css' | prepend: site.baseurl | prepend: site.url }}"
   />
   <link
     type="text/css"
     rel="stylesheet"
-    href="{{
-      'assets/css/bootstrap.css' | prepend: site.baseurl | prepend: site.url
-    }}"
+    href="{{ 'assets/css/bootstrap.css' | prepend: site.baseurl | prepend: site.url }}"
   />
   <link
     type="text/css"
     rel="stylesheet"
-    href="{{
-      'assets/css/style.css' | prepend: site.baseurl | prepend: site.url
-    }}"
+    href="{{ 'assets/css/style.css' | prepend: site.baseurl | prepend: site.url }}"
   />
 
   <link
@@ -69,3 +53,4 @@
     href="https://fonts.googleapis.com/css?family=Rambla:400,700&display=swap"
   />
 </head>
+
