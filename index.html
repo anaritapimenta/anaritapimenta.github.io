@@ -5,10 +5,10 @@ description: Experienced marketing specialist with strong skills in business com
 ---
 
 <head>
-  <title>Ana Rita Pimenta – Marketing Specialist</title>
-  <meta name="description" content="Experienced marketing specialist with strong skills in business communication and project management." />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Experienced marketing specialist with strong skills in business communication and project management." />
+  <title>Ana Rita Pimenta – Marketing Specialist</title>
 </head>
 
 <main lang="en-GB">
@@ -26,7 +26,6 @@ description: Experienced marketing specialist with strong skills in business com
             height="467"
           />
         </div>
-
         <div class="col-md-5 animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
           <header>
             <span class="heading-meta style-1">About Me</span>
@@ -41,13 +40,13 @@ description: Experienced marketing specialist with strong skills in business com
             <p>I am a <strong>lively</strong> and <strong>passionate individual</strong> who <strong>loves sports</strong>, enjoys <strong>meeting new people</strong>, and is always eager to <strong>learn new things</strong>.</p>
           </article>
 
-          <button onclick="window.open('cv.pdf','_blank')" class="btn btn-primary mt-3" aria-label="Download CV PDF" style="background-color: black; border-color: black;">
+          <button onclick="window.open('cv.pdf','_blank')" class="btn btn-primary mt-3" aria-label="Download CV PDF">
             Download CV
           </button>
 
           <div class="cardvisit mt-4" aria-label="Contact Information">
-            <h2>Ana Rita Pimenta</h2>
-            <p><strong>Marketing Specialist</strong></p>
+            <h2 style="font-weight: 600;">{{ site.author.name }}</h2>
+            <p><strong>{{ site.author.role }}</strong></p>
             <div class="divider-line"></div>
             <p><i class="ti-calendar" aria-hidden="true"></i> &nbsp;{{ site.author.date_of_birth }}</p>
             <p><i class="ti-email" aria-hidden="true"></i> &nbsp;<a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></p>
@@ -65,24 +64,15 @@ description: Experienced marketing specialist with strong skills in business com
 
   <div class="divider1" role="presentation"></div>
 
-  <section aria-label="Testimonials">
+  <section class="testimonials" aria-label="Testimonials">
     <div class="container-fluid">
-      <!-- "What They Say" fora da caixa cinza -->
-      <div class="heading-meta style-1" style="margin-bottom: 1rem; font-weight: 600; font-size: 1.2rem; color: #333;">
-        What They Say
-      </div>
-
       <header class="row">
-        <div class="col-md-12">
-          <h2 class="heading animate-box" data-animate-effect="fadeInLeft" style="margin-top: 0; position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden;">
-            <span>Testimonials About Ana Rita Pimenta</span>
-          </h2>
-          <h2 class="heading animate-box" data-animate-effect="fadeInLeft" style="margin-top: 0;">
-            Testimonials
-          </h2>
+        <div class="col-md-12" style="margin-bottom: 1rem;">
+          <span class="heading-meta style-1" style="background: none; padding: 0;">What They Say</span>
+          <h2 class="heading animate-box" data-animate-effect="fadeInLeft" style="margin-top: 0;">Testimonials</h2>
+          <h2 class="visually-hidden">Testimonials About Ana Rita Pimenta</h2>
         </div>
       </header>
-
       <div class="row">
         <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
           <blockquote class="quote-card">
@@ -90,6 +80,9 @@ description: Experienced marketing specialist with strong skills in business com
               src="{{ 'assets/img/quote.png' | prepend: site.baseurl | prepend: site.url }}"
               alt="Quotation mark icon"
               class="quote-2"
+              loading="lazy"
+              width="32"
+              height="32"
             />
             <p>Fiquei impressionado com a capacidade da Ana Rita em finalizar as tarefas que lhe dava atempadamente. Trabalha bem em grupo, tem capacidade de liderança e para resolver problemas. É uma trabalhadora muito conscienciosa e capaz.</p>
             <footer>
@@ -105,11 +98,14 @@ description: Experienced marketing specialist with strong skills in business com
               src="{{ 'assets/img/quote.png' | prepend: site.baseurl | prepend: site.url }}"
               alt="Quotation mark icon"
               class="quote-2"
+              loading="lazy"
+              width="32"
+              height="32"
             />
             <p>A Ana Rita revelou ainda excelente domínio da língua portuguesa, quer na oralidade, quer na escrita, manifestando competências comunicativas muito acima da média, tendo um interesse muito especial pela área do marketing.</p>
             <footer>
               <h3><strong>Sara Pascoal</strong></h3>
-              <p class="occupation">Polytechnic Institute of Porto – ISCAP</p>
+              <p class="occupation">Instituto Superior de Contabilidade e Administração do Porto (ISCAP)</p>
             </footer>
           </blockquote>
         </div>
@@ -119,13 +115,12 @@ description: Experienced marketing specialist with strong skills in business com
 
   <div class="divider1" role="presentation"></div>
 
-  <!-- Seção companies escondida visualmente para SEO -->
-  <section aria-label="Companies I’ve Collaborated With" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(1px, 1px, 1px, 1px); clip-path: inset(50%);">
+  <section class="companies" aria-label="Companies I’ve Worked With" style="display:none;">
     <div class="container-fluid">
       <header class="row">
         <div class="col-md-12">
           <span class="heading-meta style-1">Worked With</span>
-          <h2 class="heading animate-box" data-animate-effect="fadeInLeft">Companies I’ve Collaborated With</h2>
+          <h2 class="heading animate-box" data-animate-effect="fadeInLeft">Companies I've Collaborated With</h2>
         </div>
       </header>
       <div class="row">
@@ -139,7 +134,7 @@ description: Experienced marketing specialist with strong skills in business com
               alt="Logo of {{ company | replace: '-', ' ' | capitalize }}"
               loading="lazy"
               width="150"
-              height="75"
+              height="80"
             />
           </div>
         </div>
