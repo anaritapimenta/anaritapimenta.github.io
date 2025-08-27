@@ -4,7 +4,7 @@ layout: default
 description: "Meet Ana Rita Pimenta: a creative, collaborative and dedicated professional with leadership and marketing expertise."
 ---
 
-<div class="about" role="region" aria-label="About Ana Rita Pimenta">
+<div class="about">
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-7">
@@ -13,23 +13,16 @@ description: "Meet Ana Rita Pimenta: a creative, collaborative and dedicated pro
           class="img-fluid mb-15 animate-box fadeInLeft animated"
           data-animate-effect="fadeInLeft"
           alt="Portrait of Ana Rita Pimenta seated in a cosy setting, smiling"
-          loading="lazy"
         />
       </div>
       <div class="col-md-5 animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
         <span class="heading-meta style-1">About Me</span>
+        <h1 class="about-heading">{{ site.author.name }}</h1>
 
-        <!-- Único H1 principal da página -->
-        <h1 class="about-heading">
-          {{ site.author.name }}
-          <span class="sr-only"> – Creative and Collaborative Professional</span>
-        </h1>
-
+        <p><strong>Friendly</strong>, <strong>organised</strong>, <strong>collaborative</strong>, and <strong>creative by nature</strong>.</p>
         <p>
-          <strong>Friendly</strong>, <strong>organised</strong>, <strong>collaborative</strong>, and <strong>creative by nature</strong>.
-        </p>
-        <p>
-          I am a <strong>highly driven self-starter</strong>, who is <strong>observant and perceptive to the needs of the company</strong>, <strong>colleagues</strong>, and <strong>clients</strong> I work with.
+          I am a <strong>highly driven self-starter</strong>, who is <strong>observant and perceptive to the needs of the company</strong>,
+          <strong>colleagues</strong>, and <strong>clients</strong> I work with.
         </p>
         <p>
           I bring a great deal of <strong>energy</strong> and am <strong>self-motivated</strong> to complete tasks on time and within budget.
@@ -38,13 +31,13 @@ description: "Meet Ana Rita Pimenta: a creative, collaborative and dedicated pro
           I have the <strong>ability to identify challenges</strong> and <strong>develop solutions independently or within a team</strong>.
         </p>
         <p>
-          I am a <strong>lively</strong> and <strong>passionate individual</strong> who <strong>loves sports</strong>, enjoys <strong>meeting new people</strong>, and is always eager to <strong>learn new things</strong>.
+          I am a <strong>lively</strong> and <strong>passionate individual</strong> who <strong>loves sports</strong>, enjoys
+          <strong>meeting new people</strong>, and is always eager to <strong>learn new things</strong>.
         </p>
 
-        <input type="button" value="Download CV" onclick="window.open('cv.pdf','_blank')" aria-label="Download CV of Ana Rita Pimenta" />
+        <input type="button" value="Download CV" onclick="window.open('cv.pdf','_blank')" />
 
-        <div class="cardvisit" role="contentinfo" aria-label="Contact and personal information">
-          <h2 class="sr-only">Contact Information</h2>
+        <div class="cardvisit">
           <h3>{{ site.author.name }}</h3>
           <span>{{ site.author.role }}</span>
           <div class="divider-line"></div>
@@ -64,16 +57,13 @@ description: "Meet Ana Rita Pimenta: a creative, collaborative and dedicated pro
 
 <div class="divider1"></div>
 
-<div class="testimonial" role="region" aria-label="Testimonials about Ana Rita Pimenta">
+<div class="testimonial">
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-12">
         <span class="heading-meta style-1">Say About Me</span>
-
-        <!-- H2 para a seção de testemunhos -->
         <h2 class="heading animate-box" data-animate-effect="fadeInLeft">
           Testimonials
-          <span class="sr-only"> from clients and colleagues about Ana Rita Pimenta</span>
         </h2>
       </div>
     </div>
@@ -82,32 +72,30 @@ description: "Meet Ana Rita Pimenta: a creative, collaborative and dedicated pro
         <div class="quote-card" style="background-color: transparent; box-shadow: none; border: none; padding: 0;">
           <img
             src="{{ 'assets/img/quote.png' | prepend: site.baseurl | prepend: site.url }}"
-            alt="Quotation mark icon"
+            alt="Quotation icon"
             class="quote-2"
-            loading="lazy"
           />
           <p>
-            "I was impressed by Ana Rita’s ability to complete tasks on time. She works well in a team, has leadership skills and problem-solving abilities. She is very conscientious and capable."
+            "Fiquei impressionado com a capacidade da Ana Rita em finalizar as tarefas que lhe dava atempadamente. Trabalha bem em grupo, tem
+            capacidade de liderança e para resolver problemas. É uma trabalhadora muito conscienciosa e capaz."
           </p>
           <h5><strong>Nuno Ramos</strong></h5>
-          <p class="occupation">Nelo - M.A.R. Kayaks, Ltd.</p>
+          <p class="occupation">Nelo - M.A.R. Kayaks, Lda</p>
         </div>
       </div>
       <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
         <div class="quote-card" style="background-color: transparent; box-shadow: none; border: none; padding: 0;">
           <img
             src="{{ 'assets/img/quote.png' | prepend: site.baseurl | prepend: site.url }}"
-            alt="Quotation mark icon"
+            alt="Quotation icon"
             class="quote-2"
-            loading="lazy"
           />
           <p>
-            "Ana Rita demonstrated excellent command of the Portuguese language, both spoken and written, showing communication skills well above average, with a special interest in marketing."
+            "A Ana Rita revelou ainda excelente domínio da língua portuguesa, quer na oralidade, quer na escrita, manifestando competências
+            comunicativas muito acima da média, tendo um interesse muito especial pela área do marketing."
           </p>
           <h5>Sara Pascoal</h5>
-          <p class="occupation">
-            Porto Institute of Accounting and Administration (ISCAP)
-          </p>
+          <p class="occupation">Instituto Superior de Contabilidade e Administração do Porto (ISCAP)</p>
         </div>
       </div>
     </div>
@@ -116,16 +104,13 @@ description: "Meet Ana Rita Pimenta: a creative, collaborative and dedicated pro
 
 <div class="divider1"></div>
 
-<div class="companies" role="region" aria-label="Companies where Ana Rita worked">
+<div class="companies">
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-12">
         <span class="heading-meta style-1">Worked With</span>
-
-        <!-- H2 para a seção de empresas -->
         <h2 class="heading animate-box" data-animate-effect="fadeInLeft">
           Companies
-          <span class="sr-only"> where Ana Rita Pimenta gained experience</span>
         </h2>
       </div>
     </div>
@@ -136,7 +121,6 @@ description: "Meet Ana Rita Pimenta: a creative, collaborative and dedicated pro
             src="{{ 'assets/img/companies/livemotion.png' | prepend: site.baseurl | prepend: site.url }}"
             class="img-fluid"
             alt="Livemotion company logo"
-            loading="lazy"
           />
         </div>
       </div>
@@ -146,7 +130,6 @@ description: "Meet Ana Rita Pimenta: a creative, collaborative and dedicated pro
             src="{{ 'assets/img/companies/barn-of-monkeys.png' | prepend: site.baseurl | prepend: site.url }}"
             class="img-fluid"
             alt="Barn of Monkeys company logo"
-            loading="lazy"
           />
         </div>
       </div>
@@ -156,7 +139,6 @@ description: "Meet Ana Rita Pimenta: a creative, collaborative and dedicated pro
             src="{{ 'assets/img/companies/global-sport.png' | prepend: site.baseurl | prepend: site.url }}"
             class="img-fluid"
             alt="Global Sport company logo"
-            loading="lazy"
           />
         </div>
       </div>
@@ -166,26 +148,9 @@ description: "Meet Ana Rita Pimenta: a creative, collaborative and dedicated pro
             src="{{ 'assets/img/companies/nelo.png' | prepend: site.baseurl | prepend: site.url }}"
             class="img-fluid"
             alt="Nelo company logo"
-            loading="lazy"
           />
         </div>
       </div>
     </div>
   </div>
 </div>
-
-<style>
-  /* Screen reader only text for SEO and accessibility */
-  .sr-only {
-    position: absolute !important;
-    width: 1px !important;
-    height: 1px !important;
-    padding: 0 !important;
-    margin: -1px !important;
-    overflow: hidden !important;
-    clip: rect(0, 0, 0, 0) !important;
-    border: 0 !important;
-  }
-</style>
-
-
