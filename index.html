@@ -4,142 +4,303 @@ layout: default
 description: Experienced marketing specialist with strong skills in business communication and project management.
 ---
 
+<!DOCTYPE html>
+<html lang="en-GB">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Experienced marketing specialist with strong skills in business communication and project management." />
   <title>Ana Rita Pimenta – Marketing Specialist</title>
+  <style>
+    /* Basic reset and typography */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      background: #fff;
+    }
+    h1, h2, h3 {
+      margin: 0 0 1rem 0;
+      font-weight: 600;
+      line-height: 1.2;
+    }
+    h1 {
+      font-size: 1.8rem;
+    }
+    h2.heading {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+    }
+    h3 {
+      font-size: 1.25rem;
+    }
+    p {
+      margin-bottom: 1rem;
+    }
+    .container-fluid {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -0.5rem;
+    }
+    .col-md-7, .col-md-5, .col-md-6, .col-md-3, .col-md-4 {
+      padding: 0.5rem;
+      box-sizing: border-box;
+    }
+    .col-md-7 {
+      flex: 0 0 58.3333%;
+      max-width: 58.3333%;
+    }
+    .col-md-5 {
+      flex: 0 0 41.6667%;
+      max-width: 41.6667%;
+    }
+    .col-md-6 {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+    .col-md-4 {
+      flex: 0 0 33.3333%;
+      max-width: 33.3333%;
+    }
+    .col-md-3 {
+      flex: 0 0 25%;
+      max-width: 25%;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 4px;
+    }
+    .about-heading {
+      font-weight: 600;
+    }
+    .btn {
+      display: inline-block;
+      background-color: #007bff;
+      color: #fff;
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      user-select: none;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover,
+    .btn:focus {
+      background-color: #0056b3;
+      outline: none;
+    }
+    .mt-3 {
+      margin-top: 1rem;
+    }
+    .mt-4 {
+      margin-top: 1.5rem;
+    }
+    .divider1 {
+      border-bottom: 1px solid #ddd;
+      margin: 2rem 0;
+    }
+    .heading-meta.style-1 {
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #555;
+      font-size: 0.9rem;
+      margin-bottom: 0.25rem;
+      display: inline-block;
+    }
+    .quote-card {
+      background: #f9f9f9;
+      padding: 1.5rem;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      position: relative;
+      margin-bottom: 2rem;
+    }
+    .quote-card footer {
+      margin-top: 1rem;
+    }
+    .quote-card footer h3 {
+      margin-bottom: 0.25rem;
+      font-weight: 700;
+    }
+    .occupation {
+      font-size: 0.9rem;
+      color: #777;
+      margin: 0;
+    }
+    .quote-2 {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      width: 32px;
+      height: 32px;
+      opacity: 0.1;
+    }
+    .cardvisit {
+      background: #f1f1f1;
+      padding: 1rem;
+      border-radius: 6px;
+      font-size: 0.95rem;
+    }
+    .divider-line {
+      height: 2px;
+      background-color: #007bff;
+      margin: 0.5rem 0 1rem 0;
+      width: 50px;
+    }
+    .visually-hidden {
+      position: absolute !important;
+      width: 1px !important;
+      height: 1px !important;
+      padding: 0 !important;
+      margin: -1px !important;
+      overflow: hidden !important;
+      clip: rect(0, 0, 0, 0) !important;
+      border: 0 !important;
+    }
+  </style>
 </head>
 
-<main lang="en-GB">
-  <section class="about" aria-label="About Me">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-7">
-          <img
-            src="{{ 'assets/img/ana-rita-pimenta-marketing-business-communication.jpg' | prepend: site.baseurl | prepend: site.url }}"
-            class="img-fluid mb-15 animate-box fadeInLeft animated"
-            data-animate-effect="fadeInLeft"
-            alt="Portrait of Ana Rita Pimenta seated in a cosy setting, smiling"
-            loading="lazy"
-            width="700"
-            height="467"
-          />
-        </div>
-        <div class="col-md-5 animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
-          <header>
-            <span class="heading-meta style-1">About Me</span>
-            <h1 class="about-heading" style="font-weight: 600; font-size: 1.8rem;">Ana Rita Pimenta</h1>
-          </header>
+<body>
+  <main lang="en-GB">
+    <section class="about" aria-label="About Me">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-7">
+            <img
+              src="{{ 'assets/img/ana-rita-pimenta-marketing-business-communication.jpg' | prepend: site.baseurl | prepend: site.url }}"
+              alt="Portrait of Ana Rita Pimenta seated in a cosy setting, smiling"
+              loading="lazy"
+              width="700"
+              height="467"
+            />
+          </div>
+          <div class="col-md-5">
+            <header>
+              <span class="heading-meta style-1">About Me</span>
+              <h1 class="about-heading">Ana Rita Pimenta</h1>
+            </header>
 
-          <article>
-            <p><strong>Friendly</strong>, <strong>organised</strong>, <strong>collaborative</strong>, and <strong>creative by nature</strong>.</p>
-            <p>I am a <strong>highly driven self-starter</strong>, who is <strong>observant and perceptive to the needs of the company</strong>, <strong>colleagues</strong>, and <strong>clients</strong> I work with.</p>
-            <p>I bring a great deal of <strong>energy</strong> and am <strong>self-motivated</strong> to complete tasks on time and within budget.</p>
-            <p>I have the <strong>ability to identify challenges</strong> and <strong>develop solutions independently or within a team</strong>.</p>
-            <p>I am a <strong>lively</strong> and <strong>passionate individual</strong> who <strong>loves sports</strong>, enjoys <strong>meeting new people</strong>, and is always eager to <strong>learn new things</strong>.</p>
-          </article>
+            <article>
+              <p><strong>Friendly</strong>, <strong>organised</strong>, <strong>collaborative</strong>, and <strong>creative by nature</strong>.</p>
+              <p>I am a <strong>highly driven self-starter</strong>, who is <strong>observant and perceptive to the needs of the company</strong>, <strong>colleagues</strong>, and <strong>clients</strong> I work with.</p>
+              <p>I bring a great deal of <strong>energy</strong> and am <strong>self-motivated</strong> to complete tasks on time and within budget.</p>
+              <p>I have the <strong>ability to identify challenges</strong> and <strong>develop solutions independently or within a team</strong>.</p>
+              <p>I am a <strong>lively</strong> and <strong>passionate individual</strong> who <strong>loves sports</strong>, enjoys <strong>meeting new people</strong>, and is always eager to <strong>learn new things</strong>.</p>
+            </article>
 
-          <button onclick="window.open('cv.pdf','_blank')" class="btn btn-primary mt-3" aria-label="Download CV PDF">
-            Download CV
-          </button>
+            <button onclick="window.open('cv.pdf','_blank')" class="btn mt-3" aria-label="Download CV PDF">
+              Download CV
+            </button>
 
-          <div class="cardvisit mt-4" aria-label="Contact Information">
-            <h2 style="font-weight: 600;">{{ site.author.name }}</h2>
-            <p><strong>{{ site.author.role }}</strong></p>
-            <div class="divider-line"></div>
-            <p><i class="ti-calendar" aria-hidden="true"></i> &nbsp;{{ site.author.date_of_birth }}</p>
-            <p><i class="ti-email" aria-hidden="true"></i> &nbsp;<a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></p>
-            <p><i class="ti-location-pin" aria-hidden="true"></i> &nbsp;{{ site.author.location }}</p>
-            <p><i class="ti-mobile" aria-hidden="true"></i> &nbsp;<a href="tel:{{ site.author.phone_number }}">{{ site.author.phone_number }}</a></p>
+            <div class="cardvisit mt-4" aria-label="Contact Information">
+              <h2 style="font-weight: 600;">{{ site.author.name }}</h2>
+              <p><strong>{{ site.author.role }}</strong></p>
+              <div class="divider-line"></div>
+              <p><i class="ti-calendar" aria-hidden="true"></i> &nbsp;{{ site.author.date_of_birth }}</p>
+              <p><i class="ti-email" aria-hidden="true"></i> &nbsp;<a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></p>
+              <p><i class="ti-location-pin" aria-hidden="true"></i> &nbsp;{{ site.author.location }}</p>
+              <p><i class="ti-mobile" aria-hidden="true"></i> &nbsp;<a href="tel:{{ site.author.phone_number }}">{{ site.author.phone_number }}</a></p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <div class="divider1" role="presentation"></div>
+    <div class="divider1" role="presentation"></div>
 
-  {% include skills.html %}
+    {% include skills.html %}
 
-  <div class="divider1" role="presentation"></div>
+    <div class="divider1" role="presentation"></div>
 
-  <section class="testimonials" aria-label="Testimonials">
-    <div class="container-fluid">
-      <header class="row">
-        <div class="col-md-12" style="margin-bottom: 1rem;">
-          <span class="heading-meta style-1" style="background: none; padding: 0;">What They Say</span>
-          <h2 class="heading animate-box" data-animate-effect="fadeInLeft" style="margin-top: 0;">Testimonials</h2>
-          <h2 class="visually-hidden">Testimonials About Ana Rita Pimenta</h2>
-        </div>
-      </header>
-      <div class="row">
-        <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-          <blockquote class="quote-card">
-            <img
-              src="{{ 'assets/img/quote.png' | prepend: site.baseurl | prepend: site.url }}"
-              alt="Quotation mark icon"
-              class="quote-2"
-              loading="lazy"
-              width="32"
-              height="32"
-            />
-            <p>Fiquei impressionado com a capacidade da Ana Rita em finalizar as tarefas que lhe dava atempadamente. Trabalha bem em grupo, tem capacidade de liderança e para resolver problemas. É uma trabalhadora muito conscienciosa e capaz.</p>
-            <footer>
-              <h3><strong>Nuno Ramos</strong></h3>
-              <p class="occupation">Nelo - M.A.R. Kayaks, Lda</p>
-            </footer>
-          </blockquote>
-        </div>
+    <section class="testimonials" aria-label="Testimonials">
+      <div class="container-fluid">
+        <header class="row">
+          <div class="col-md-12" style="margin-bottom: 1rem;">
+            <span class="heading-meta style-1" style="background: none; padding: 0;">What They Say</span>
+            <h2 class="heading animate-box" data-animate-effect="fadeInLeft" style="margin-top: 0;">Testimonials</h2>
+            <h2 class="visually-hidden">Testimonials About Ana Rita Pimenta</h2>
+          </div>
+        </header>
+        <div class="row">
+          <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+            <blockquote class="quote-card">
+              <img
+                src="{{ 'assets/img/quote.png' | prepend: site.baseurl | prepend: site.url }}"
+                alt="Quotation mark icon"
+                class="quote-2"
+                loading="lazy"
+                width="32"
+                height="32"
+              />
+              <p>Fiquei impressionado com a capacidade da Ana Rita em finalizar as tarefas que lhe dava atempadamente. Trabalha bem em grupo, tem capacidade de liderança e para resolver problemas. É uma trabalhadora muito conscienciosa e capaz.</p>
+              <footer>
+                <h3><strong>Nuno Ramos</strong></h3>
+                <p class="occupation">Nelo - M.A.R. Kayaks, Lda</p>
+              </footer>
+            </blockquote>
+          </div>
 
-        <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-          <blockquote class="quote-card">
-            <img
-              src="{{ 'assets/img/quote.png' | prepend: site.baseurl | prepend: site.url }}"
-              alt="Quotation mark icon"
-              class="quote-2"
-              loading="lazy"
-              width="32"
-              height="32"
-            />
-            <p>A Ana Rita revelou ainda excelente domínio da língua portuguesa, quer na oralidade, quer na escrita, manifestando competências comunicativas muito acima da média, tendo um interesse muito especial pela área do marketing.</p>
-            <footer>
-              <h3><strong>Sara Pascoal</strong></h3>
-              <p class="occupation">Instituto Superior de Contabilidade e Administração do Porto (ISCAP)</p>
-            </footer>
-          </blockquote>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="divider1" role="presentation"></div>
-
-  <section class="companies" aria-label="Companies I’ve Worked With" style="display:none;">
-    <div class="container-fluid">
-      <header class="row">
-        <div class="col-md-12">
-          <span class="heading-meta style-1">Worked With</span>
-          <h2 class="heading animate-box" data-animate-effect="fadeInLeft">Companies I've Collaborated With</h2>
-        </div>
-      </header>
-      <div class="row">
-        {% assign companies = "livemotion,barn-of-monkeys,global-sport,nelo" | split: "," %}
-        {% for company in companies %}
-        <div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
-          <div class="clients">
-            <img
-              src="{{ 'assets/img/companies/' | append: company | append: '.png' | prepend: site.baseurl | prepend: site.url }}"
-              class="img-fluid"
-              alt="Logo of {{ company | replace: '-', ' ' | capitalize }}"
-              loading="lazy"
-              width="150"
-              height="80"
-            />
+          <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+            <blockquote class="quote-card">
+              <img
+                src="{{ 'assets/img/quote.png' | prepend: site.baseurl | prepend: site.url }}"
+                alt="Quotation mark icon"
+                class="quote-2"
+                loading="lazy"
+                width="32"
+                height="32"
+              />
+              <p>A Ana Rita revelou ainda excelente domínio da língua portuguesa, quer na oralidade, quer na escrita, manifestando competências comunicativas muito acima da média, tendo um interesse muito especial pela área do marketing.</p>
+              <footer>
+                <h3><strong>Sara Pascoal</strong></h3>
+                <p class="occupation">Instituto Superior de Contabilidade e Administração do Porto (ISCAP)</p>
+              </footer>
+            </blockquote>
           </div>
         </div>
-        {% endfor %}
       </div>
-    </div>
-  </section>
-</main>
+    </section>
+
+    <div class="divider1" role="presentation"></div>
+
+    <section class="companies" aria-label="Companies I’ve Worked With">
+      <div class="container-fluid">
+        <header class="row">
+          <div class="col-md-12">
+            <span class="heading-meta style-1">Worked With</span>
+            <h2 class="heading animate-box visually-hidden" data-animate-effect="fadeInLeft">Companies I've Collaborated With</h2>
+          </div>
+        </header>
+        <div class="row">
+          {% assign companies = "livemotion,barn-of-monkeys,global-sport,nelo" | split: "," %}
+          {% for company in companies %}
+          <div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
+            <div class="clients">
+              <img
+                src="{{ 'assets/img/companies/' | append: company | append: '.png' | prepend: site.baseurl | prepend: site.url }}"
+                alt="Logo of {{ company | replace: '-', ' ' | capitalize }}"
+                loading="lazy"
+                width="150"
+                height="80"
+              />
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
