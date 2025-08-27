@@ -1,72 +1,104 @@
-{% assign active = page.url | downcase | split: '/' %}
+---
+title: "{{ page.title | default: 'Ana Rita Pimenta - Marketing and Business Communication' }}"
+description: "{{ page.description | default: 'Website of Ana Rita Pimenta, specialist in marketing and business communication.' }}"
+---
 
-<aside id="aside">
-  <h1 id="logo">
-    <img
-      src="{{
-        'assets/img/ana-rita-pimenta-marketing-business-communication.jpg'
-          | prepend: site.baseurl
-          | prepend: site.url
-      }}"
-      alt="Profile photo of Ana Rita Pimenta, specialist in marketing and business communication"
-    /><br />
-    <a href="{{ site.url }}">
-      {{ site.author.name }}
-      <span>{{ site.author.role }}</span>
-    </a>
-  </h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="{{ page.description | escape }}" />
+  <title>{{ page.title | escape }}</title>
 
-  <nav id="main-menu">
-    <ul>
-      <li class="{% if active[1] == null %}active{% endif %}">
-        <a href="{{ site.url }}">Home</a>
-      </li>
-      <li class="{% if active[1] contains 'resume' %}active{% endif %}">
-        <a href="{{
-          'resume' | prepend: site.baseurl | prepend: site.url
-        }}">CV</a>
-      </li>
-      <li class="{% if active[1] contains 'portfolio' %}active{% endif %}">
-        <a href="{{
-          'portfolio' | prepend: site.baseurl | prepend: site.url
-        }}">Portfolio</a>
-      </li>
-      <li class="{% if active[1] contains 'contact' %}active{% endif %}">
-        <a href="{{
-          'contact' | prepend: site.baseurl | prepend: site.url
-        }}">Contact</a>
-      </li>
-    </ul>
-  </nav>
+  <style>
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+  </style>
 
-  <div class="footer">
-    <ul>
-      <li>
-        <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}"
-           target="_blank" rel="noopener noreferrer"
-           aria-label="Ana Rita Pimenta’s LinkedIn profile">
-          <i class="ti-linkedin font-14px gray-icon"></i>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.facebook.com/{{ site.author.facebook }}"
-           target="_blank" rel="noopener noreferrer"
-           aria-label="Ana Rita Pimenta’s Facebook profile">
-          <i class="ti-facebook font-14px gray-icon"></i>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.instagram.com/{{ site.author.instagram }}"
-           target="_blank" rel="noopener noreferrer"
-           aria-label="Ana Rita Pimenta’s Instagram profile">
-          <i class="ti-instagram font-14px gray-icon"></i>
-        </a>
-      </li>
-    </ul>
-    <p>
-      <small>{{ site.author.name }} &copy; 2025 All Rights Reserved</small>
-    </p>
-  </div>
-</aside>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | prepend: site.baseurl | prepend: site.url }}" />
+</head>
+<body>
+
+  {% assign active = page.url | downcase | split: '/' %}
+
+  <aside id="aside">
+    <h1 class="sr-only">
+      Ana Rita Pimenta – Specialist in Marketing and Business Communication Resume Website
+    </h1>
+
+    <div id="logo">
+      <img
+        src="{{ 'assets/img/ana-rita-pimenta-marketing-business-communication.jpg' | prepend: site.baseurl | prepend: site.url }}"
+        alt="Ana Rita Pimenta - Marketing and Business Communication Specialist"
+      /><br />
+      <a href="{{ site.url }}">
+        {{ site.author.name }}
+        <span>{{ site.author.role }}</span>
+      </a>
+    </div>
+
+    <h2 class="sr-only">Main Navigation Menu</h2>
+    <nav id="main-menu">
+      <ul>
+        <li class="{% if active[1] == null %}active{% endif %}">
+          <a href="{{ site.url }}">Home</a>
+        </li>
+        <li class="{% if active[1] contains 'resume' %}active{% endif %}">
+          <a href="{{ 'resume' | prepend: site.baseurl | prepend: site.url }}">Resume</a>
+        </li>
+        <li class="{% if active[1] contains 'portfolio' %}active{% endif %}">
+          <a href="{{ 'portfolio' | prepend: site.baseurl | prepend: site.url }}">Portfolio</a>
+        </li>
+        <li class="{% if active[1] contains 'contact' %}active{% endif %}">
+          <a href="{{ 'contact' | prepend: site.baseurl | prepend: site.url }}">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="footer">
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Ana Rita Pimenta’s LinkedIn profile">
+            <i class="ti-linkedin font-14px gray-icon"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/{{ site.author.facebook }}"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Ana Rita Pimenta’s Facebook profile">
+            <i class="ti-facebook font-14px gray-icon"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/{{ site.author.instagram }}"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Ana Rita Pimenta’s Instagram profile">
+            <i class="ti-instagram font-14px gray-icon"></i>
+          </a>
+        </li>
+      </ul>
+      <p>
+        <small>{{ site.author.name }} &copy; 2025 All Rights Reserved</small>
+      </p>
+    </div>
+  </aside>
+
+  <!-- Conteúdo principal da página aqui -->
+
+</body>
+</html>
+
 
 
