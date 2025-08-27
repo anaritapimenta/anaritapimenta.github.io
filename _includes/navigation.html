@@ -1,5 +1,8 @@
 {% assign active = page.url | downcase | split: '/' %}
 
+<!-- Botão de navegação (hamburger menu) corrigido -->
+<a href="#" class="js-nav-toggle nav-toggle" aria-label="Abrir menu de navegação"></a>
+
 <aside id="aside">
   <h1 id="logo">
     <img
@@ -8,25 +11,13 @@
           | prepend: site.baseurl
           | prepend: site.url
       }}"
-      alt="Profile photo of Ana Rita Pimenta, marketing and business communication specialist"
+      alt="Foto de perfil de Ana Rita Pimenta, especialista em marketing e comunicação empresarial"
     /><br />
     <a href="{{ site.url }}">
       {{ site.author.name }}
       <span>{{ site.author.role }}</span>
     </a>
   </h1>
-
-  <!-- Hamburger button for Mobile -->
-  <button
-    class="menu-toggle"
-    aria-label="Open main menu"
-    aria-expanded="false"
-    aria-controls="main-menu"
-    onclick="const nav = document.getElementById('main-menu'); const btn = this; const isOpen = btn.getAttribute('aria-expanded') === 'true'; btn.setAttribute('aria-expanded', !isOpen); nav.classList.toggle('open');"
-  >
-    <span class="hamburger-icon" aria-hidden="true" style="font-size:1.5rem;">☰</span>
-    <span class="sr-only">Menu</span>
-  </button>
 
   <nav id="main-menu">
     <ul>
@@ -56,21 +47,21 @@
       <li>
         <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}"
            target="_blank" rel="noopener noreferrer"
-           aria-label="{{ site.author.name }}’s LinkedIn">
+           aria-label="LinkedIn de {{ site.author.name }}">
           <i class="ti-linkedin font-14px gray-icon"></i>
         </a>
       </li>
       <li>
         <a href="https://www.facebook.com/{{ site.author.facebook }}"
            target="_blank" rel="noopener noreferrer"
-           aria-label="{{ site.author.name }}’s Facebook">
+           aria-label="Facebook de {{ site.author.name }}">
           <i class="ti-facebook font-14px gray-icon"></i>
         </a>
       </li>
       <li>
         <a href="https://www.instagram.com/{{ site.author.instagram }}"
            target="_blank" rel="noopener noreferrer"
-           aria-label="{{ site.author.name }}’s Instagram">
+           aria-label="Instagram de {{ site.author.name }}">
           <i class="ti-instagram font-14px gray-icon"></i>
         </a>
       </li>
@@ -80,66 +71,3 @@
     </p>
   </div>
 </aside>
-
-<style>
-  /* Button styles */
-  .menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: inherit;
-    padding: 0.5rem 1rem; /* bigger tap target */
-    align-items: center;
-    display: flex;
-  }
-
-  .hamburger-icon {
-    user-select: none;
-  }
-
-  /* Visually hidden text for screen readers */
-  .sr-only {
-    position: absolute !important;
-    width: 1px !important;
-    height: 1px !important;
-    padding: 0 !important;
-    margin: -1px !important;
-    overflow: hidden !important;
-    clip: rect(0, 0, 0, 0) !important;
-    white-space: nowrap !important;
-    border: 0 !important;
-  }
-
-  /* Mobile styles */
-  @media (max-width: 768px) {
-    /* Show hamburger button */
-    .menu-toggle {
-      display: flex;
-    }
-
-    /* Hide menu initially */
-    #main-menu {
-      display: none;
-    }
-
-    /* Show menu when open */
-    #main-menu.open {
-      display: block;
-    }
-
-    /* Menu styling */
-    #main-menu ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    #main-menu ul li {
-      margin-bottom: 0.5rem;
-    }
-  }
-</style>
-
-
