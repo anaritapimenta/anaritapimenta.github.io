@@ -30,6 +30,21 @@ layout: default
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+
+  <style>
+    /* Screen reader only - hides visually but keeps accessible */
+    .sr-only {
+      position: absolute !important;
+      width: 1px !important;
+      height: 1px !important;
+      padding: 0 !important;
+      margin: -1px !important;
+      overflow: hidden !important;
+      clip: rect(0, 0, 0, 0) !important;
+      white-space: nowrap !important;
+      border: 0 !important;
+    }
+  </style>
 </head>
 
 <body>
@@ -50,7 +65,10 @@ layout: default
         <div class="col-md-5 animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
           <header>
             <span class="heading-meta style-1">About Me</span>
-            <h1 class="about-heading">{{ site.author.name }} – Marketing Specialist</h1>
+            <h1 class="about-heading">
+              Ana Rita Pimenta
+              <span class="sr-only"> – Marketing Specialist</span>
+            </h1>
           </header>
 
           <article>
@@ -90,7 +108,10 @@ layout: default
       <header class="row">
         <div class="col-md-12">
           <span class="heading-meta style-1">What They Say</span>
-          <h2 class="heading animate-box" data-animate-effect="fadeInLeft">Testimonials About Ana Rita Pimenta</h2>
+          <h2 class="heading animate-box" data-animate-effect="fadeInLeft">
+            <span class="sr-only">Testimonials About Ana Rita Pimenta</span>
+            Testimonials
+          </h2>
         </div>
       </header>
       <div class="row">
@@ -136,7 +157,7 @@ layout: default
       <header class="row">
         <div class="col-md-12">
           <span class="heading-meta style-1">Worked With</span>
-          <h2 class="heading animate-box" data-animate-effect="fadeInLeft">Companies I've Collaborated With</h2>
+          <h2 class="heading animate-box sr-only" data-animate-effect="fadeInLeft">Companies I've Collaborated With</h2>
         </div>
       </header>
       <div class="row">
