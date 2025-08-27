@@ -1,9 +1,39 @@
 ---
-title: Home
+title: Ana Rita Pimenta – Creative Marketing & Communication
 layout: default
 ---
 
-<main lang="en">
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Page Title -->
+  <title>Ana Rita Pimenta – Creative Marketing & Communication</title>
+
+  <!-- Meta Description -->
+  <meta name="description" content="Creative, organised and driven professional in marketing and communication. Discover my work and experience." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ana Rita Pimenta – Creative Marketing & Communication" />
+  <meta property="og:description" content="Creative, organised and driven professional in marketing and communication. Discover my work and experience." />
+  <meta property="og:image" content="{{ site.url }}/assets/img/og-image.jpg" />
+  <meta property="og:url" content="{{ site.url }}" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ana Rita Pimenta – Creative Marketing & Communication" />
+  <meta name="twitter:description" content="Creative, organised and driven professional in marketing and communication." />
+  <meta name="twitter:image" content="{{ site.url }}/assets/img/og-image.jpg" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+
+<body>
+<main>
   <section class="about" aria-label="About Me">
     <div class="container-fluid">
       <div class="row">
@@ -13,19 +43,20 @@ layout: default
             class="img-fluid mb-15 animate-box fadeInLeft animated"
             data-animate-effect="fadeInLeft"
             alt="Portrait of Ana Rita Pimenta seated in a cosy setting, smiling"
+            loading="lazy"
           />
         </div>
 
         <div class="col-md-5 animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
           <header>
             <span class="heading-meta style-1">About Me</span>
-            <h1 class="about-heading">{{ site.author.name }}</h1>
+            <h1 class="about-heading">{{ site.author.name }} – Marketing Specialist</h1>
           </header>
 
           <article>
             <p><strong>Friendly</strong>, <strong>organised</strong>, <strong>collaborative</strong>, and <strong>creative by nature</strong>.</p>
-            <p>I am a <strong>highly driven self-starter</strong>, who is <strong>observant and perceptive to the needs of the company</strong>, <strong>colleagues</strong>, and <strong>clients</strong> I work with.</p>
-            <p>I bring a great deal of <strong>energy</strong> and am <strong>self-motivated</strong> to complete tasks on time and within budget.</p>
+            <p>I am a <strong>highly driven self-starter</strong>, who is <strong>attentive to the needs of the company</strong>, <strong>colleagues</strong>, and <strong>clients</strong>.</p>
+            <p>I bring <strong>energy</strong> and am <strong>self-motivated</strong> to complete tasks on time and on budget.</p>
             <p>I have the <strong>ability to identify challenges</strong> and <strong>develop solutions independently or within a team</strong>.</p>
             <p>I am a <strong>lively</strong> and <strong>passionate individual</strong> who <strong>loves sports</strong>, enjoys <strong>meeting new people</strong>, and is always eager to <strong>learn new things</strong>.</p>
           </article>
@@ -59,7 +90,7 @@ layout: default
       <header class="row">
         <div class="col-md-12">
           <span class="heading-meta style-1">What They Say</span>
-          <h2 class="heading animate-box" data-animate-effect="fadeInLeft">Testimonials</h2>
+          <h2 class="heading animate-box" data-animate-effect="fadeInLeft">Testimonials About Ana Rita Pimenta</h2>
         </div>
       </header>
       <div class="row">
@@ -69,8 +100,9 @@ layout: default
               src="{{ 'assets/img/quote.png' | prepend: site.baseurl | prepend: site.url }}"
               alt="Quotation mark icon"
               class="quote-2"
+              loading="lazy"
             />
-            <p>Fiquei impressionado com a capacidade da Ana Rita em finalizar as tarefas que lhe dava atempadamente. Trabalha bem em grupo, tem capacidade de liderança e para resolver problemas. É uma trabalhadora muito conscienciosa e capaz.</p>
+            <p>I was impressed by Ana Rita’s ability to complete tasks on time. She works well in teams, shows leadership, and problem-solving skills. A very conscientious and capable professional.</p>
             <footer>
               <h3><strong>Nuno Ramos</strong></h3>
               <p class="occupation">Nelo - M.A.R. Kayaks, Lda</p>
@@ -84,11 +116,12 @@ layout: default
               src="{{ 'assets/img/quote.png' | prepend: site.baseurl | prepend: site.url }}"
               alt="Quotation mark icon"
               class="quote-2"
+              loading="lazy"
             />
-            <p>A Ana Rita revelou ainda excelente domínio da língua portuguesa, quer na oralidade, quer na escrita, manifestando competências comunicativas muito acima da média, tendo um interesse muito especial pela área do marketing.</p>
+            <p>Ana Rita demonstrated excellent command of the Portuguese language, both spoken and written, showing outstanding communication skills and a strong interest in marketing.</p>
             <footer>
-              <h3>Sara Pascoal</h3>
-              <p class="occupation">Instituto Superior de Contabilidade e Administração do Porto (ISCAP)</p>
+              <h3><strong>Sara Pascoal</strong></h3>
+              <p class="occupation">Polytechnic Institute of Porto – ISCAP</p>
             </footer>
           </blockquote>
         </div>
@@ -103,7 +136,7 @@ layout: default
       <header class="row">
         <div class="col-md-12">
           <span class="heading-meta style-1">Worked With</span>
-          <h2 class="heading animate-box" data-animate-effect="fadeInLeft">Companies</h2>
+          <h2 class="heading animate-box" data-animate-effect="fadeInLeft">Companies I've Collaborated With</h2>
         </div>
       </header>
       <div class="row">
@@ -115,6 +148,7 @@ layout: default
               src="{{ 'assets/img/companies/' | append: company | append: '.png' | prepend: site.baseurl | prepend: site.url }}"
               class="img-fluid"
               alt="Logo of {{ company | replace: '-', ' ' | capitalize }}"
+              loading="lazy"
             />
           </div>
         </div>
@@ -123,4 +157,7 @@ layout: default
     </div>
   </section>
 </main>
+</body>
+</html>
+
 
