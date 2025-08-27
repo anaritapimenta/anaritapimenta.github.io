@@ -8,7 +8,7 @@
           | prepend: site.baseurl
           | prepend: site.url
       }}"
-      alt="Foto de perfil de Ana Rita Pimenta, especialista em marketing e comunicação empresarial"
+      alt="Profile photo of Ana Rita Pimenta, specialist in marketing and business communication"
     /><br />
     <a href="{{ site.url }}">
       {{ site.author.name }}
@@ -24,7 +24,7 @@
       <li class="{% if active[1] contains 'resume' %}active{% endif %}">
         <a href="{{
           'resume' | prepend: site.baseurl | prepend: site.url
-        }}">Resume</a>
+        }}">CV</a>
       </li>
       <li class="{% if active[1] contains 'portfolio' %}active{% endif %}">
         <a href="{{
@@ -44,21 +44,21 @@
       <li>
         <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}"
            target="_blank" rel="noopener noreferrer"
-           aria-label="LinkedIn de {{ site.author.name }}">
+           aria-label="Ana Rita Pimenta’s LinkedIn profile">
           <i class="ti-linkedin font-14px gray-icon"></i>
         </a>
       </li>
       <li>
         <a href="https://www.facebook.com/{{ site.author.facebook }}"
            target="_blank" rel="noopener noreferrer"
-           aria-label="Facebook de {{ site.author.name }}">
+           aria-label="Ana Rita Pimenta’s Facebook profile">
           <i class="ti-facebook font-14px gray-icon"></i>
         </a>
       </li>
       <li>
         <a href="https://www.instagram.com/{{ site.author.instagram }}"
            target="_blank" rel="noopener noreferrer"
-           aria-label="Instagram de {{ site.author.name }}">
+           aria-label="Ana Rita Pimenta’s Instagram profile">
           <i class="ti-instagram font-14px gray-icon"></i>
         </a>
       </li>
@@ -68,4 +68,5 @@
     </p>
   </div>
 </aside>
+
 
