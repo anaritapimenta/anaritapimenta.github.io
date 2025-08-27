@@ -3,132 +3,222 @@ title: Ana Rita Pimenta – Creative Marketing & Communication
 layout: default
 ---
 
-<main>
-  <section class="about" aria-label="About Me">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-7">
-          <img
-            src="{{ 'assets/img/avatar.jpg' | prepend: site.baseurl | prepend: site.url }}"
-            class="img-fluid mb-15 animate-box fadeInLeft animated"
-            data-animate-effect="fadeInLeft"
-            alt="Portrait of Ana Rita Pimenta seated in a cosy setting, smiling"
-            loading="lazy"
-          />
-        </div>
-        <div class="col-md-5 animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
-          <header>
-            <span class="heading-meta style-1">About Me</span>
-            <h1 class="about-heading">
-              {{ site.author.name }}
-              <span class="sr-only"> – {{ site.author.role }}</span>
-            </h1>
-          </header>
-          <article>
-            <p><strong>Friendly</strong>, <strong>organised</strong>, <strong>collaborative</strong>, and <strong>creative by nature</strong>.</p>
-            <p>I am a <strong>highly driven self-starter</strong>, who is <strong>perceptive to the needs of the company</strong>, <strong>colleagues</strong>, and <strong>clients</strong>.</p>
-            <p>I bring <strong>energy</strong> and am <strong>self-motivated</strong> to complete tasks on time and within budget.</p>
-            <p>I have the <strong>ability to identify challenges</strong> and <strong>develop solutions independently or in a team</strong>.</p>
-            <p>I am a <strong>lively</strong> and <strong>passionate individual</strong> who <strong>loves sports</strong>, enjoys <strong>meeting new people</strong>, and is always eager to <strong>learn new things</strong>.</p>
-          </article>
-          <button onclick="window.open('cv.pdf','_blank')" class="btn btn-primary mt-3" aria-label="Download CV PDF">
-            Download CV
-          </button>
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-          <div class="cardvisit mt-4" aria-label="Contact Information">
-            <h2>{{ site.author.name }}</h2>
-            <p><strong>{{ site.author.role }}</strong></p>
-            <div class="divider-line"></div>
-            <p><i class="ti-calendar" aria-hidden="true"></i> &nbsp;{{ site.author.date_of_birth }}</p>
-            <p><i class="ti-email" aria-hidden="true"></i> &nbsp;<a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></p>
-            <p><i class="ti-location-pin" aria-hidden="true"></i> &nbsp;{{ site.author.location }}</p>
-            <p><i class="ti-mobile" aria-hidden="true"></i> &nbsp;<a href="tel:{{ site.author.phone_number }}">{{ site.author.phone_number }}</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <!-- Page Title (up to 60 characters) -->
+  <title>Ana Rita Pimenta – Marketing & Communication Specialist</title>
 
-  <div class="divider1" role="presentation"></div>
+  <!-- Meta Description (up to 155 characters) -->
+  <meta name="description" content="Ana Rita Pimenta, a creative professional in marketing and communication. Organised, collaborative and passionate about delivering excellent results." />
 
-  {% include skills.html %}
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ana Rita Pimenta – Marketing & Communication Specialist" />
+  <meta property="og:description" content="Ana Rita Pimenta, a creative professional in marketing and communication. Organised, collaborative and passionate about delivering excellent results." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ site.url }}" />
+  <meta property="og:image" content="{{ site.url }}/assets/img/og-image.jpg" />
 
-  <div class="divider1" role="presentation"></div>
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ana Rita Pimenta – Marketing & Communication Specialist" />
+  <meta name="twitter:description" content="Ana Rita Pimenta, a creative professional in marketing and communication. Organised, collaborative and passionate about delivering excellent results." />
+  <meta name="twitter:image" content="{{ site.url }}/assets/img/og-image.jpg" />
 
-  <section class="testimonials" aria-label="Testimonials">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-12">
-          <span class="heading-meta style-1">Say About Me</span>
-          <h2 class="heading animate-box" data-animate-effect="fadeInLeft">
-            <span class="sr-only">Testimonials About Ana Rita Pimenta</span>
-            Testimonials
-          </h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-          <blockquote class="quote-card">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
+
+  <style>
+    /* Screen reader only */
+    .sr-only {
+      position: absolute !important;
+      width: 1px !important;
+      height: 1px !important;
+      padding: 0 !important;
+      margin: -1px !important;
+      overflow: hidden !important;
+      clip: rect(0, 0, 0, 0) !important;
+      white-space: nowrap !important;
+      border: 0 !important;
+    }
+
+    /* Black rounded button */
+    .btn-black-rounded {
+      background-color: #000;
+      color: #fff;
+      border: none;
+      border-radius: 50px;
+      padding: 0.75rem 1.75rem;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+    }
+    .btn-black-rounded:hover,
+    .btn-black-rounded:focus {
+      background-color: #222;
+      outline: none;
+    }
+
+    /* Testimonials */
+    .testiominal .quote-card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .testiominal .quote-card img.quote-2 {
+      width: 40px;
+      margin-bottom: 1rem;
+    }
+    .testiominal .quote-card h5 {
+      margin-top: 1rem;
+      font-weight: 600;
+    }
+    .testiominal .quote-card .occupation {
+      font-style: italic;
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <section class="about" aria-label="About Me">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-7">
             <img
-              src="{{ 'assets/img/quote.png' | prepend: site.baseurl | prepend: site.url }}"
-              alt="Quotation mark icon"
-              class="quote-2"
-              loading="lazy"
-            />
-            <p>"Fiquei impressionado com a capacidade da Ana Rita em finalizar as tarefas que lhe dava atempadamente. Trabalha bem em grupo, tem capacidade de liderança e para resolver problemas. É uma trabalhadora muito conscienciosa e capaz."</p>
-            <footer>
-              <h3><strong>Nuno Ramos</strong></h3>
-              <p class="occupation">Nelo - M.A.R. Kayaks, Lda</p>
-            </footer>
-          </blockquote>
-        </div>
-        <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-          <blockquote class="quote-card">
-            <img
-              src="{{ 'assets/img/quote.png' | prepend: site.baseurl | prepend: site.url }}"
-              alt="Quotation mark icon"
-              class="quote-2"
-              loading="lazy"
-            />
-            <p>"A Ana Rita revelou ainda excelente domínio da língua portuguesa, quer na oralidade, quer na escrita, manifestando competências comunicativas muito acima da média, tendo um interesse muito especial pela área do marketing."</p>
-            <footer>
-              <h3><strong>Sara Pascoal</strong></h3>
-              <p class="occupation">Instituto Superior de Contabilidade e Administração do Porto (ISCAP)</p>
-            </footer>
-          </blockquote>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="divider1" role="presentation"></div>
-
-  <section class="companies" aria-label="Companies I’ve Worked With">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-12">
-          <span class="heading-meta style-1">Worked With</span>
-          <h2 class="heading animate-box sr-only" data-animate-effect="fadeInLeft">Companies I've Collaborated With</h2>
-        </div>
-      </div>
-      <div class="row">
-        {% assign companies = "livemotion,barn-of-monkeys,global-sport,nelo" | split: "," %}
-        {% for company in companies %}
-        <div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
-          <div class="clients">
-            <img
-              src="{{ 'assets/img/companies/' | append: company | append: '.png' | prepend: site.baseurl | prepend: site.url }}"
-              class="img-fluid"
-              alt="Logo of {{ company | replace: '-', ' ' | capitalize }}"
+              src="{{ 'assets/img/avatar.jpg' | prepend: site.baseurl | prepend: site.url }}"
+              class="img-fluid mb-15 animate-box fadeInLeft animated"
+              data-animate-effect="fadeInLeft"
+              alt="Portrait of Ana Rita Pimenta seated in a cosy setting, smiling"
               loading="lazy"
             />
           </div>
-        </div>
-        {% endfor %}
-      </div>
-    </div>
-  </section>
+          <div class="col-md-5 animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+            <header>
+              <!-- h1 up to 70 characters -->
+              <h1 class="about-heading">
+                Ana Rita Pimenta – Creative Marketing & Communication
+              </h1>
+              <span class="heading-meta style-1 sr-only">About Me</span>
+            </header>
+            <article>
+              <p><strong>Friendly</strong>, <strong>organised</strong>, <strong>collaborative</strong>, and <strong>creative by nature</strong>.</p>
+              <p>I am a <strong>highly driven self-starter</strong>, who is <strong>attuned to the needs of the company</strong>, <strong>colleagues</strong>, and <strong>clients</strong>.</p>
+              <p>I bring <strong>energy</strong> and am <strong>self-motivated</strong> to complete tasks on time and within budget.</p>
+              <p>I have the <strong>ability to identify challenges</strong> and <strong>develop solutions independently or within a team</strong>.</p>
+              <p>I am a <strong>lively</strong> and <strong>passionate individual</strong> who <strong>loves sports</strong>, enjoys <strong>meeting new people</strong>, and is always eager to <strong>learn new things</strong>.</p>
+            </article>
 
-  <div class="divider1" role="presentation"></div>
-</main>
+            <input
+              type="button"
+              value="Download CV"
+              onclick="window.open('cv.pdf','_blank')"
+              class="btn-black-rounded"
+              aria-label="Download CV PDF"
+            />
+
+            <div class="cardvisit mt-4" aria-label="Contact Information">
+              <h2 class="sr-only">Contact Information</h2>
+              <h3>{{ site.author.name }}</h3>
+              <p><strong>{{ site.author.role }}</strong></p>
+              <div class="divider-line"></div>
+              <p><i class="ti-calendar" aria-hidden="true"></i> &nbsp;{{ site.author.date_of_birth }}</p>
+              <p><i class="ti-email" aria-hidden="true"></i> &nbsp;<a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></p>
+              <p><i class="ti-location-pin" aria-hidden="true"></i> &nbsp;{{ site.author.location }}</p>
+              <p><i class="ti-mobile" aria-hidden="true"></i> &nbsp;<a href="tel:{{ site.author.phone_number }}">{{ site.author.phone_number }}</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider1" role="presentation"></div>
+
+    {% include skills.html %}
+
+    <div class="divider1" role="presentation"></div>
+
+    <section class="testiominal" aria-label="Testimonials">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <!-- h2 up to 70 characters -->
+            <h2 class="heading animate-box" data-animate-effect="fadeInLeft">
+              What People Say About Ana Rita
+            </h2>
+            <span class="heading-meta style-1 sr-only">Testimonials</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+            <div class="quote-card">
+              <img
+                src="{{ 'assets/img/quote.png' | prepend: site.baseurl | prepend: site.url }}"
+                alt=""
+                class="quote-2"
+              />
+              <p>
+                "I was impressed by Ana Rita’s ability to complete tasks promptly. She works well in groups, has leadership skills and problem-solving abilities. She is a conscientious and capable worker."
+              </p>
+              <h5><strong>Nuno Ramos</strong></h5>
+              <p class="occupation">Nelo - M.A.R. Kayaks, Ltd.</p>
+            </div>
+          </div>
+          <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+            <div class="quote-card">
+              <img
+                src="{{ 'assets/img/quote.png' | prepend: site.baseurl | prepend: site.url }}"
+                alt="quote"
+                class="quote-2"
+              />
+              <p>
+                "Ana Rita also demonstrated excellent command of the Portuguese language, both spoken and written, showing communication skills well above average, with a special interest in marketing."
+              </p>
+              <h5>Sara Pascoal</h5>
+              <p class="occupation">
+                Porto Accounting and Business School (ISCAP)
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider1" role="presentation"></div>
+
+    <section class="companies" aria-label="Companies I’ve Worked With">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <span class="heading-meta style-1">Worked With</span>
+            <h2 class="heading animate-box sr-only" data-animate-effect="fadeInLeft">Companies I've Collaborated With</h2>
+          </div>
+        </div>
+        <div class="row">
+          {% assign companies = "livemotion,barn-of-monkeys,global-sport,nelo" | split: "," %}
+          {% for company in companies %}
+          <div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
+            <div class="clients">
+              <img
+                src="{{ 'assets/img/companies/' | append: company | append: '.png' | prepend: site.baseurl | prepend: site.url }}"
+                class="img-fluid"
+                alt="Logo of {{ company | replace: '-', ' ' | capitalize }}"
+              />
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+
+    <div class="divider1" role="presentation"></div>
+  </main>
+</body>
+</html>
 
