@@ -24,8 +24,8 @@
     aria-controls="main-menu"
     onclick="const nav = document.getElementById('main-menu'); const btn = this; const isOpen = btn.getAttribute('aria-expanded') === 'true'; btn.setAttribute('aria-expanded', !isOpen); nav.classList.toggle('open');"
   >
-    <span class="hamburger-icon" aria-hidden="true">☰</span>
-    <span class="sr-only">Open menu</span>
+    <span class="hamburger-icon" aria-hidden="true" style="font-size:1.5rem; margin-right: 0.5rem;">☰</span>
+    <span>Menu</span>
   </button>
 
   <nav id="main-menu">
@@ -82,17 +82,24 @@
 </aside>
 
 <style>
-  /* Hide button and menu on desktop */
+  /* Button styles */
   .menu-toggle {
     display: none;
     background: none;
     border: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
     cursor: pointer;
     color: inherit;
+    padding: 0.5rem 1rem;
+    align-items: center;
+    display: flex;
   }
 
-  /* Visually hidden text for screen readers */
+  .hamburger-icon {
+    user-select: none;
+  }
+
+  /* Visually hidden text for screen readers (if needed elsewhere) */
   .sr-only {
     position: absolute !important;
     width: 1px !important;
@@ -109,8 +116,7 @@
   @media (max-width: 768px) {
     /* Show hamburger button */
     .menu-toggle {
-      display: inline-block;
-      margin-bottom: 1rem;
+      display: flex;
     }
 
     /* Hide menu initially */
@@ -123,7 +129,7 @@
       display: block;
     }
 
-    /* Optional: simple styling for menu */
+    /* Menu styling */
     #main-menu ul {
       list-style: none;
       padding: 0;
@@ -135,3 +141,4 @@
     }
   }
 </style>
+
