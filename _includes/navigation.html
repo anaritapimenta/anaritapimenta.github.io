@@ -24,8 +24,8 @@
     aria-controls="main-menu"
     onclick="const nav = document.getElementById('main-menu'); const btn = this; const isOpen = btn.getAttribute('aria-expanded') === 'true'; btn.setAttribute('aria-expanded', !isOpen); nav.classList.toggle('open');"
   >
-    <span class="hamburger-icon" aria-hidden="true" style="font-size:1.5rem; margin-right: 0.5rem;">☰</span>
-    <span>Menu</span>
+    <span class="hamburger-icon" aria-hidden="true" style="font-size:1.5rem;">☰</span>
+    <span class="sr-only">Menu</span>
   </button>
 
   <nav id="main-menu">
@@ -90,7 +90,7 @@
     font-size: 1.5rem;
     cursor: pointer;
     color: inherit;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1rem; /* bigger tap target */
     align-items: center;
     display: flex;
   }
@@ -99,7 +99,7 @@
     user-select: none;
   }
 
-  /* Visually hidden text for screen readers (if needed elsewhere) */
+  /* Visually hidden text for screen readers */
   .sr-only {
     position: absolute !important;
     width: 1px !important;
@@ -141,4 +141,5 @@
     }
   }
 </style>
+
 
