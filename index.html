@@ -1,26 +1,32 @@
 ---
-title: Ana Rita Pimenta – Marketing and Communication Professional
+title: Ana Rita Pimenta – Marketing & Communication
 layout: default
-description: Friendly, organised and creative individual with strong communication and problem-solving skills.
+description: Creative and collaborative marketing professional with strong communication skills.
 ---
 
 <div class="about">
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-7">
-        <img
-          src="{{ 'assets/img/ana-rita-pimenta-marketing-business-communication.jpg' | prepend: site.baseurl | prepend: site.url }}"
-          class="img-fluid mb-15 animate-box fadeInLeft animated"
-          data-animate-effect="fadeInLeft"
-          alt="Ana Rita Pimenta smiling, seated in a professional setting related to marketing and business communication"
-          loading="lazy"
-        />
+        <picture>
+          <source srcset="{{ 'assets/img/ana-rita-pimenta-marketing-business-communication.webp' | prepend: site.baseurl | prepend: site.url }}" type="image/webp">
+          <img
+            src="{{ 'assets/img/ana-rita-pimenta-marketing-business-communication.jpg' | prepend: site.baseurl | prepend: site.url }}"
+            class="img-fluid mb-15 animate-box fadeInLeft animated"
+            data-animate-effect="fadeInLeft"
+            alt="Ana Rita Pimenta smiling in a business setting"
+            loading="lazy"
+          />
+        </picture>
       </div>
       <div class="col-md-5 animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
         <span class="heading-meta style-1">About Me</span>
-        <h1 class="about-heading" aria-label="Ana Rita Pimenta – Marketing and Communication Professional">
+        <h1 class="about-heading" aria-label="Ana Rita Pimenta – Marketing & Communication">
           Ana Rita Pimenta
         </h1>
+        <p class="sr-only">
+          Ana Rita Pimenta is a marketing and communication professional with experience in creative strategy, team collaboration, and brand engagement.
+        </p>
 
         <p><strong>Friendly</strong>, <strong>organised</strong>, <strong>collaborative</strong>, and <strong>creative by nature</strong>.</p>
         <p>I am a <strong>highly driven self-starter</strong>, who is <strong>observant and perceptive to the needs of the company</strong>, <strong>colleagues</strong>, and <strong>clients</strong> I work with.</p>
@@ -48,6 +54,9 @@ description: Friendly, organised and creative individual with strong communicati
 <div class="divider1"></div>
 
 {% include skills.html %}
+<p class="sr-only">
+  Ana Rita Pimenta has developed skills in content creation, digital marketing, communication strategy, event planning, and public relations.
+</p>
 
 <div class="divider1"></div>
 
@@ -59,6 +68,9 @@ description: Friendly, organised and creative individual with strong communicati
         <h2 class="heading animate-box" data-animate-effect="fadeInLeft" aria-label="Testimonials from colleagues and collaborators">
           Testimonials
         </h2>
+        <p class="sr-only">
+          Read testimonials from mentors and colleagues who worked closely with Ana Rita Pimenta in academic and professional environments.
+        </p>
       </div>
     </div>
     <div class="row">
@@ -71,12 +83,9 @@ description: Friendly, organised and creative individual with strong communicati
             loading="lazy"
           />
           <p>
-            "Fiquei impressionado com a capacidade da Ana Rita em finalizar as
-            tarefas que lhe dava atempadamente. Trabalha bem em grupo, tem
-            capacidade de liderança e para resolver problemas. É uma
-            trabalhadora muito conscienciosa e capaz."
+            "Fiquei impressionado com a capacidade da Ana Rita em finalizar as tarefas que lhe dava atempadamente. Trabalha bem em grupo, tem capacidade de liderança e para resolver problemas. É uma trabalhadora muito conscienciosa e capaz."
           </p>
-          <h3><strong>Nuno Ramos</strong></h3>
+          <p><strong>Nuno Ramos</strong></p>
           <p class="occupation">Nelo - M.A.R. Kayaks, Lda</p>
         </div>
       </div>
@@ -89,15 +98,10 @@ description: Friendly, organised and creative individual with strong communicati
             loading="lazy"
           />
           <p>
-            "A Ana Rita revelou ainda excelente domínio da língua portuguesa,
-            quer na oralidade, quer na escrita, manifestando competências
-            comunicativas muito acima da média, tendo um interesse muito
-            especial pela área do marketing."
+            "A Ana Rita revelou ainda excelente domínio da língua portuguesa, quer na oralidade, quer na escrita, manifestando competências comunicativas muito acima da média, tendo um interesse muito especial pela área do marketing."
           </p>
-          <h3><strong>Sara Pascoal</strong></h3>
-          <p class="occupation">
-            Instituto Superior de Contabilidade e Administração do Porto (ISCAP)
-          </p>
+          <p><strong>Sara Pascoal</strong></p>
+          <p class="occupation">Instituto Superior de Contabilidade e Administração do Porto (ISCAP)</p>
         </div>
       </div>
     </div>
@@ -114,47 +118,69 @@ description: Friendly, organised and creative individual with strong communicati
         <h2 class="heading animate-box" data-animate-effect="fadeInLeft" aria-label="Companies and organisations Ana Rita Pimenta has worked with">
           Companies
         </h2>
+        <p class="sr-only">
+          Companies Ana Rita Pimenta has collaborated with include LiveMotion, Nelo, Barn of Monkeys, and Global Sport, across marketing and business initiatives.
+        </p>
       </div>
     </div>
     <div class="row">
+      <!-- LiveMotion -->
       <div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
         <div class="clients">
-          <img
-            src="{{ 'assets/img/companies/livemotion.png' | prepend: site.baseurl | prepend: site.url }}"
-            class="img-fluid"
-            alt="LiveMotion company logo"
-            loading="lazy"
-          />
+          <picture>
+            <source srcset="{{ 'assets/img/companies/livemotion.webp' | prepend: site.baseurl | prepend: site.url }}" type="image/webp">
+            <img
+              src="{{ 'assets/img/companies/livemotion.png' | prepend: site.baseurl | prepend: site.url }}"
+              class="img-fluid"
+              alt="LiveMotion company logo"
+              loading="lazy"
+            />
+          </picture>
         </div>
       </div>
+
+      <!-- Barn of Monkeys -->
       <div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
         <div class="clients">
-          <img
-            src="{{ 'assets/img/companies/barn-of-monkeys.png' | prepend: site.baseurl | prepend: site.url }}"
-            class="img-fluid"
-            alt="Barn of Monkeys company logo"
-            loading="lazy"
-          />
+          <picture>
+            <source srcset="{{ 'assets/img/companies/barn-morneys.webp' | prepend: site.baseurl | prepend: site.url }}" type="image/webp">
+            <img
+              src="{{ 'assets/img/companies/barn-of-monkeys.png' | prepend: site.baseurl | prepend: site.url }}"
+              class="img-fluid"
+              alt="Barn of Monkeys company logo"
+              loading="lazy"
+            />
+          </picture>
         </div>
       </div>
+
+      <!-- Global Sport -->
       <div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
         <div class="clients">
-          <img
-            src="{{ 'assets/img/companies/global-sport.png' | prepend: site.baseurl | prepend: site.url }}"
-            class="img-fluid"
-            alt="Global Sport company logo"
-            loading="lazy"
-          />
+          <picture>
+            <source srcset="{{ 'assets/img/companies/global-sport.webp' | prepend: site.baseurl | prepend: site.url }}" type="image/webp">
+            <img
+              src="{{ 'assets/img/companies/global-sport.png' | prepend: site.baseurl | prepend: site.url }}"
+              class="img-fluid"
+              alt="Global Sport company logo"
+              loading="lazy"
+            />
+          </picture>
         </div>
       </div>
+
+      <!-- Nelo -->
       <div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
         <div class="clients">
-          <img
-            src="{{ 'assets/img/companies/nelo.png' | prepend: site.baseurl | prepend: site.url }}"
-            class="img-fluid"
-            alt="Nelo company logo"
-            loading="lazy"
-          />
+          <picture>
+            <source srcset="{{ 'assets/img/companies/nelo.webp' | prepend: site.baseurl | prepend: site.url }}" type="image/webp">
+            <img
+              src="{{ 'assets/img/companies/nelo.png' | prepend: site.baseurl | prepend: site.url }}"
+              class="img-fluid"
+              alt="Nelo company logo"
+              loading="lazy"
+            />
+          </picture>
         </div>
       </div>
     </div>
