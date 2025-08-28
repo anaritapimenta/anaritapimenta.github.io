@@ -9,9 +9,18 @@ description: Creative and collaborative marketing professional with strong commu
     <div class="row">
       <div class="col-md-7">
         <picture>
-          <source srcset="{{ 'assets/img/ana-rita-pimenta-marketing-business-communication.webp' | prepend: site.baseurl | prepend: site.url }}" type="image/webp">
+          <!-- WebP para suportar navegadores compatíveis e reduzir o tamanho do arquivo -->
+          <source 
+            srcset="{{ 'assets/img/ana-rita-pimenta-marketing-business-communication-303w.webp' | prepend: site.baseurl | prepend: site.url }} 303w,
+                    {{ 'assets/img/ana-rita-pimenta-marketing-business-communication-600w.webp' | prepend: site.baseurl | prepend: site.url }} 600w"
+            sizes="(max-width: 600px) 100vw, 50vw"
+            type="image/webp"
+          >
           <img
-            src="{{ 'assets/img/ana-rita-pimenta-marketing-business-communication.jpg' | prepend: site.baseurl | prepend: site.url }}"
+            src="{{ 'assets/img/ana-rita-pimenta-marketing-business-communication-303w.jpg' | prepend: site.baseurl | prepend: site.url }}"
+            srcset="{{ 'assets/img/ana-rita-pimenta-marketing-business-communication-303w.jpg' | prepend: site.baseurl | prepend: site.url }} 303w,
+                    {{ 'assets/img/ana-rita-pimenta-marketing-business-communication-600w.jpg' | prepend: site.baseurl | prepend: site.url }} 600w"
+            sizes="(max-width: 600px) 100vw, 50vw"
             class="img-fluid mb-15 animate-box fadeInLeft animated"
             data-animate-effect="fadeInLeft"
             alt="Ana Rita Pimenta smiling in a business setting"
