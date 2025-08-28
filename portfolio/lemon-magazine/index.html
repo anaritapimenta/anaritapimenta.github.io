@@ -1,8 +1,8 @@
 ---
 title: Lemon Magazine PR – Barn of Monkeys
 layout: default
-description: Media placement for Barn of Monkeys in Lemon Magazine. Copywriting, PR outreach, and press relations by Ana Rita Pimenta.
-og_image: /assets/img/portfolio/project-2/1.png
+description: PR article published in Lemon Magazine featuring Barn of Monkeys. Media relations, brand communication, and press strategy by Ana Rita Pimenta.
+og_image: /assets/img/portfolio/project-2/lemon-magazine.jpg
 ---
 
 <head>
@@ -31,7 +31,7 @@ og_image: /assets/img/portfolio/project-2/1.png
       <div class="col-md-12">
         <span class="heading-meta style-1">Portfolio</span>
         <h1 class="heading animate-box" data-animate-effect="fadeInLeft">
-          Lemon Magazine Feature
+          PR Feature: Barn of Monkeys in Lemon Magazine
         </h1>
         <a
           href="{{ 'portfolio/' | prepend: site.baseurl | prepend: site.url }}"
@@ -56,25 +56,38 @@ og_image: /assets/img/portfolio/project-2/1.png
     <div class="row">
       <!-- Images -->
       <div class="col-md-7 image-content animate-box" data-animate-effect="fadeInLeft">
-        <img
-          class="img-fluid mb-30"
-          src="{{ 'assets/img/portfolio/project-2/1.png' | prepend: site.baseurl | prepend: site.url }}"
-          alt="Published article in Lemon Magazine featuring Barn of Monkeys"
-          loading="lazy"
-        />
-        <img
-          class="img-fluid mb-30"
-          src="{{ 'assets/img/portfolio/project-2/2.png' | prepend: site.baseurl | prepend: site.url }}"
-          alt="Close-up of Lemon Magazine article – PR campaign result"
-          loading="lazy"
-        />
+        <picture>
+          <source
+            srcset="{{ 'assets/img/portfolio/project-2/lemon-magazine.webp' | prepend: site.baseurl | prepend: site.url }}"
+            type="image/webp"
+          />
+          <img
+            class="img-fluid mb-30"
+            src="{{ 'assets/img/portfolio/project-2/lemon-magazine.jpg' | prepend: site.baseurl | prepend: site.url }}"
+            alt="Published article in Lemon Magazine featuring Barn of Monkeys"
+            loading="lazy"
+          />
+        </picture>
+
+        <picture>
+          <source
+            srcset="{{ 'assets/img/portfolio/project-2/lemon-magazine-article.webp' | prepend: site.baseurl | prepend: site.url }}"
+            type="image/webp"
+          />
+          <img
+            class="img-fluid mb-30"
+            src="{{ 'assets/img/portfolio/project-2/lemon-magazine-article.jpg' | prepend: site.baseurl | prepend: site.url }}"
+            alt="Close-up of PR campaign article in Lemon Magazine"
+            loading="lazy"
+          />
+        </picture>
       </div>
 
       <!-- Description -->
       <div class="col-md-5 sticky-parent animate-box" data-animate-effect="fadeInLeft">
         <div id="sticky_item">
           <article class="project-desc">
-            <h2>PR Highlights</h2>
+            <h2>Media Strategy & Press Coverage</h2>
 
             <p>
               While working at Barn of Monkeys, I acted as a dedicated <strong>brand ambassador</strong>,
@@ -99,4 +112,5 @@ og_image: /assets/img/portfolio/project-2/1.png
     </div>
   </div>
 </div>
+
 
