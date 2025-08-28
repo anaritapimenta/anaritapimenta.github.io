@@ -8,7 +8,7 @@ layout: default
   <title>Professional Video Marketing Portfolio | MAR Kayaks</title>
   <meta name="description" content="Explore MAR Kayaks' video marketing projects including rowing boat promos, app launches, April Fools' pranks and Christmas campaigns." />
   <style>
-    /* Hide SEO-only headers without affecting layout */
+    /* SEO hidden class to keep SEO titles but hide visually */
     .seo-hidden {
       position: absolute !important;
       width: 1px !important;
@@ -27,11 +27,11 @@ layout: default
     <div class="row">
       <div class="col-md-12">
 
-        <!-- SEO optimized hidden titles -->
+        <!-- SEO-only titles (hidden from visual UI) -->
         <h1 class="seo-hidden">Professional Video Marketing Portfolio by MAR Kayaks</h1>
         <h2 class="seo-hidden">Showcasing Video Projects: Rowing, App Promo, April Fools, Christmas</h2>
 
-        <!-- Visible titles unchanged -->
+        <!-- Visible Titles -->
         <span class="heading-meta style-1">Portfolio</span>
         <h2 class="heading animate-box" data-animate-effect="fadeInLeft">Project</h2>
 
@@ -61,7 +61,7 @@ layout: default
         data-animate-effect="fadeInLeft"
       >
 
-        <!-- Picture element com fallback .jpeg -->
+        <!-- Image 1: Rowing boat with fallback -->
         <picture>
           <source srcset="{{ 'assets/img/portfolio/project-9/nelo-rowing.webp' | prepend: site.baseurl | prepend: site.url }}" type="image/webp" />
           <img
@@ -72,6 +72,7 @@ layout: default
           />
         </picture>
 
+        <!-- Image 2: April Fools prank with fallback -->
         <picture>
           <source srcset="{{ 'assets/img/portfolio/project-9/nelo-april-fowl.webp' | prepend: site.baseurl | prepend: site.url }}" type="image/webp" />
           <img
@@ -82,6 +83,7 @@ layout: default
           />
         </picture>
 
+        <!-- Image 3: Mobile app promo with fallback -->
         <picture>
           <source srcset="{{ 'assets/img/portfolio/project-9/nelo-mobile-app.webp' | prepend: site.baseurl | prepend: site.url }}" type="image/webp" />
           <img
@@ -92,11 +94,12 @@ layout: default
           />
         </picture>
 
+        <!-- Image 4: Christmas campaign with fallback -->
         <picture>
-          <source srcset="{{ 'assets/img/portfolio/project-9/4.webp' | prepend: site.baseurl | prepend: site.url }}" type="image/webp" />
+          <source srcset="{{ 'assets/img/portfolio/project-9/christmas-nelo-video.webp' | prepend: site.baseurl | prepend: site.url }}" type="image/webp" />
           <img
             class="img-fluid mb-30"
-            src="{{ 'assets/img/portfolio/project-9/4.jpeg' | prepend: site.baseurl | prepend: site.url }}"
+            src="{{ 'assets/img/portfolio/project-9/christmas-nelo-video.jpeg' | prepend: site.baseurl | prepend: site.url }}"
             alt="Corporate video still – Christmas campaign"
             loading="lazy"
           />
@@ -121,6 +124,7 @@ layout: default
               <strong>For MAR Kayaks, Lda, I created several videos</strong>: some were corporate (such as a Christmas video and an April Fools' prank), and others were <strong>promotional</strong>, including an app launch and a rowing boat showcase.
             </p>
 
+            <!-- Buttons reordered -->
             <input
               style="margin-bottom: 6px"
               type="button"
@@ -165,4 +169,3 @@ layout: default
     </div>
   </div>
 </div>
-
