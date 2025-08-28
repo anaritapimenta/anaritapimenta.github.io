@@ -9,9 +9,23 @@ description: Creative and collaborative marketing professional with strong commu
     <div class="row">
       <div class="col-md-7">
         <picture>
-          <source srcset="{{ 'assets/img/ana-rita-pimenta-marketing-business-communication.webp' | prepend: site.baseurl | prepend: site.url }}" type="image/webp">
+          <source 
+            srcset="
+              {{ 'assets/img/ana-rita-pimenta-marketing-business-communication-300.webp' | prepend: site.baseurl | prepend: site.url }} 300w,
+              {{ 'assets/img/ana-rita-pimenta-marketing-business-communication-600.webp' | prepend: site.baseurl | prepend: site.url }} 600w,
+              {{ 'assets/img/ana-rita-pimenta-marketing-business-communication.webp' | prepend: site.baseurl | prepend: site.url }} 1280w
+            "
+            sizes="(max-width: 600px) 300px, 600px"
+            type="image/webp"
+          >
           <img
-            src="{{ 'assets/img/ana-rita-pimenta-marketing-business-communication.jpg' | prepend: site.baseurl | prepend: site.url }}"
+            src="{{ 'assets/img/ana-rita-pimenta-marketing-business-communication-300.jpg' | prepend: site.baseurl | prepend: site.url }}"
+            srcset="
+              {{ 'assets/img/ana-rita-pimenta-marketing-business-communication-300.jpg' | prepend: site.baseurl | prepend: site.url }} 300w,
+              {{ 'assets/img/ana-rita-pimenta-marketing-business-communication-600.jpg' | prepend: site.baseurl | prepend: site.url }} 600w,
+              {{ 'assets/img/ana-rita-pimenta-marketing-business-communication.jpg' | prepend: site.baseurl | prepend: site.url }} 1280w
+            "
+            sizes="(max-width: 600px) 300px, 600px"
             class="img-fluid mb-15 animate-box fadeInLeft animated"
             data-animate-effect="fadeInLeft"
             alt="Ana Rita Pimenta smiling in a business setting"
