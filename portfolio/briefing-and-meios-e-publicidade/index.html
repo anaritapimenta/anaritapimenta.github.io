@@ -2,7 +2,7 @@
 title: Media Campaigns – Briefing & Meios Ads
 layout: default
 description: Email and banner campaigns created for Livemotion, with performance tracking and media analysis by Ana Rita Pimenta.
-og_image: /assets/img/portfolio/project-1/1.png
+og_image: /assets/img/portfolio/project-1/banner-magazine-newsletter.jpg
 ---
 
 <div class="projects">
@@ -36,12 +36,18 @@ og_image: /assets/img/portfolio/project-1/1.png
     <div class="row">
       <!-- Image Section -->
       <div class="col-md-7 image-content animate-box" data-animate-effect="fadeInLeft">
-        <img
-          class="img-fluid mb-30"
-          src="{{ 'assets/img/portfolio/project-1/1.png' | prepend: site.baseurl | prepend: site.url }}"
-          alt="Livemotion newsletter and banner campaign in Meios & Publicidade"
-          loading="lazy"
-        />
+        <picture>
+          <source
+            srcset="{{ 'assets/img/portfolio/project-1/banner-magazine-newsletter.webp' | prepend: site.baseurl | prepend: site.url }}"
+            type="image/webp"
+          />
+          <img
+            class="img-fluid mb-30"
+            src="{{ 'assets/img/portfolio/project-1/banner-magazine-newsletter.jpg' | prepend: site.baseurl | prepend: site.url }}"
+            alt="Livemotion newsletter and banner campaign in Meios & Publicidade"
+            loading="lazy"
+          />
+        </picture>
       </div>
 
       <!-- Content Section -->
@@ -79,4 +85,3 @@ og_image: /assets/img/portfolio/project-1/1.png
     </div>
   </div>
 </div>
-
