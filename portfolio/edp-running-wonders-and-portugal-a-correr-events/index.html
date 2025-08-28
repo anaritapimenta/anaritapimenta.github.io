@@ -33,18 +33,24 @@ og_image: /assets/img/portfolio/project-8/1.png
         class="col-md-7 image-content animate-box fadeInLeft"
         data-animate-effect="fadeInLeft"
       >
-        <img
-          class="img-fluid mb-30"
-          src="{{ 'assets/img/portfolio/project-8/1.png' | prepend: site.baseurl | prepend: site.url }}"
-          alt="EDP Running Wonders event in Portugal – Image 1"
-          loading="lazy"
-        />
-        <img
-          class="img-fluid mb-30"
-          src="{{ 'assets/img/portfolio/project-8/2.png' | prepend: site.baseurl | prepend: site.url }}"
-          alt="EDP Running Wonders event in Portugal – Image 2"
-          loading="lazy"
-        />
+        <picture>
+          <source srcset="{{ 'assets/img/portfolio/project-8/portugal-correr-events.webp' | prepend: site.baseurl | prepend: site.url }}" type="image/webp" />
+          <img
+            class="img-fluid mb-30"
+            src="{{ 'assets/img/portfolio/project-8/portugal-correr-events.jpeg' | prepend: site.baseurl | prepend: site.url }}"
+            alt="EDP Running Wonders event in Portugal – Image 1"
+            loading="lazy"
+          />
+        </picture>
+        <picture>
+          <source srcset="{{ 'assets/img/portfolio/project-8/edp-running-events.webp' | prepend: site.baseurl | prepend: site.url }}" type="image/webp" />
+          <img
+            class="img-fluid mb-30"
+            src="{{ 'assets/img/portfolio/project-8/edp-running-events.jpeg' | prepend: site.baseurl | prepend: site.url }}"
+            alt="EDP Running Wonders event in Portugal – Image 2"
+            loading="lazy"
+          />
+        </picture>
       </div>
 
       <div
