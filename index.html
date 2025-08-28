@@ -9,20 +9,14 @@ description: Creative and collaborative marketing professional with strong commu
     <div class="row">
       <div class="col-md-7">
         <picture>
-          <!-- WebP Image -->
-          <source srcset="assets/img/ana-rita-pimenta-marketing-business-communication-303w.webp 303w, 
-                          assets/img/ana-rita-pimenta-marketing-business-communication-600w.webp 600w" 
-                  sizes="(max-width: 600px) 100vw, 50vw" type="image/webp">
-          
-          <!-- Fallback JPG Image -->
-          <img src="assets/img/ana-rita-pimenta-marketing-business-communication-303w.jpg"
-               srcset="assets/img/ana-rita-pimenta-marketing-business-communication-303w.jpg 303w,
-                       assets/img/ana-rita-pimenta-marketing-business-communication-600w.jpg 600w"
-               sizes="(max-width: 600px) 100vw, 50vw"
-               class="img-fluid mb-15 animate-box fadeInLeft animated"
-               data-animate-effect="fadeInLeft"
-               alt="Ana Rita Pimenta smiling in a business setting"
-               loading="lazy" />
+          <source srcset="{{ 'assets/img/ana-rita-pimenta-marketing-business-communication.webp' | prepend: site.baseurl | prepend: site.url }}" type="image/webp">
+          <img
+            src="{{ 'assets/img/ana-rita-pimenta-marketing-business-communication.jpg' | prepend: site.baseurl | prepend: site.url }}"
+            class="img-fluid mb-15 animate-box fadeInLeft animated"
+            data-animate-effect="fadeInLeft"
+            alt="Ana Rita Pimenta smiling in a business setting"
+            loading="lazy"
+          />
         </picture>
       </div>
       <div class="col-md-5 animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
@@ -83,7 +77,7 @@ description: Creative and collaborative marketing professional with strong commu
       <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
         <div class="quote-card">
           <img
-            src="assets/img/quote.png"
+            src="{{ 'assets/img/quote.png' | prepend: site.baseurl | prepend: site.url }}"
             alt="Quote icon"
             class="quote-2"
             loading="lazy"
@@ -98,7 +92,7 @@ description: Creative and collaborative marketing professional with strong commu
       <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
         <div class="quote-card">
           <img
-            src="assets/img/quote.png"
+            src="{{ 'assets/img/quote.png' | prepend: site.baseurl | prepend: site.url }}"
             alt="Quote icon"
             class="quote-2"
             loading="lazy"
@@ -134,9 +128,9 @@ description: Creative and collaborative marketing professional with strong commu
       <div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
         <div class="clients">
           <picture>
-            <source srcset="assets/img/companies/livemotion.webp" type="image/webp">
+            <source srcset="{{ 'assets/img/companies/livemotion.webp' | prepend: site.baseurl | prepend: site.url }}" type="image/webp">
             <img
-              src="assets/img/companies/livemotion.png"
+              src="{{ 'assets/img/companies/livemotion.png' | prepend: site.baseurl | prepend: site.url }}"
               class="img-fluid"
               alt="LiveMotion company logo"
               loading="lazy"
@@ -149,9 +143,9 @@ description: Creative and collaborative marketing professional with strong commu
       <div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
         <div class="clients">
           <picture>
-            <source srcset="assets/img/companies/barn-monkeys.webp" type="image/webp">
+            <source srcset="{{ 'assets/img/companies/barn-monkeys.webp' | prepend: site.baseurl | prepend: site.url }}" type="image/webp">
             <img
-              src="assets/img/companies/barn-of-monkeys.png"
+              src="{{ 'assets/img/companies/barn-of-monkeys.png' | prepend: site.baseurl | prepend: site.url }}"
               class="img-fluid"
               alt="Barn of Monkeys company logo"
               loading="lazy"
@@ -164,9 +158,9 @@ description: Creative and collaborative marketing professional with strong commu
       <div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
         <div class="clients">
           <picture>
-            <source srcset="assets/img/companies/global-sport.webp" type="image/webp">
+            <source srcset="{{ 'assets/img/companies/global-sport.webp' | prepend: site.baseurl | prepend: site.url }}" type="image/webp">
             <img
-              src="assets/img/companies/global-sport.png"
+              src="{{ 'assets/img/companies/global-sport.png' | prepend: site.baseurl | prepend: site.url }}"
               class="img-fluid"
               alt="Global Sport company logo"
               loading="lazy"
@@ -179,9 +173,9 @@ description: Creative and collaborative marketing professional with strong commu
       <div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
         <div class="clients">
           <picture>
-            <source srcset="assets/img/companies/nelo.webp" type="image/webp">
+            <source srcset="{{ 'assets/img/companies/nelo.webp' | prepend: site.baseurl | prepend: site.url }}" type="image/webp">
             <img
-              src="assets/img/companies/nelo.png"
+              src="{{ 'assets/img/companies/nelo.png' | prepend: site.baseurl | prepend: site.url }}"
               class="img-fluid"
               alt="Nelo company logo"
               loading="lazy"
@@ -192,4 +186,3 @@ description: Creative and collaborative marketing professional with strong commu
     </div>
   </div>
 </div>
-
