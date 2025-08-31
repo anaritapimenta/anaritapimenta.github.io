@@ -163,3 +163,11 @@
     stickyFunction();
   });
 })();
+if (window.innerWidth <= 600) {
+  document.querySelectorAll('[style]').forEach(el => {
+    if (el.style.letterSpacing) {
+      el.style.setProperty('letter-spacing', '0', 'important');
+    }
+  });
+}
+
