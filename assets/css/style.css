@@ -2014,3 +2014,8 @@ hr {
   margin-bottom: -20px;
   border: 0;
 }
+@media (max-width: 600px) {
+  body, p, a, h1, h2, h3, .txt1, .txt2 {
+    letter-spacing: normal !important; /* ou 0 !important, que é quase o mesmo */
+  }
+}
