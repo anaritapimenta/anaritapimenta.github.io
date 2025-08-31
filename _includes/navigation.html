@@ -4,25 +4,18 @@
   <h1 id="logo">
     <picture>
       <source 
-        srcset="
-          {{ 'assets/img/ana-rita-pimenta-118.webp' | prepend: site.baseurl | prepend: site.url }} 118w,
-          {{ 'assets/img/ana-rita-pimenta-236.webp' | prepend: site.baseurl | prepend: site.url }} 236w,
-          {{ 'assets/img/ana-rita-pimenta-300.webp' | prepend: site.baseurl | prepend: site.url }} 300w,
-          {{ 'assets/img/ana-rita-pimenta-600.webp' | prepend: site.baseurl | prepend: site.url }} 600w,
-          {{ 'assets/img/ana-rita-pimenta.webp' | prepend: site.baseurl | prepend: site.url }} 1280w
-        "
-        sizes="(max-width: 767px) 303px, 118px"
+        srcset="{{
+          'assets/img/ana-rita-pimenta-marketing-business-communication.webp'
+            | prepend: site.baseurl
+            | prepend: site.url
+        }}" 
         type="image/webp" />
       <img
-        src="{{ 'assets/img/ana-rita-pimenta-118.jpg' | prepend: site.baseurl | prepend: site.url }}"
-        srcset="
-          {{ 'assets/img/ana-rita-pimenta-118.jpg' | prepend: site.baseurl | prepend: site.url }} 118w,
-          {{ 'assets/img/ana-rita-pimenta-236.jpg' | prepend: site.baseurl | prepend: site.url }} 236w,
-          {{ 'assets/img/ana-rita-pimenta-300.jpg' | prepend: site.baseurl | prepend: site.url }} 300w,
-          {{ 'assets/img/ana-rita-pimenta-600.jpg' | prepend: site.baseurl | prepend: site.url }} 600w,
-          {{ 'assets/img/ana-rita-pimenta.jpg' | prepend: site.baseurl | prepend: site.url }} 1280w
-        "
-        sizes="(max-width: 767px) 303px, 118px"
+        src="{{
+          'assets/img/ana-rita-pimenta-marketing-business-communication.jpg'
+            | prepend: site.baseurl
+            | prepend: site.url
+        }}"
         alt="Profile photo of Ana Rita Pimenta, specialist in marketing and business communication" />
     </picture>
     <br />
@@ -38,13 +31,19 @@
         <a href="{{ site.url }}">Home</a>
       </li>
       <li class="{% if active[1] contains 'resume' %}active{% endif %}">
-        <a href="{{ 'resume' | prepend: site.baseurl | prepend: site.url }}">RESUME</a>
+        <a href="{{
+          'resume' | prepend: site.baseurl | prepend: site.url
+        }}">RESUME</a>
       </li>
       <li class="{% if active[1] contains 'portfolio' %}active{% endif %}">
-        <a href="{{ 'portfolio' | prepend: site.baseurl | prepend: site.url }}">Portfolio</a>
+        <a href="{{
+          'portfolio' | prepend: site.baseurl | prepend: site.url
+        }}">Portfolio</a>
       </li>
       <li class="{% if active[1] contains 'contact' %}active{% endif %}">
-        <a href="{{ 'contact' | prepend: site.baseurl | prepend: site.url }}">Contact</a>
+        <a href="{{
+          'contact' | prepend: site.baseurl | prepend: site.url
+        }}">Contact</a>
       </li>
     </ul>
   </nav>
@@ -52,21 +51,30 @@
   <div class="footer">
     <ul>
       <li>
-        <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn of {{ site.author.name }}">
+        <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}"
+           target="_blank" rel="noopener noreferrer"
+           aria-label="LinkedIn of {{ site.author.name }}">
           <i class="ti-linkedin font-14px gray-icon"></i>
         </a>
       </li>
       <li>
-        <a href="https://www.facebook.com/{{ site.author.facebook }}" target="_blank" rel="noopener noreferrer" aria-label="Facebook of {{ site.author.name }}">
+        <a href="https://www.facebook.com/{{ site.author.facebook }}"
+           target="_blank" rel="noopener noreferrer"
+           aria-label="Facebook of {{ site.author.name }}">
           <i class="ti-facebook font-14px gray-icon"></i>
         </a>
       </li>
       <li>
-        <a href="https://www.instagram.com/{{ site.author.instagram }}" target="_blank" rel="noopener noreferrer" aria-label="Instagram of {{ site.author.name }}">
+        <a href="https://www.instagram.com/{{ site.author.instagram }}"
+           target="_blank" rel="noopener noreferrer"
+           aria-label="Instagram of {{ site.author.name }}">
           <i class="ti-instagram font-14px gray-icon"></i>
         </a>
       </li>
     </ul>
-    <p><small>{{ site.author.name }} &copy; 2025 All Rights Reserved</small></p>
+    <p>
+      <small>{{ site.author.name }} &copy; 2025 All Rights Reserved</small>
+    </p>
   </div>
 </aside>
+
