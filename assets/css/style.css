@@ -2019,4 +2019,9 @@ hr {
     letter-spacing: 0 !important;
   }
 }
+@media (max-width: 600px) {
+  #aside * {
+    letter-spacing: normal !important;
+  }
+}
 
