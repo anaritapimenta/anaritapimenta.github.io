@@ -2024,15 +2024,3 @@ hr {
     letter-spacing: normal !important;
   }
 }
-@media (max-width: 768px) {
-  body, h1, h2, h3, p, span, a {
-    letter-spacing: normal !important;
-  }
-
-  .heading,
-  .project-desc h2,
-  a span {
-    letter-spacing: 0 !important;
-  }
-}
-
